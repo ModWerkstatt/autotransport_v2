@@ -1,0 +1,721 @@
+local transf = require "transf"
+local ParamBuilder = require "parambuilder_v1_1"
+local constructionutil = require "constructionutil"
+local positionx = ParamBuilder.Slider("offsetx", _("offset x-axis"), ParamBuilder.rangeSymm(1,0.01), 1/0.01, _("jrm_param_offsetx_tooltip") )
+local model_icons = {
+						"ui/models_20/vehicle/waggon/Autotransport/Offs547/Offehss548_db@2x.tga",
+						"ui/models_20/vehicle/waggon/Autotransport/Offs547/Laeqrss548_db@2x.tga",
+						"ui/models_20/vehicle/waggon/Autotransport/DDm915/DDm915_fernblau_1994@2x.tga",
+						"ui/models_20/vehicle/waggon/Autotransport/DDm915/DDm915_fernblau@2x.tga",
+						"ui/models_20/vehicle/waggon/Autotransport/DDm915/DDm915_gruen_1994@2x.tga",
+						"ui/models_20/vehicle/waggon/Autotransport/DDm915/DDm915_gruen@2x.tga",
+						"ui/models_20/vehicle/waggon/Autotransport/DDm915/DDm915_ozeanblau@2x.tga",
+						"ui/models_20/vehicle/waggon/Autotransport/DDm915/DDm915_rotGrau@2x.tga",
+						"ui/models_20/vehicle/waggon/Autotransport/DDm915/DDmOBB_czech@2x.tga",
+						"ui/models_20/vehicle/waggon/Autotransport/DDm915/DDmOBB_gruen@2x.tga",
+						"ui/models_20/vehicle/waggon/Autotransport/DDm915/DDmOBB_orange_banner@2x.tga",
+						"ui/models_20/vehicle/waggon/Autotransport/DDm915/DDmOBB_orange@2x.tga",
+						"ui/models_20/vehicle/waggon/Autotransport/DDm915/DDmOBB_orangeBlut_banner@2x.tga",
+						"ui/models_20/vehicle/waggon/Autotransport/DDm915/DDmOBB_orangeBlut@2x.tga",
+						"ui/models_20/vehicle/waggon/Autotransport/DDm915/DDmOBB_rot@2x.tga",
+						"ui/models_20/vehicle/waggon/Autotransport/DDm916/DDm916_DB_blau@2x.tga",
+						"ui/models_20/vehicle/waggon/Autotransport/DDm916/DDm916_DB_gruen@2x.tga",
+						"ui/models_20/vehicle/waggon/Autotransport/DDm916/DDm916_DB_rot@2x.tga",
+						"ui/models_20/vehicle/waggon/Autotransport/DDm916/DDm916_DR@2x.tga",
+						"ui/models_20/vehicle/waggon/Autotransport/DDm916/DDm916_NS@2x.tga",
+						"ui/models_20/vehicle/waggon/Autotransport/DDm916/DDm916_SNCB_blau85@2x.tga",
+						"ui/models_20/vehicle/waggon/Autotransport/DDm916/DDm916_SNCB_gruen@2x.tga",
+						"ui/models_20/vehicle/waggon/Autotransport/DDm916/DDm916_SNCB_blau95@2x.tga",
+						"ui/models_20/vehicle/waggon/Autotransport/DDm916/DDm916_SNCF_06@2x.tga",
+						"ui/models_20/vehicle/waggon/Autotransport/DDm916/DDm916_SNCF_85@2x.tga",
+						"ui/models_20/vehicle/waggon/Autotransport/DDm916/DDm916_SNCF_96@2x.tga",
+						"ui/models_20/vehicle/waggon/Autotransport/DDm916/DDm916_SNCF@2x.tga",
+						"ui/models_20/vehicle/waggon/Autotransport/Westerland/Offhs66_dbBraun@2x.tga",
+						"ui/models_20/vehicle/waggon/Autotransport/Westerland/Leks554_dbBlau_einheit@2x.tga",
+
+					}
+local model_values = {
+						"asset/Autotransport/Offehss548_db.mdl",
+						"asset/Autotransport/Laeqrss548_db.mdl",
+						"asset/Autotransport/DDm915_fernblau_1994.mdl",
+						"asset/Autotransport/DDm915_fernblau.mdl",
+						"asset/Autotransport/DDm915_gruen_1994.mdl",
+						"asset/Autotransport/DDm915_gruen.mdl",
+						"asset/Autotransport/DDm915_ozeanblau.mdl",
+						"asset/Autotransport/DDm915_rotGrau.mdl",
+						"asset/Autotransport/DDmOBB_czech.mdl",
+						"asset/Autotransport/DDmOBB_gruen.mdl",
+						"asset/Autotransport/DDmOBB_orange_banner.mdl",
+						"asset/Autotransport/DDmOBB_orange.mdl",
+						"asset/Autotransport/DDmOBB_orangeBlut_banner.mdl",
+						"asset/Autotransport/DDmOBB_orangeBlut.mdl",
+						"asset/Autotransport/DDmOBB_rot.mdl",
+						"asset/Autotransport/DDm916_DB_blau.mdl",
+						"asset/Autotransport/DDm916_DB_gruen.mdl",
+						"asset/Autotransport/DDm916_DB_rot.mdl",
+						"asset/Autotransport/DDm916_DR.mdl",
+						"asset/Autotransport/DDm916_NS.mdl",
+						"asset/Autotransport/DDm916_SNCB_blau85.mdl",
+						"asset/Autotransport/DDm916_SNCB_gruen.mdl",
+						"asset/Autotransport/DDm916_SNCB_blau95.mdl",
+						"asset/Autotransport/DDm916_SNCF_06.mdl",
+						"asset/Autotransport/DDm916_SNCF_85.mdl",
+						"asset/Autotransport/DDm916_SNCF_96.mdl",
+						"asset/Autotransport/DDm916_SNCF.mdl",
+						"asset/Autotransport/Offhs66_dbBraun_einheit.mdl",
+						"asset/Autotransport/Leks554_dbBlau_einheit.mdl",
+
+					}
+local model_beladen_values = {
+						---1950/1960s/1970s (1-48)
+						"vehicle/car_load/bandion/bandion_olympia_1.mdl",
+						"vehicle/car_load/bandion/bandion_olympia_2.mdl",
+						"vehicle/car_load/bandion/bandion_olympia_3.mdl",
+						"vehicle/car_load/bandion/bandion_olympia_4.mdl",
+						"vehicle/car_load/bandion/bandion_olympia_5.mdl",
+						"vehicle/car_load/bandion/bandion_olympia_6.mdl",
+						"vehicle/car_load/bandion/bandion_ente_1.mdl",
+						"vehicle/car_load/bandion/bandion_ente_2.mdl",
+						"vehicle/car_load/bandion/bandion_ente_3.mdl",
+						"vehicle/car_load/bandion/bandion_ente_4.mdl",
+						"vehicle/car_load/bandion/bandion_ente_5.mdl",
+						"vehicle/car_load/urban/beetle_1948_ladung_1.mdl",
+						"vehicle/car_load/urban/beetle_1948_ladung_2.mdl",
+						"vehicle/car_load/urban/beetle_1948_ladung_3.mdl",
+						"vehicle/car_load/urban/beetle_1948_ladung_4.mdl",
+						"vehicle/car_load/urban/beetle_1948_ladung_5.mdl",
+						"vehicle/car_load/urban/beetle_1948_ladung_6.mdl",
+						"vehicle/car_load/bandion/bandion_nsu_1.mdl",
+						"vehicle/car_load/bandion/bandion_nsu_2.mdl",
+						"vehicle/car_load/bandion/bandion_nsu_3.mdl",
+						"vehicle/car_load/bandion/bandion_nsu_4.mdl",
+						"vehicle/car_load/bandion/bandion_nsu_5.mdl",
+						"vehicle/car_load/bandion/bandion_nsu_6.mdl",
+						"vehicle/car_load/bandion/bandion_taunus_1.mdl",
+						"vehicle/car_load/bandion/bandion_taunus_2.mdl",
+						"vehicle/car_load/bandion/bandion_taunus_3.mdl",
+						"vehicle/car_load/bandion/bandion_taunus_4.mdl",
+						"vehicle/car_load/bandion/bandion_taunus_5.mdl",
+						"vehicle/car_load/bandion/bandion_taunus_6.mdl",
+						"vehicle/car_load/urban/renault_4_f4_fourgonnette_1.mdl",
+						"vehicle/car_load/urban/renault_4_f4_fourgonnette_2.mdl",
+						"vehicle/car_load/urban/renault_4_f4_fourgonnette_3.mdl",
+						"vehicle/car_load/urban/renault_4_f4_fourgonnette_4.mdl",
+						"vehicle/car_load/urban/renault_4_f4_fourgonnette_5.mdl",
+						"vehicle/car_load/urban/renault_4_f4_fourgonnette_6.mdl",
+						"vehicle/car_load/urban/gaz_22_wolga_ladung_1.mdl",
+						"vehicle/car_load/urban/gaz_22_wolga_ladung_2.mdl",
+						"vehicle/car_load/urban/gaz_22_wolga_ladung_3.mdl",
+						"vehicle/car_load/urban/gaz_22_wolga_ladung_4.mdl",
+						"vehicle/car_load/urban/gaz_22_wolga_ladung_5.mdl",
+						"vehicle/car_load/urban/gaz_22_wolga_ladung_6.mdl",
+						"vehicle/car_load/bandion/bandion_audi80_1.mdl",
+						"vehicle/car_load/bandion/bandion_audi80_2.mdl",
+						"vehicle/car_load/bandion/bandion_audi80_3.mdl",
+						"vehicle/car_load/bandion/bandion_audi80_4.mdl",
+						"vehicle/car_load/bandion/bandion_audi80_5.mdl",
+						"vehicle/car_load/bandion/bandion_audi80_6.mdl",
+						"vehicle/car_load/urban/vw_type_2_t1_ladung_1.mdl",
+						"vehicle/car_load/urban/vw_type_2_t1_ladung_2.mdl",
+						"vehicle/car_load/urban/vw_type_2_t1_ladung_3.mdl",
+						"vehicle/car_load/urban/vw_type_2_t1_ladung_4.mdl",
+						"vehicle/car_load/urban/vw_type_2_t1_ladung_5.mdl",
+						"vehicle/car_load/urban/vw_type_2_t1_ladung_6.mdl",
+						---1980 (54)
+						"vehicle/car_load/urban/corolla_ladung_1.mdl",
+						"vehicle/car_load/urban/corolla_ladung_2.mdl",
+						"vehicle/car_load/urban/corolla_ladung_3.mdl",
+						"vehicle/car_load/urban/corolla_ladung_4.mdl",
+						"vehicle/car_load/urban/corolla_ladung_5.mdl",
+						"vehicle/car_load/urban/corolla_ladung_6.mdl",
+						"vehicle/car_load/urban/opel_kadett_e_carevan_ladung_1.mdl",
+						"vehicle/car_load/urban/opel_kadett_e_carevan_ladung_2.mdl",
+						"vehicle/car_load/urban/opel_kadett_e_carevan_ladung_3.mdl",
+						"vehicle/car_load/urban/opel_kadett_e_carevan_ladung_4.mdl",
+						"vehicle/car_load/urban/opel_kadett_e_carevan_ladung_5.mdl",
+						"vehicle/car_load/urban/opel_kadett_e_carevan_ladung_6.mdl",
+						"vehicle/car_load/urban/vw_golf_1_ladung_1.mdl",
+						"vehicle/car_load/urban/vw_golf_1_ladung_2.mdl",
+						"vehicle/car_load/urban/vw_golf_1_ladung_3.mdl",
+						"vehicle/car_load/urban/vw_golf_1_ladung_4.mdl",
+						"vehicle/car_load/urban/vw_golf_1_ladung_5.mdl",
+						"vehicle/car_load/urban/vw_golf_1_ladung_6.mdl",
+						"vehicle/car_load/urban/vw_santana_ladung_1.mdl",
+						"vehicle/car_load/urban/vw_santana_ladung_2.mdl",
+						"vehicle/car_load/urban/vw_santana_ladung_3.mdl",
+						"vehicle/car_load/urban/vw_santana_ladung_4.mdl",
+						"vehicle/car_load/urban/vw_santana_ladung_5.mdl",
+						"vehicle/car_load/urban/vw_santana_ladung_6.mdl",
+						"vehicle/car_load/bandion/bandion_t3_1.mdl",
+						"vehicle/car_load/bandion/bandion_t3_2.mdl",
+						"vehicle/car_load/bandion/bandion_t3_3.mdl",
+						"vehicle/car_load/bandion/bandion_t3_4.mdl",
+						"vehicle/car_load/bandion/bandion_t3_5.mdl",
+						"vehicle/car_load/bandion/bandion_t3_6.mdl",
+						---1990 (83)
+						"vehicle/car_load/bko/bko_406_1.mdl",
+						"vehicle/car_load/bko/bko_406_2.mdl",
+						"vehicle/car_load/bko/bko_406_3.mdl",
+						"vehicle/car_load/bko/bko_406_4.mdl",
+						"vehicle/car_load/bko/bko_406_5.mdl",
+						"vehicle/car_load/bko/bko_astra_1.mdl",
+						"vehicle/car_load/bko/bko_astra_2.mdl",
+						"vehicle/car_load/bko/bko_astra_3.mdl",
+						"vehicle/car_load/bko/bko_clio_1.mdl",
+						"vehicle/car_load/bko/bko_clio_2.mdl",
+						"vehicle/car_load/bko/bko_clio_3.mdl",
+						"vehicle/car_load/bko/bko_clio_4.mdl",
+						"vehicle/car_load/bko/bko_clio_5.mdl",
+						"vehicle/car_load/bko/bko_e36_1.mdl",
+						"vehicle/car_load/bko/bko_e36_2.mdl",
+						"vehicle/car_load/bko/bko_e36_3.mdl",
+						"vehicle/car_load/bko/bko_e36_4.mdl",
+						"vehicle/car_load/bko/bko_e36_5.mdl",
+						"vehicle/car_load/bko/bko_golf_1.mdl",
+						"vehicle/car_load/bko/bko_golf_2.mdl",
+						"vehicle/car_load/bko/bko_golf_3.mdl",
+						"vehicle/car_load/bko/bko_golf_4.mdl",
+						"vehicle/car_load/bko/bko_golf_5.mdl",
+						"vehicle/car_load/bko/bko_volvo_1.mdl",
+						"vehicle/car_load/bko/bko_volvo_2.mdl",
+						"vehicle/car_load/bko/bko_volvo_3.mdl",
+						"vehicle/car_load/bko/bko_volvo_4.mdl",
+						"vehicle/car_load/bko/bko_volvo_5.mdl",
+						"vehicle/car_load/bko/bko_w202_1.mdl",
+						"vehicle/car_load/bko/bko_w202_2.mdl",
+						"vehicle/car_load/bko/bko_w202_3.mdl",
+						"vehicle/car_load/bko/bko_w202_4.mdl",
+						"vehicle/car_load/bko/bko_w202_5.mdl",
+						"vehicle/car_load/urban/opel_limo_ladung_1.mdl",
+						"vehicle/car_load/urban/opel_limo_ladung_2.mdl",
+						"vehicle/car_load/urban/opel_limo_ladung_3.mdl",
+						"vehicle/car_load/urban/opel_limo_ladung_4.mdl",
+						"vehicle/car_load/urban/opel_limo_ladung_5.mdl",
+						"vehicle/car_load/urban/opel_limo_ladung_6.mdl",
+						"vehicle/car_load/bko/bko_a6c5_1.mdl",
+						"vehicle/car_load/bko/bko_a6c5_2.mdl",
+						"vehicle/car_load/bko/bko_a6c5_3.mdl",
+						"vehicle/car_load/bko/bko_a6c5_4.mdl",
+						"vehicle/car_load/bko/bko_a6c5_5.mdl",
+						---2000
+						"vehicle/car_load/bko/2000s/bko_a4_1.mdl",
+						"vehicle/car_load/bko/2000s/bko_a4_2.mdl",
+						"vehicle/car_load/bko/2000s/bko_a4_3.mdl",
+						"vehicle/car_load/bko/2000s/bko_a4_4.mdl",
+						"vehicle/car_load/bko/2000s/bko_a4_5.mdl",
+						"vehicle/car_load/bko/2000s/bko_golf_g4_1.mdl",
+						"vehicle/car_load/bko/2000s/bko_golf_g4_2.mdl",
+						"vehicle/car_load/bko/2000s/bko_golf_g4_3.mdl",
+						"vehicle/car_load/bko/2000s/bko_golf_g4_4.mdl",
+						"vehicle/car_load/bko/2000s/bko_golf_g4_5.mdl",
+						"vehicle/car_load/bko/2000s/bko_meriva_1.mdl",
+						"vehicle/car_load/bko/2000s/bko_meriva_2.mdl",
+						"vehicle/car_load/bko/2000s/bko_meriva_3.mdl",
+						"vehicle/car_load/bko/2000s/bko_meriva_4.mdl",
+						"vehicle/car_load/bko/2000s/bko_meriva_5.mdl",
+						---2010
+						"vehicle/car_load/urban/haval_h6_ladung_1.mdl",
+						"vehicle/car_load/urban/haval_h6_ladung_2.mdl",
+						"vehicle/car_load/urban/haval_h6_ladung_3.mdl",
+						"vehicle/car_load/urban/haval_h6_ladung_4.mdl",
+						"vehicle/car_load/urban/haval_h6_ladung_5.mdl",
+						"vehicle/car_load/urban/haval_h6_ladung_6.mdl",
+						"vehicle/car_load/urban/toyota_mirai_ladung_1.mdl",
+						"vehicle/car_load/urban/toyota_mirai_ladung_2.mdl",
+						"vehicle/car_load/urban/toyota_mirai_ladung_3.mdl",
+						"vehicle/car_load/urban/toyota_mirai_ladung_4.mdl",
+						"vehicle/car_load/urban/toyota_mirai_ladung_5.mdl",
+						"vehicle/car_load/urban/toyota_mirai_ladung_6.mdl",
+						"vehicle/car_load/urban/vw_touran_ladung_1.mdl",
+						"vehicle/car_load/urban/vw_touran_ladung_2.mdl",
+						"vehicle/car_load/urban/vw_touran_ladung_3.mdl",
+						"vehicle/car_load/urban/vw_touran_ladung_4.mdl",
+						"vehicle/car_load/urban/vw_touran_ladung_5.mdl",
+						"vehicle/car_load/urban/vw_touran_ladung_6.mdl",
+						--X_Wagen 
+						"vehicle/car_load/jay/tl250_1.mdl",
+						"vehicle/car_load/jay/tl250_2.mdl",
+						"vehicle/car_load/jay/tl250_3.mdl",
+						"vehicle/car_load/jay/tl250_4.mdl",
+						"vehicle/car_load/jay/tl250_5.mdl",
+						"vehicle/car_load/jay/tl250_6.mdl",
+						--Besondere
+						"vehicle/car_load/bko/2000s/bko_q7_1.mdl",
+						"vehicle/car_load/bko/2000s/bko_q7_2.mdl",
+						"vehicle/car_load/bko/2000s/bko_q7_3.mdl",
+						"vehicle/car_load/bko/2000s/bko_q7_4.mdl",
+						"vehicle/car_load/bko/2000s/bko_q7_5.mdl",
+						"vehicle/car_load/bko/2000s/bko_rav_1.mdl",
+						"vehicle/car_load/bko/2000s/bko_rav_2.mdl",
+						"vehicle/car_load/bko/2000s/bko_rav_3.mdl",
+						"vehicle/car_load/bko/2000s/bko_rav_4.mdl",
+						"vehicle/car_load/bko/2000s/bko_rav_5.mdl",
+						"vehicle/car_load/jay/beetle_1948_ladung_abgedeckt.mdl",
+						"vehicle/car_load/bko/special/bko_q7_covered.mdl",
+						---DR
+						"vehicle/car_load/urban/trabant_ladung_1.mdl",
+						"vehicle/car_load/urban/trabant_ladung_2.mdl",
+						"vehicle/car_load/urban/trabant_ladung_3.mdl",
+						"vehicle/car_load/urban/trabant_ladung_4.mdl",
+						"vehicle/car_load/urban/trabant_ladung_5.mdl",
+						"vehicle/car_load/urban/trabant_ladung_6.mdl",
+						"vehicle/car_load/urban/lada2107_ladung_1.mdl",
+						"vehicle/car_load/urban/lada2107_ladung_2.mdl",
+						"vehicle/car_load/urban/lada2107_ladung_3.mdl",
+						"vehicle/car_load/urban/lada2107_ladung_4.mdl",
+						"vehicle/car_load/urban/lada2107_ladung_5.mdl",
+						"vehicle/car_load/urban/lada2107_ladung_6.mdl",
+					}	
+local assetmodel = ParamBuilder.IconButton("type_param", _("vehicle"), model_icons, model_values, 1, _("jrm_param_type_tooltip") )
+
+function data()
+
+return { 
+	type = "ASSET_TRACK",
+	description = {
+			name = _("assetPerson_mod_name"),
+	},
+	availability =
+	{
+			yearFrom = 1955,
+			yearTo = 0,
+	},
+	buildMode = "MULTI",
+	categories = { "tracks", "jays_mods" },
+	order = -2046867593,
+	skipCollision = true,
+	autoRemovable = false,
+	params = {
+		{
+			key = "position",
+			name = _("height"),
+			uiType = "BUTTON",
+			values = { _("ground"), _("rail") },
+			tooltip = _("height_tooltip"),
+			defaultIndex = 1,
+		},
+				{
+			key = "beladenAutos",
+			name = _("Beladung?"),
+			uiType = "BUTTON",
+			values = { _("yes"), _("no") },
+			defaultIndex = 1,
+		},
+		positionx.params,
+		assetmodel.params,
+	},
+	updateFn = function(params)
+		local trax = positionx.getValue(params)
+		local height = 0
+		if params.position == 1 then
+			height = 1.05
+		end
+		
+	local result = { }
+	result.models = { }
+
+	if params.beladenAutos == 1 then
+		table.insert(result.models, {
+			id = assetmodel.getValue(params),
+			transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, trax, 0, height, 1 }),
+		} )	
+	
+			result.terrainAlignmentLists = { {
+				type = "EQUAL",
+				faces =  { }
+			} }
+			print(assetmodel.getValue(params))
+			return result
+		end
+		if params.beladenAutos == 0 then
+			---DDm915
+			if assetmodel.getValue(params) == "asset/Autotransport/DDm915_gruen.mdl" 
+			or assetmodel.getValue(params) == "asset/Autotransport/DDm915_ozeanblau.mdl" 
+			or assetmodel.getValue(params) == "asset/Autotransport/DDmOBB_gruen.mdl" 
+			then
+				table.insert(result.models, {id = assetmodel.getValue(params),transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, trax, 0, height, 1 }),} )	
+				---Cars
+				table.insert(result.models, {id = model_beladen_values[math.random(1, 47)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, -0.019999999552965, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.5+trax, 0, 1.1000000238419 + height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(1, 47)],
+				transf = constructionutil.rotateTransf(params, { 0.99984043836594, 0, -0.034915197640657, 0, 0, 1, 0, 0, 0.034899495542049, 0, 0.9993908405304, 0, -4.9000000953674+trax, 0, 0.95999997854233 + height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(1, 47)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0.019999999552965+trax, 0, 0.89999997615814+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(1, 47)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0.047139998525381, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.5999999046326+trax, 0, 0.98000001907349+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(1, 47)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0.0099999997764826, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.199999809265+trax, 0, 1.1499999761581+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(1, 53)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, -0.059999998658895, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.10000038147+trax, 0, 2.789999961853+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(1, 47)], 
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5+trax, 0, 2.5499999523163+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(1, 53)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -0.0099999997764826+trax, 0, 2.5499999523163+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(1, 47)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 5.25+trax, 0, 2.5499999523163+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(1, 53)],
+				transf = constructionutil.rotateTransf(params, { 0.99910801649094, 0, 0.073369905352592, 0, -0, 1, 0, 0, -0.0732381939888, -0, 0.997314453125, 0, 10.25+trax, 0, 2.8099999427795+ height, 1 }),} )				
+				result.terrainAlignmentLists = { {
+					type = "EQUAL",
+					faces =  { }
+				} }
+				return result
+			end
+			if assetmodel.getValue(params) == "asset/Autotransport/DDm915_fernblau.mdl" 
+			or assetmodel.getValue(params) == "asset/Autotransport/DDmOBB_orange.mdl" 
+			or assetmodel.getValue(params) == "asset/Autotransport/DDmOBB_orange_banner.mdl" 
+			or assetmodel.getValue(params) == "asset/Autotransport/DDmOBB_orangeBlut.mdl" 
+			or assetmodel.getValue(params) == "asset/Autotransport/DDmOBB_orangeBlut_banner.mdl" 
+			then
+				table.insert(result.models, {id = assetmodel.getValue(params),transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, trax, 0, height, 1 }),} )	
+				---Cars
+				table.insert(result.models, {id = model_beladen_values[math.random(54,77)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, -0.019999999552965, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.5+trax, 0, 1.1000000238419 + height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(54,77)],
+				transf = constructionutil.rotateTransf(params, { 0.99984043836594, 0, -0.034915197640657, 0, 0, 1, 0, 0, 0.034899495542049, 0, 0.9993908405304, 0, -4.9000000953674+trax, 0, 0.95999997854233 + height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(54,77)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0.019999999552965, 0, 0.89999997615814+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(54,77)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0.047139998525381, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.5999999046326+trax, 0, 0.98000001907349+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(54,77)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0.0099999997764826, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.199999809265+trax, 0, 1.1499999761581+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(54,82)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, -0.059999998658895, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.10000038147+trax, 0, 2.789999961853+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(54,77)], 
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5+trax, 0, 2.5499999523163+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(54,77)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -0.0099999997764826+trax, 0, 2.5499999523163+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(54,77)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 5.25+trax, 0, 2.5499999523163+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(54,82)],
+				transf = constructionutil.rotateTransf(params, { 0.99910801649094, 0, 0.073369905352592, 0, -0, 1, 0, 0, -0.0732381939888, -0, 0.997314453125, 0, 10.25+trax, 0, 2.8099999427795+ height, 1 }),} )				
+				result.terrainAlignmentLists = { {
+					type = "EQUAL",
+					faces =  { }
+				} }
+				return result
+			end
+			if assetmodel.getValue(params) == "asset/Autotransport/DDm915_fernblau_1994.mdl" 
+			or assetmodel.getValue(params) == "asset/Autotransport/DDm915_gruen_1994.mdl" 
+			or assetmodel.getValue(params) == "asset/Autotransport/DDm915_rotGrau.mdl" 
+			or assetmodel.getValue(params) == "asset/Autotransport/DDm915_verkehrsrot.mdl" 
+			or assetmodel.getValue(params) == "asset/Autotransport/DDmOBB_orangeBlut_banner.mdl" 
+			then
+				table.insert(result.models, {id = assetmodel.getValue(params),transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, trax, 0, height, 1 }),} )	
+				---Cars
+				table.insert(result.models, {id = model_beladen_values[math.random(83, 142)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, -0.019999999552965, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.5+trax, 0, 1.1000000238419 + height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(83, 142)],
+				transf = constructionutil.rotateTransf(params, { 0.99984043836594, 0, -0.034915197640657, 0, 0, 1, 0, 0, 0.034899495542049, 0, 0.9993908405304, 0, -4.9000000953674+trax, 0, 0.95999997854233 + height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(83, 142)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0.019999999552965+trax, 0, 0.89999997615814+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(83, 142)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0.047139998525381, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.5999999046326+trax, 0, 0.98000001907349+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(83, 142)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0.0099999997764826, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.199999809265+trax, 0, 1.1499999761581+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(63, 142)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, -0.059999998658895, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.10000038147+trax, 0, 2.789999961853+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(83, 142)], 
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5+trax, 0, 2.5499999523163+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(83, 142)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -0.0099999997764826+trax, 0, 2.5499999523163+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(83, 142)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 5.25+trax, 0, 2.5499999523163+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(60, 142)],
+				transf = constructionutil.rotateTransf(params, { 0.99910801649094, 0, 0.073369905352592, 0, -0, 1, 0, 0, -0.0732381939888, -0, 0.997314453125, 0, 10.25+trax, 0, 2.8099999427795+ height, 1 }),} )				
+				result.terrainAlignmentLists = { {
+					type = "EQUAL",
+					faces =  { }
+				} }
+				return result
+			end
+			if assetmodel.getValue(params) == "asset/Autotransport/DDmOBB_rot.mdl" 
+			or assetmodel.getValue(params) == "asset/Autotransport/DDmOBB_czech.mdl" 
+			then
+				table.insert(result.models, {id = assetmodel.getValue(params),transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, trax, 0, height, 1 }),} )	
+				---Cars
+				table.insert(result.models, {id = model_beladen_values[math.random(83, 142)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, -0.019999999552965, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.25+trax, 0, 1.1000000238419 + height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(143, 160)],
+				transf = constructionutil.rotateTransf(params, { 0.99984043836594, 0, -0.034915197640657, 0, 0, 1, 0, 0, 0.034899495542049, 0, 0.9993908405304, 0, -5+trax, 0, 0.95999997854233 + height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(83, 142)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0+trax, 0, 0.89999997615814+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(143, 160)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0.047139998525381, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5+trax, 0, 0.98000001907349+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(143, 160)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0.0099999997764826, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.25+trax, 0, 1.1499999761581+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(143, 160)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, -0.059999998658895, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.25+trax, 0, 2.789999961853+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(60, 142)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5+trax, 0, 2.5499999523163+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(143, 160)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -0+trax, 0, 2.5499999523163+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(83, 142)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 5+trax, 0, 2.5499999523163+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(143, 160)],
+				transf = constructionutil.rotateTransf(params, { 0.99910801649094, 0, 0.073369905352592, 0, -0, 1, 0, 0, -0.0732381939888, -0, 0.997314453125, 0, 10.25+trax, 0, 2.8099999427795+ height, 1 }),} )				
+				result.terrainAlignmentLists = { {
+					type = "EQUAL",
+					faces =  { }
+				} }
+				return result
+			end
+			if assetmodel.getValue(params) == "asset/Autotransport/DDm916_SNCF.mdl" 
+			or assetmodel.getValue(params) == "asset/Autotransport/DDm916_SNCB_gruen.mdl" 
+			then
+				table.insert(result.models, {id = assetmodel.getValue(params),transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, trax, 0, height, 1 }),} )	
+				---Cars
+				table.insert(result.models, {id = model_beladen_values[math.random(1, 47)],
+				transf = constructionutil.rotateTransf(params, { 0.99864035844803, 0, -0.055832657963037, 0, 0, 1, 0, 0, 0.055821489542723, 0, 0.99844062328339, 0, -10.140000343323 + trax, 0, 0.99000000953674 + height, 1, }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(1, 47)],
+				transf = constructionutil.rotateTransf(params, { 1.0003752708435, 0, -0.012222497723997, 0, 0, 1, 0, 0, 0.012216999195516, 0, 0.99992525577545, 0, -5.1799998283386+ trax, 0, 0.75999999046326+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(1, 47)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -0.14000000059605+ trax, 0, 0.70999997854233+ height, 1}),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(1, 47)],
+				transf = constructionutil.rotateTransf(params, {  1.0007201433182, 0, 0.027952644973993, 0, -0, 1, 0, 0, -0.027921639382839, -0, 0.99961012601852, 0, 4.7300000190735+ trax, 0, 0.76999998092651+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(1, 47)],
+				transf = constructionutil.rotateTransf(params, { 0.99839168787003, 0, 0.05756688863039, 0, -0, 1, 0, 0, -0.057564008980989, -0, 0.9983417391777, 0, 9.8500003814697+ trax, 0, 0.99000000953674+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(1, 53)],
+				transf = constructionutil.rotateTransf(params, { 1.0000064373016, 0, -0.059892650693655, 0, 0, 1, 0, 0, 0.059785135090351, 0, 0.99821126461029, 0, -10.220000267029+ trax, 0, 2.5899999141693+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(1, 47)], 
+				transf = constructionutil.rotateTransf(params, { 0.99862951040268, 0, -0.05233596265316, 0, 0, 1, 0, 0, 0.05233596265316, 0, 0.99862951040268, 0, -4.9699997901917+ trax, -0.0099999997764826, 2.3699998855591+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(1, 47)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0.10999999940395+ trax, 0, 2.3099999427795+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(1, 47)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 4.9200000762939+ trax, 0, 2.3099999427795+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(1, 53)],
+				transf = constructionutil.rotateTransf(params, { 1.0000064373016, 0, 0.059892650693655, 0, -0, 1, 0, 0, -0.059785135090351, -0, 0.99821126461029, 0, 10.10000038147+ trax, 0, 2.5799999237061+ height, 1 }),} )				
+				result.terrainAlignmentLists = { {
+					type = "EQUAL",
+					faces =  { }
+				} }
+				return result
+			end
+			if assetmodel.getValue(params) == "asset/Autotransport/DDm916_SNCB_blau85.mdl" 
+			or assetmodel.getValue(params) == "asset/Autotransport/DDm916_SNCB_gruen_2.mdl" 
+			or assetmodel.getValue(params) == "asset/Autotransport/DDm916_SNCF_85.mdl"
+			then
+				table.insert(result.models, {id = assetmodel.getValue(params),transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, trax, 0, height, 1 }),} )	
+				---Cars
+				table.insert(result.models, {id = model_beladen_values[math.random(54,77)],
+				transf = constructionutil.rotateTransf(params, { 0.99864035844803, 0, -0.055832657963037, 0, 0, 1, 0, 0, 0.055821489542723, 0, 0.99844062328339, 0, -10.140000343323 + trax, 0, 0.99000000953674 + height, 1, }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(54,77)],
+				transf = constructionutil.rotateTransf(params, { 1.0003752708435, 0, -0.012222497723997, 0, 0, 1, 0, 0, 0.012216999195516, 0, 0.99992525577545, 0, -5.1799998283386+ trax, 0, 0.75999999046326+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(54,77)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -0.14000000059605+ trax, 0, 0.70999997854233+ height, 1}),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(54,77)],
+				transf = constructionutil.rotateTransf(params, {  1.0007201433182, 0, 0.027952644973993, 0, -0, 1, 0, 0, -0.027921639382839, -0, 0.99961012601852, 0, 4.7300000190735+ trax, 0, 0.76999998092651+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(54,77)],
+				transf = constructionutil.rotateTransf(params, { 0.99839168787003, 0, 0.05756688863039, 0, -0, 1, 0, 0, -0.057564008980989, -0, 0.9983417391777, 0, 9.8500003814697+ trax, 0, 0.99000000953674+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(54,77)],
+				transf = constructionutil.rotateTransf(params, { 1.0000064373016, 0, -0.059892650693655, 0, 0, 1, 0, 0, 0.059785135090351, 0, 0.99821126461029, 0, -10.220000267029+ trax, 0, 2.5899999141693+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(54,82)], 
+				transf = constructionutil.rotateTransf(params, { 0.99862951040268, 0, -0.05233596265316, 0, 0, 1, 0, 0, 0.05233596265316, 0, 0.99862951040268, 0, -4.9699997901917+ trax, -0.0099999997764826, 2.3699998855591+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(54,77)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0.10999999940395+ trax, 0, 2.3099999427795+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(54,77)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 4.9200000762939+ trax, 0, 2.3099999427795+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(54,82)],
+				transf = constructionutil.rotateTransf(params, { 1.0000064373016, 0, 0.059892650693655, 0, -0, 1, 0, 0, -0.059785135090351, -0, 0.99821126461029, 0, 10.10000038147+ trax, 0, 2.5799999237061+ height, 1 }),} )				
+				result.terrainAlignmentLists = { {
+					type = "EQUAL",
+					faces =  { }
+				} }
+				return result
+			end
+			if assetmodel.getValue(params) == "asset/Autotransport/DDm916_SNCF_96.mdl" 
+			or assetmodel.getValue(params) == "asset/Autotransport/DDm916_SNCB_blau95.mdl" 
+			or assetmodel.getValue(params) == "asset/Autotransport/DDm916_DB_blau.mdl"
+			or assetmodel.getValue(params) == "asset/Autotransport/DDm916_DB_gruen.mdl"
+			or assetmodel.getValue(params) == "asset/Autotransport/DDm916_DB_rot.mdl"
+			then
+				table.insert(result.models, {id = assetmodel.getValue(params),transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, trax, 0, height, 1 }),} )	
+				---Cars
+				table.insert(result.models, {id = model_beladen_values[math.random(83,142)],
+				transf = constructionutil.rotateTransf(params, { 0.99864035844803, 0, -0.055832657963037, 0, 0, 1, 0, 0, 0.055821489542723, 0, 0.99844062328339, 0, -10.140000343323 + trax, 0, 0.99000000953674 + height, 1, }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(83,142)],
+				transf = constructionutil.rotateTransf(params, { 1.0003752708435, 0, -0.012222497723997, 0, 0, 1, 0, 0, 0.012216999195516, 0, 0.99992525577545, 0, -5.1799998283386+ trax, 0, 0.75999999046326+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(83,142)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -0.14000000059605+ trax, 0, 0.70999997854233+ height, 1}),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(83,142)],
+				transf = constructionutil.rotateTransf(params, {  1.0007201433182, 0, 0.027952644973993, 0, -0, 1, 0, 0, -0.027921639382839, -0, 0.99961012601852, 0, 4.7300000190735+ trax, 0, 0.76999998092651+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(83,142)],
+				transf = constructionutil.rotateTransf(params, { 0.99839168787003, 0, 0.05756688863039, 0, -0, 1, 0, 0, -0.057564008980989, -0, 0.9983417391777, 0, 9.8500003814697+ trax, 0, 0.99000000953674+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(83,142)],
+				transf = constructionutil.rotateTransf(params, { 1.0000064373016, 0, -0.059892650693655, 0, 0, 1, 0, 0, 0.059785135090351, 0, 0.99821126461029, 0, -10.220000267029+ trax, 0, 2.5899999141693+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(60, 142)],
+				transf = constructionutil.rotateTransf(params, { 0.99862951040268, 0, -0.05233596265316, 0, 0, 1, 0, 0, 0.05233596265316, 0, 0.99862951040268, 0, -4.9699997901917+ trax, -0.0099999997764826, 2.3699998855591+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(83,142)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0.10999999940395+ trax, 0, 2.3099999427795+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(83,142)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 4.9200000762939+ trax, 0, 2.3099999427795+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(60, 142)],
+				transf = constructionutil.rotateTransf(params, { 1.0000064373016, 0, 0.059892650693655, 0, -0, 1, 0, 0, -0.059785135090351, -0, 0.99821126461029, 0, 10.10000038147+ trax, 0, 2.5799999237061+ height, 1 }),} )				
+				result.terrainAlignmentLists = { {
+					type = "EQUAL",
+					faces =  { }
+				} }
+				return result
+			end
+			if assetmodel.getValue(params) == "asset/Autotransport/DDm916_NS.mdl" 
+			or assetmodel.getValue(params) == "asset/Autotransport/DDm916_SNCF_06.mdl" 
+			then
+				table.insert(result.models, {id = assetmodel.getValue(params),transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, trax, 0, height, 1 }),} )	
+				---Cars
+				table.insert(result.models, {id = model_beladen_values[math.random(143, 160)],
+				transf = constructionutil.rotateTransf(params, { 0.99864035844803, 0, -0.055832657963037, 0, 0, 1, 0, 0, 0.055821489542723, 0, 0.99844062328339, 0, -10.140000343323 + trax, 0, 0.99000000953674 + height, 1, }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(143, 160)],
+				transf = constructionutil.rotateTransf(params, { 1.0003752708435, 0, -0.012222497723997, 0, 0, 1, 0, 0, 0.012216999195516, 0, 0.99992525577545, 0, -5.1799998283386+ trax, 0, 0.75999999046326+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(143, 160)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -0.14000000059605+ trax, 0, 0.70999997854233+ height, 1}),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(143, 160)],
+				transf = constructionutil.rotateTransf(params, {  1.0007201433182, 0, 0.027952644973993, 0, -0, 1, 0, 0, -0.027921639382839, -0, 0.99961012601852, 0, 4.7300000190735+ trax, 0, 0.76999998092651+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(143, 160)],
+				transf = constructionutil.rotateTransf(params, { 0.99839168787003, 0, 0.05756688863039, 0, -0, 1, 0, 0, -0.057564008980989, -0, 0.9983417391777, 0, 9.8500003814697+ trax, 0, 0.99000000953674+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(83, 142)],
+				transf = constructionutil.rotateTransf(params, { 1.0000064373016, 0, -0.059892650693655, 0, 0, 1, 0, 0, 0.059785135090351, 0, 0.99821126461029, 0, -10.220000267029+ trax, 0, 2.5899999141693+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(83, 142)], 
+				transf = constructionutil.rotateTransf(params, { 0.99862951040268, 0, -0.05233596265316, 0, 0, 1, 0, 0, 0.05233596265316, 0, 0.99862951040268, 0, -4.9699997901917+ trax, -0.0099999997764826, 2.3699998855591+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(143, 160)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0.10999999940395+ trax, 0, 2.3099999427795+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(143, 160)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 4.9200000762939+ trax, 0, 2.3099999427795+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(83, 142)],
+				transf = constructionutil.rotateTransf(params, { 1.0000064373016, 0, 0.059892650693655, 0, -0, 1, 0, 0, -0.059785135090351, -0, 0.99821126461029, 0, 10.10000038147+ trax, 0, 2.5799999237061+ height, 1 }),} )				
+				result.terrainAlignmentLists = { {
+					type = "EQUAL",
+					faces =  { }
+				} }
+				return result
+			end
+			if assetmodel.getValue(params) == "asset/Autotransport/DDm916_DR.mdl" 
+			then
+				table.insert(result.models, {id = assetmodel.getValue(params),transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, trax, 0, height, 1 }),} )	
+				---Cars
+				table.insert(result.models, {id = model_beladen_values[math.random(179, 190)],
+				transf = constructionutil.rotateTransf(params, { 0.99864035844803, 0, -0.055832657963037, 0, 0, 1, 0, 0, 0.055821489542723, 0, 0.99844062328339, 0, -10.140000343323 + trax, 0, 0.99000000953674 + height, 1, }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(179, 190)],
+				transf = constructionutil.rotateTransf(params, { 1.0003752708435, 0, -0.012222497723997, 0, 0, 1, 0, 0, 0.012216999195516, 0, 0.99992525577545, 0, -5.1799998283386+ trax, 0, 0.75999999046326+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(179, 190)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -0.14000000059605+ trax, 0, 0.70999997854233+ height, 1}),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(179, 190)],
+				transf = constructionutil.rotateTransf(params, {  1.0007201433182, 0, 0.027952644973993, 0, -0, 1, 0, 0, -0.027921639382839, -0, 0.99961012601852, 0, 4.7300000190735+ trax, 0, 0.76999998092651+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(179, 190)],
+				transf = constructionutil.rotateTransf(params, { 0.99839168787003, 0, 0.05756688863039, 0, -0, 1, 0, 0, -0.057564008980989, -0, 0.9983417391777, 0, 9.8500003814697+ trax, 0, 0.99000000953674+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(179, 190)],
+				transf = constructionutil.rotateTransf(params, { 1.0000064373016, 0, -0.059892650693655, 0, 0, 1, 0, 0, 0.059785135090351, 0, 0.99821126461029, 0, -10.220000267029+ trax, 0, 2.5899999141693+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(179, 190)], 
+				transf = constructionutil.rotateTransf(params, { 0.99862951040268, 0, -0.05233596265316, 0, 0, 1, 0, 0, 0.05233596265316, 0, 0.99862951040268, 0, -4.9699997901917+ trax, -0.0099999997764826, 2.3699998855591+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(179, 190)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0.10999999940395+ trax, 0, 2.3099999427795+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(179, 190)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 4.9200000762939+ trax, 0, 2.3099999427795+ height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(179, 190)],
+				transf = constructionutil.rotateTransf(params, { 1.0000064373016, 0, 0.059892650693655, 0, -0, 1, 0, 0, -0.059785135090351, -0, 0.99821126461029, 0, 10.10000038147+ trax, 0, 2.5799999237061+ height, 1 }),} )				
+				result.terrainAlignmentLists = { {
+					type = "EQUAL",
+					faces =  { }
+				} }
+				return result
+			end
+			if assetmodel.getValue(params) == "asset/Autotransport/Offehss548_db.mdl" 
+			then
+				table.insert(result.models, {id = assetmodel.getValue(params),transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, trax, 0, height, 1 }),} )	
+				---Cars
+				table.insert(result.models, {id = model_beladen_values[math.random(1,47)],
+				transf = constructionutil.rotateTransf(params, { 1, -8.7422769468049e-08, -0, 0, 8.7422769468049e-08, 1, 0, 0, 0, -0, 1, 0, -0+trax, 0, 0.80000001192093+height, 1 }),} )	
+				table.insert(result.models, {id = model_beladen_values[math.random(1,47)],
+				transf = constructionutil.rotateTransf(params, { 1, -8.7422769468049e-08, -0, 0, 8.7422769468049e-08, 1, 0, 0, 0, -0, 1, 0, -5+trax, 0, 0.80000001192093+height, 1 }),} )	
+				table.insert(result.models, {id = model_beladen_values[math.random(1,47)],
+				transf = constructionutil.rotateTransf(params, { 1, -8.7422769468049e-08, -0, 0, 8.7422769468049e-08, 1, 0, 0, 0, -0, 1, 0, 5+trax, 0, 0.80000001192093+height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(1,47)],
+				transf = constructionutil.rotateTransf(params, { 1, -8.7422769468049e-08, 0.087, 0, 8.7422769468049e-08, 1, 0, 0, -0.087, -0, 1, 0, 10+trax, 0, 1+height, 1 }),} )	
+				table.insert(result.models, {id = model_beladen_values[math.random(1,47)],
+				transf = constructionutil.rotateTransf(params, { 0.99470269680023, -3.8735146290492e-07, -0.10279252380133, 0, 3.8941431057538e-07, 1, 0, 0, 0.10279252380133, -4.002888331911e-08, 0.99470269680023, 0, -10+trax, 0, 1.0099999904633+height, 1 }),} )	
+				table.insert(result.models, {id = model_beladen_values[math.random(1,47)],
+				transf = constructionutil.rotateTransf(params, { 1, -8.7422769468049e-08, -0, 0, 8.7422769468049e-08, 1, 0, 0, 0, -0, 1, 0, 0+trax, 0, 2.789999961853+height, 1 }),} )	
+				table.insert(result.models, {id = model_beladen_values[math.random(1,47)],
+				transf = constructionutil.rotateTransf(params, { 1, -8.7422769468049e-08, -0, 0, 8.7422769468049e-08, 1, 0, 0, 0, -0, 1, 0, -5+trax, 0, 2.789999961853+height, 1 }),} )	
+				table.insert(result.models, {id = model_beladen_values[math.random(1,47)],
+				transf = constructionutil.rotateTransf(params, { 1, -8.7422769468049e-08, -0, 0, 8.7422769468049e-08, 1, 0, 0, 0, -0, 1, 0, 5+trax, 0, 2.789999961853+height, 1 }),} )	
+				table.insert(result.models, {id = model_beladen_values[math.random(1,47)],
+				transf = constructionutil.rotateTransf(params, { 1, -8.7422769468049e-08, -0, 0, 8.7422769468049e-08, 1, 0, 0, 0, -0, 1, 0, -10+trax, 0, 2.789999961853+height, 1 }),} )	
+				table.insert(result.models, {id = model_beladen_values[math.random(1,47)],
+				transf = constructionutil.rotateTransf(params, { 1, -8.7422769468049e-08, -0, 0, 8.7422769468049e-08, 1, 0, 0, 0, -0, 1, 0, 10+trax, 0, 2.789999961853+height, 1 }),} )			
+				result.terrainAlignmentLists = { {
+					type = "EQUAL",
+					faces =  { }
+				} }
+				return result
+			end
+			if assetmodel.getValue(params) == "asset/Autotransport/Laeqrss548_db.mdl" 
+			then
+				table.insert(result.models, {id = assetmodel.getValue(params),transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, trax, 0, height, 1 }),} )	
+				---Cars
+				table.insert(result.models, {id = model_beladen_values[math.random(54,77)],
+				transf = constructionutil.rotateTransf(params, { 1, -8.7422769468049e-08, -0, 0, 8.7422769468049e-08, 1, 0, 0, 0, -0, 1, 0, -0+trax, 0, 0.80000001192093+height, 1 }),} )	
+				table.insert(result.models, {id = model_beladen_values[math.random(54,77)],
+				transf = constructionutil.rotateTransf(params, { 1, -8.7422769468049e-08, -0, 0, 8.7422769468049e-08, 1, 0, 0, 0, -0, 1, 0, -5+trax, 0, 0.80000001192093+height, 1 }),} )	
+				table.insert(result.models, {id = model_beladen_values[math.random(54,77)],
+				transf = constructionutil.rotateTransf(params, { 1, -8.7422769468049e-08, -0, 0, 8.7422769468049e-08, 1, 0, 0, 0, -0, 1, 0, 5+trax, 0, 0.80000001192093+height, 1 }),} )
+				table.insert(result.models, {id = model_beladen_values[math.random(54,77)],
+				transf = constructionutil.rotateTransf(params, { 1, -8.7422769468049e-08, 0.087, 0, 8.7422769468049e-08, 1, 0, 0, -0.087, -0, 1, 0, 10+trax, 0, 1+height, 1 }),} )	
+				table.insert(result.models, {id = model_beladen_values[math.random(54,77)],
+				transf = constructionutil.rotateTransf(params, { 0.99470269680023, -3.8735146290492e-07, -0.10279252380133, 0, 3.8941431057538e-07, 1, 0, 0, 0.10279252380133, -4.002888331911e-08, 0.99470269680023, 0, -10+trax, 0, 1.0099999904633+height, 1 }),} )	
+				table.insert(result.models, {id = model_beladen_values[math.random(54,77)],
+				transf = constructionutil.rotateTransf(params, { 1, -8.7422769468049e-08, -0, 0, 8.7422769468049e-08, 1, 0, 0, 0, -0, 1, 0, 0+trax, 0, 2.789999961853+height, 1 }),} )	
+				table.insert(result.models, {id = model_beladen_values[math.random(54,77)],
+				transf = constructionutil.rotateTransf(params, { 1, -8.7422769468049e-08, -0, 0, 8.7422769468049e-08, 1, 0, 0, 0, -0, 1, 0, -5+trax, 0, 2.789999961853+height, 1 }),} )	
+				table.insert(result.models, {id = model_beladen_values[math.random(54,77)],
+				transf = constructionutil.rotateTransf(params, { 1, -8.7422769468049e-08, -0, 0, 8.7422769468049e-08, 1, 0, 0, 0, -0, 1, 0, 5+trax, 0, 2.789999961853+height, 1 }),} )	
+				table.insert(result.models, {id = model_beladen_values[math.random(54,77)],
+				transf = constructionutil.rotateTransf(params, { 1, -8.7422769468049e-08, -0, 0, 8.7422769468049e-08, 1, 0, 0, 0, -0, 1, 0, -10+trax, 0, 2.789999961853+height, 1 }),} )	
+				table.insert(result.models, {id = model_beladen_values[math.random(54,77)],
+				transf = constructionutil.rotateTransf(params, { 1, -8.7422769468049e-08, -0, 0, 8.7422769468049e-08, 1, 0, 0, 0, -0, 1, 0, 10+trax, 0, 2.789999961853+height, 1 }),} )					
+				result.terrainAlignmentLists = { {
+					type = "EQUAL",
+					faces =  { }
+				} }
+				return result
+			end
+			if assetmodel.getValue(params) == "asset/Autotransport/Offhs66_dbBraun_einheit.mdl" 
+			then
+				table.insert(result.models, {id = assetmodel.getValue(params),transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, trax, 0, height, 1 }),} )	
+				---Cars
+				table.insert(result.models, {id = model_beladen_values[math.random(1, 47)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 2.5+trax, 0, 1.1399999856949+height, 1 }),} )		
+				table.insert(result.models, {id = model_beladen_values[math.random(1, 47)],
+				transf = constructionutil.rotateTransf(params, {1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -2.4000000953674+trax, 0, 1.1399999856949+height, 1 }),} )	
+				table.insert(result.models, {id = model_beladen_values[math.random(1, 47)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 2.5+trax, 0, 2.9800000190735+height, 1 }),} )	
+				table.insert(result.models, {id = model_beladen_values[math.random(1, 47)],
+				transf = constructionutil.rotateTransf(params, {1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -2.5+trax, 0, 2.9800000190735+height, 1 }),} )					
+				result.terrainAlignmentLists = { {
+					type = "EQUAL",
+					faces =  { }
+				} }
+				return result
+			end
+			if assetmodel.getValue(params) == "asset/Autotransport/Leks554_dbBlau_einheit.mdl" 
+			then
+				table.insert(result.models, {id = assetmodel.getValue(params),transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, trax, 0, height, 1 }),} )	
+				---Cars
+				table.insert(result.models, {id = model_beladen_values[math.random(83,142)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 2.5+trax, 0, 1.1399999856949+height, 1 }),} )		
+				table.insert(result.models, {id = model_beladen_values[math.random(83,142)],
+				transf = constructionutil.rotateTransf(params, {1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -2.4000000953674+trax, 0, 1.1399999856949+height, 1 }),} )	
+				table.insert(result.models, {id = model_beladen_values[math.random(83,142)],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 2.5+trax, 0, 2.9800000190735+height, 1 }),} )	
+				table.insert(result.models, {id = model_beladen_values[math.random(83,142)],
+				transf = constructionutil.rotateTransf(params, {1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -2.5+trax, 0, 2.9800000190735+height, 1 }),} )					
+				result.terrainAlignmentLists = { {
+					type = "EQUAL",
+					faces =  { }
+				} }
+				return result
+			end
+		end
+	end		
+}
+
+end

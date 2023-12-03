@@ -1,0 +1,45 @@
+function data()
+return {
+	__version = "",
+	order = 0,
+	params = {
+		albedo_scale = {
+			albedoScale = { 0.98600000143051, 0.98600000143051, 0.98600000143051, },
+		},
+		alpha_scale = {
+			alphaScale = 1.4500000476837,
+		},
+		alpha_test = {
+			a2CThreshold = 0,
+			alphaThreshold = 0.10000000149012,
+			cutout = true,
+			disableDepthAndNormalWrite = false,
+			sorted = true,
+		},
+		fade_out_range = {
+			fadeOutEndDist = 19578,
+			fadeOutStartDist = 9930,
+		},
+		map_albedo_opacity = {
+			compressionAllowed = false,
+			fileName = "models/vehicle/waggon/LaaersABRF/LaaersABRF_gitterBlau.dds",
+			type = "TWOD",
+		},
+		map_metal_gloss_ao = {
+			compressionAllowed = false,
+			fileName = "models/vehicle/waggon/Laaers560/Laaers560HM_gitter_mga.dds",
+			type = "TWOD",
+		},
+		polygon_offset = {
+			factor = 0,
+			forceDepthWrite = false,
+			units = 0,
+		},
+		two_sided = {
+			flipNormal = true,
+			twoSided = false,
+		},
+	},
+	type = "PHYS_TRANSPARENT",
+}
+end

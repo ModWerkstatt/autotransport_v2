@@ -1,0 +1,227 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 13.192854881287, 1.5117837190628, 3.4585859775543, },
+		bbMin = { -13.192854881287, -1.5117832422256, -0.050224453210831, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 13.192854881287, 1.5117834806442, 1.7544052600861, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/bogie_lod0.msh",
+								name = "bogie",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.1035154885758e-07, 0, 7.6293943607197e-08, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse2_lod0.msh",
+								name = "achse2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2548406124115, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse_lod0.msh",
+								name = "achse",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2565886974335, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+						},
+						name = "bogie",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.5200595855713, -1.1920928955078e-07, 0.73861974477768, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/bogie_lod0.msh",
+								name = "bogie",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.1035154885758e-07, 0, 7.6293943607197e-08, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse2_lod0.msh",
+								name = "achse2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2548406124115, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse_lod0.msh",
+								name = "achse",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2565886974335, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+						},
+						name = "bogie2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.5200595855713, -1.1920928955078e-07, 0.73861974477768, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/ddm/DDmOBB_orangeBlut.mtl", },
+						mesh = "vehicle/waggon/Autotransport/ddm/DDmOBB_lod0.msh",
+						name = "DDm915",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/ddm/DDmOBB_orangeBlut.mtl", },
+						mesh = "vehicle/waggon/Autotransport/ddm/Gelaender_oben_hoch_lod0.msh",
+						name = "Gelander oben hoch",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/ddm/DDmOBB_orangeBlut.mtl", },
+						mesh = "vehicle/waggon/Autotransport/ddm/Gelaender_unten_lod0.msh",
+						name = "Gelander unten",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 211.20753479004,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/bogie_lod1.msh",
+								name = "bogie",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.1035154885758e-07, 0, 7.6293943607197e-08, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse2_lod1.msh",
+								name = "achse2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2548406124115, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse_lod1.msh",
+								name = "achse",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2565886974335, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+						},
+						name = "bogie",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.5200595855713, -1.1920928955078e-07, 0.73861974477768, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/bogie_lod1.msh",
+								name = "bogie",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.1035154885758e-07, 0, 7.6293943607197e-08, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse2_lod1.msh",
+								name = "achse2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2548406124115, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse_lod1.msh",
+								name = "achse",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2565886974335, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+						},
+						name = "bogie2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.5200595855713, -1.1920928955078e-07, 0.73861974477768, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/ddm/DDmOBB_orangeBlut.mtl", },
+						mesh = "vehicle/waggon/Autotransport/ddm/DDm915_lod1.msh",
+						name = "DDm915",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/ddm/DDmOBB_orangeBlut.mtl", },
+						mesh = "vehicle/waggon/Autotransport/ddm/Gelander oben hoch_lod1.msh",
+						name = "Gelander oben hoch",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/ddm/DDmOBB_orangeBlut.mtl", },
+						mesh = "vehicle/waggon/Autotransport/ddm/Gelander unten_lod1.msh",
+						name = "Gelander unten",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 211.20753479004,
+			visibleTo = 633.62261962891,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse2_lod2.msh",
+								name = "achse2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2548406124115, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse_lod2.msh",
+								name = "achse",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2565886974335, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+						},
+						name = "bogie",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.5200595855713, -1.1920928955078e-07, 0.73861974477768, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse2_lod2.msh",
+								name = "achse2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2548406124115, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse_lod2.msh",
+								name = "achse",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2565886974335, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+						},
+						name = "bogie2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.5200595855713, -1.1920928955078e-07, 0.73861974477768, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/ddm/DDmOBB_orangeBlut.mtl", },
+						mesh = "vehicle/waggon/Autotransport/ddm/DDm915_lod2.msh",
+						name = "DDm915",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 633.62261962891,
+			visibleTo = 1900.8679199219,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

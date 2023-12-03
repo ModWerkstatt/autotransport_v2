@@ -1,0 +1,475 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 13.112860679626, 1.4820796251297, 3.4258549213409, },
+		bbMin = { -13.112860679626, -1.4820796251297, -0.050224840641022, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 13.112860679626, 1.4820796251297, 1.7380398511887, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+
+
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_body_lod0.msh",
+						name = "jay_mesh_DRDD_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_puffer_lod0.msh",
+						name = "jay_mesh_DRDD_puffer",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_ebenen_lod0.msh",
+						name = "jay_mesh_DRDD_ebenen",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_gelanderOben_lod0.msh",
+						name = "jay_mesh_DRDD_gelanderOben",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_klappeUnten_lod0.msh",
+						name = "jay_mesh_DRDD_klappeUnten",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_kupplung_lod0.msh",
+						name = "jay_mesh_DRDD_kupplung",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_klappeOben_lod0.msh",
+						name = "jay_mesh_DRDD_klappeOben",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_datenRaster_lod0.msh",
+						name = "jay_mesh_DRDD_datenRaster",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_tritteSeitlich_lod0.msh",
+						name = "jay_mesh_DRDD_tritteSeitlich",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_seilhaken_lod0.msh",
+						name = "jay_mesh_DRDD_seilhaken",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_kabel_lod0.msh",
+						name = "jay_mesh_DRDD_kabel",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_handbremse_lod0.msh",
+						name = "jay_mesh_DRDD_handbremse",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_stange_lod0.msh",
+						name = "jay_mesh_DRDD_stange",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_untereStangenFront_lod0.msh",
+						name = "jay_mesh_DRDD_untereStangenFront",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_schieneOben_lod0.msh",
+						name = "jay_mesh_DRDD_schieneOben",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_schieneUnten_lod0.msh",
+						name = "jay_mesh_DRDD_schieneUnten",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_stangeSeite_lod0.msh",
+						name = "jay_mesh_DRDD_stangeSeite",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_abdeckungOben_lod0.msh",
+						name = "jay_mesh_DRDD_abdeckungOben",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_leiterStix_lod0.msh",
+						name = "jay_mesh_DRDD_leiterStix",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_unterStangenSenk_lod0.msh",
+						name = "jay_mesh_DRDD_unterStangenSenk",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_halterStangen_lod0.msh",
+						name = "jay_mesh_DRDD_halterStangen",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_untereStangenGerade_lod0.msh",
+						name = "jay_mesh_DRDD_untereStangenGerade",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_untereStangenSchrag_lod0.msh",
+						name = "jay_mesh_DRDD_untereStangenSchrag",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_bremse_lod0.msh",
+						name = "jay_mesh_DRDD_bremse",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/DDDR/SchwanY30.mtl", },
+								mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_schwanY30_w2_lod0.msh",
+								name = "jay_mesh_schwanY30_w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.745498657227, 0.042217563837767, 0.42951941490173, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/DDDR/SchwanY30.mtl", },
+								mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_schwanY30_gestell_lod0.msh",
+								name = "jay_mesh_schwanY30_gestell",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/DDDR/SchwanY30.mtl", },
+								mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_schwanY30_w1_lod0.msh",
+								name = "jay_mesh_schwanY30_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.4567403793335, 0.042217686772346, 0.42951944470406, 1, },
+							},
+						},
+						name = "y30_schwan",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/DDDR/SchwanY30.mtl", },
+								mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_schwanY30_w2_lod0.msh",
+								name = "jay_mesh_schwanY30_w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.745498657227, 0.042217563837767, 0.42951941490173, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/DDDR/SchwanY30.mtl", },
+								mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_schwanY30_gestell_lod0.msh",
+								name = "jay_mesh_schwanY30_gestell",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/DDDR/SchwanY30.mtl", },
+								mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_schwanY30_w1_lod0.msh",
+								name = "jay_mesh_schwanY30_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.4567403793335, 0.042217686772346, 0.42951944470406, 1, },
+							},
+						},
+						name = "y30_schwan",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 69.896446228027,
+		},
+		{
+			node = {
+				children = {
+
+
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_body_lod1.msh",
+						name = "jay_mesh_DRDD_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_puffer_lod1.msh",
+						name = "jay_mesh_DRDD_puffer",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_ebenen_lod1.msh",
+						name = "jay_mesh_DRDD_ebenen",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_gelanderOben_lod1.msh",
+						name = "jay_mesh_DRDD_gelanderOben",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_klappeUnten_lod1.msh",
+						name = "jay_mesh_DRDD_klappeUnten",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_klappeOben_lod1.msh",
+						name = "jay_mesh_DRDD_klappeOben",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_untereStangenFront_lod1.msh",
+						name = "jay_mesh_DRDD_untereStangenFront",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_abdeckungOben_lod1.msh",
+						name = "jay_mesh_DRDD_abdeckungOben",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_halterStangen_lod1.msh",
+						name = "jay_mesh_DRDD_halterStangen",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/DDDR/SchwanY30.mtl", },
+								mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_schwanY30_w2_lod1.msh",
+								name = "jay_mesh_schwanY30_w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.745498657227, 0.042217563837767, 0.42951941490173, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/DDDR/SchwanY30.mtl", },
+								mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_schwanY30_gestell_lod1.msh",
+								name = "jay_mesh_schwanY30_gestell",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/DDDR/SchwanY30.mtl", },
+								mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_schwanY30_w1_lod1.msh",
+								name = "jay_mesh_schwanY30_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.4567403793335, 0.042217686772346, 0.42951944470406, 1, },
+							},
+						},
+						name = "y30_schwan",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/DDDR/SchwanY30.mtl", },
+								mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_schwanY30_w2_lod1.msh",
+								name = "jay_mesh_schwanY30_w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.745498657227, 0.042217563837767, 0.42951941490173, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/DDDR/SchwanY30.mtl", },
+								mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_schwanY30_gestell_lod1.msh",
+								name = "jay_mesh_schwanY30_gestell",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/DDDR/SchwanY30.mtl", },
+								mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_schwanY30_w1_lod1.msh",
+								name = "jay_mesh_schwanY30_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.4567403793335, 0.042217686772346, 0.42951944470406, 1, },
+							},
+						},
+						name = "y30_schwan",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 69.896446228027,
+			visibleTo = 209.68934631348,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_body_lod2.msh",
+						name = "jay_mesh_DRDD_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_puffer_lod2.msh",
+						name = "jay_mesh_DRDD_puffer",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_ebenen_lod2.msh",
+						name = "jay_mesh_DRDD_ebenen",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_abdeckungOben_lod2.msh",
+						name = "jay_mesh_DRDD_abdeckungOben",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/DDDR/SchwanY30.mtl", },
+								mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_schwanY30_w2_lod2.msh",
+								name = "jay_mesh_schwanY30_w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.745498657227, 0.042217563837767, 0.42951941490173, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/DDDR/SchwanY30.mtl", },
+								mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_schwanY30_w1_lod2.msh",
+								name = "jay_mesh_schwanY30_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.4567403793335, 0.042217686772346, 0.42951944470406, 1, },
+							},
+						},
+						name = "y30_schwan",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/DDDR/SchwanY30.mtl", },
+								mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_schwanY30_w2_lod2.msh",
+								name = "jay_mesh_schwanY30_w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.745498657227, 0.042217563837767, 0.42951941490173, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/DDDR/SchwanY30.mtl", },
+								mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_schwanY30_w1_lod2.msh",
+								name = "jay_mesh_schwanY30_w1",
+								transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -8.4567403793335, 0.042217686772346, 0.42951944470406, 1, },
+							},
+						},
+						name = "y30_schwan",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 209.68934631348,
+			visibleTo = 629.06805419922,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_body_lod3.msh",
+						name = "jay_mesh_DRDD_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_ebenen_lod3.msh",
+						name = "jay_mesh_DRDD_ebenen",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/DDDR/DDm916_SNCF_new.mtl", },
+						mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_DRDD_abdeckungOben_lod3.msh",
+						name = "jay_mesh_DRDD_abdeckungOben",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/DDDR/SchwanY30.mtl", },
+								mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_schwanY30_w2_lod3.msh",
+								name = "jay_mesh_schwanY30_w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.745498657227, 0.042217563837767, 0.42951941490173, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/DDDR/SchwanY30.mtl", },
+								mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_schwanY30_w1_lod3.msh",
+								name = "jay_mesh_schwanY30_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.4567403793335, 0.042217686772346, 0.42951944470406, 1, },
+							},
+						},
+						name = "y30_schwan",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/DDDR/SchwanY30.mtl", },
+								mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_schwanY30_w2_lod3.msh",
+								name = "jay_mesh_schwanY30_w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.745498657227, 0.042217563837767, 0.42951941490173, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/DDDR/SchwanY30.mtl", },
+								mesh = "vehicle/waggon/Autotransport/DDDR/jay_mesh_schwanY30_w1_lod3.msh",
+								name = "jay_mesh_schwanY30_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.4567403793335, 0.042217686772346, 0.42951944470406, 1, },
+							},
+						},
+						name = "y30_schwan",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 629.06805419922,
+			visibleTo = 1887.2041015625,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

@@ -1,0 +1,414 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 13.192854881287, 1.5117837190628, 3.4585859775543, },
+		bbMin = { -13.192854881287, -1.5117832422256, -0.050224453210831, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 13.192854881287, 1.5117834806442, 1.7544052600861, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/modwerkstatt_basis/zugschluss.mtl", },
+						mesh = "vehicle/waggon/modwerkstatt_basis/zugschluss/zugschluss_de_lod0.msh",
+						name = "zugschluss_de_front",
+						transf = { 0.9933722615242, 0, 0.11493711918592, 0, 0.0054142796434462, 0.99888956546783, -0.04679423943162, 0, -0.11480950564146, 0.04710641130805, 0.99226933717728, 0, -12.670000076294, 1.0199999809265, 1.5199999809265, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/bogie_lod0.msh",
+								name = "bogie",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.1035154885758e-07, 0, 7.6293943607197e-08, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse2_lod0.msh",
+								name = "achse2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2548406124115, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse_lod0.msh",
+								name = "achse",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2565886974335, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+						},
+						name = "bogie",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.5200595855713, -1.1920928955078e-07, 0.73861974477768, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/bogie_lod0.msh",
+								name = "bogie",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.1035154885758e-07, 0, 7.6293943607197e-08, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse2_lod0.msh",
+								name = "achse2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2548406124115, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse_lod0.msh",
+								name = "achse",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2565886974335, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+						},
+						name = "bogie2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.5200595855713, -1.1920928955078e-07, 0.73861974477768, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/ddm/DDmOBB_czech.mtl", },
+						mesh = "vehicle/waggon/Autotransport/ddm/DDmOBB_lod0.msh",
+						name = "DDm915",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/ddm/DDmOBB_czech.mtl", },
+						mesh = "vehicle/waggon/Autotransport/ddm/Gelaender_oben_hoch_lod0.msh",
+						name = "Gelander oben hoch",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/ddm/DDmOBB_czech.mtl", },
+						mesh = "vehicle/waggon/Autotransport/ddm/Gelaender_unten_lod0.msh",
+						name = "Gelander unten",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 211.20753479004,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/bogie_lod1.msh",
+								name = "bogie",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.1035154885758e-07, 0, 7.6293943607197e-08, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse2_lod1.msh",
+								name = "achse2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2548406124115, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse_lod1.msh",
+								name = "achse",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2565886974335, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+						},
+						name = "bogie",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.5200595855713, -1.1920928955078e-07, 0.73861974477768, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/bogie_lod1.msh",
+								name = "bogie",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.1035154885758e-07, 0, 7.6293943607197e-08, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse2_lod1.msh",
+								name = "achse2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2548406124115, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse_lod1.msh",
+								name = "achse",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2565886974335, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+						},
+						name = "bogie2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.5200595855713, -1.1920928955078e-07, 0.73861974477768, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/ddm/DDmOBB_czech.mtl", },
+						mesh = "vehicle/waggon/Autotransport/ddm/DDm915_lod1.msh",
+						name = "DDm915",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/ddm/DDmOBB_czech.mtl", },
+						mesh = "vehicle/waggon/Autotransport/ddm/Gelander oben hoch_lod1.msh",
+						name = "Gelander oben hoch",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/ddm/DDmOBB_czech.mtl", },
+						mesh = "vehicle/waggon/Autotransport/ddm/Gelander unten_lod1.msh",
+						name = "Gelander unten",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 211.20753479004,
+			visibleTo = 633.62261962891,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse2_lod2.msh",
+								name = "achse2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2548406124115, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse_lod2.msh",
+								name = "achse",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2565886974335, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+						},
+						name = "bogie",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.5200595855713, -1.1920928955078e-07, 0.73861974477768, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse2_lod2.msh",
+								name = "achse2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2548406124115, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse_lod2.msh",
+								name = "achse",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2565886974335, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+						},
+						name = "bogie2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.5200595855713, -1.1920928955078e-07, 0.73861974477768, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/ddm/DDmOBB_czech.mtl", },
+						mesh = "vehicle/waggon/Autotransport/ddm/DDm915_lod2.msh",
+						name = "DDm915",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 633.62261962891,
+			visibleTo = 1900.8679199219,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 2016,
+			yearTo = -1,
+		},
+		cargoSlotProvider = {
+			slots = {
+				{
+					group = 0,
+					models = { "vehicle/car_load/urban/toyota_mirai_ladung_1.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_2.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_3.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_4.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_5.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_6.mdl", "vehicle/car_load/urban/opel_limo_ladung_1.mdl", "vehicle/car_load/urban/opel_limo_ladung_2.mdl", "vehicle/car_load/urban/opel_limo_ladung_3.mdl", "vehicle/car_load/urban/opel_limo_ladung_4.mdl", "vehicle/car_load/urban/opel_limo_ladung_5.mdl", "vehicle/car_load/urban/opel_limo_ladung_6.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_1.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_2.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_3.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_4.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_5.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_6.mdl", "vehicle/car_load/urban/corolla_ladung_1.mdl", "vehicle/car_load/urban/corolla_ladung_2.mdl", "vehicle/car_load/urban/corolla_ladung_3.mdl", "vehicle/car_load/urban/corolla_ladung_4.mdl", "vehicle/car_load/urban/corolla_ladung_5.mdl", "vehicle/car_load/urban/corolla_ladung_6.mdl", "vehicle/car_load/bko/bko_e36_1.mdl", "vehicle/car_load/bko/bko_e36_2.mdl", "vehicle/car_load/bko/bko_e36_3.mdl", "vehicle/car_load/bko/bko_e36_4.mdl", "vehicle/car_load/bko/bko_e36_5.mdl", "vehicle/car_load/bko/bko_astra_1.mdl", "vehicle/car_load/bko/bko_astra_2.mdl", "vehicle/car_load/bko/bko_astra_3.mdl", "vehicle/car_load/bko/bko_clio_1.mdl", "vehicle/car_load/bko/bko_clio_2.mdl", "vehicle/car_load/bko/bko_clio_3.mdl", "vehicle/car_load/bko/bko_clio_4.mdl", "vehicle/car_load/bko/bko_clio_5.mdl", "vehicle/car_load/bko/bko_golf_1.mdl", "vehicle/car_load/bko/bko_golf_2.mdl", "vehicle/car_load/bko/bko_golf_3.mdl", "vehicle/car_load/bko/bko_golf_4.mdl", "vehicle/car_load/bko/bko_golf_5.mdl", "vehicle/car_load/bko/bko_volvo_1.mdl", "vehicle/car_load/bko/bko_volvo_2.mdl", "vehicle/car_load/bko/bko_volvo_3.mdl", "vehicle/car_load/bko/bko_volvo_4.mdl", "vehicle/car_load/bko/bko_volvo_5.mdl", "vehicle/car_load/bko/bko_406_1.mdl", "vehicle/car_load/bko/bko_406_2.mdl", "vehicle/car_load/bko/bko_406_3.mdl", "vehicle/car_load/bko/bko_406_4.mdl", "vehicle/car_load/bko/bko_406_5.mdl", "vehicle/car_load/bko/bko_a6c5_1.mdl", "vehicle/car_load/bko/bko_a6c5_2.mdl", "vehicle/car_load/bko/bko_a6c5_3.mdl", "vehicle/car_load/bko/bko_a6c5_4.mdl", "vehicle/car_load/bko/bko_a6c5_5.mdl", "vehicle/car_load/bko/bko_w202_1.mdl", "vehicle/car_load/bko/bko_w202_2.mdl", "vehicle/car_load/bko/bko_w202_3.mdl", "vehicle/car_load/bko/bko_w202_4.mdl", "vehicle/car_load/bko/bko_w202_5.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_1.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_2.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_3.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_4.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_5.mdl", "vehicle/car_load/bko/2000s/bko_a4_1.mdl", "vehicle/car_load/bko/2000s/bko_a4_2.mdl", "vehicle/car_load/bko/2000s/bko_a4_3.mdl", "vehicle/car_load/bko/2000s/bko_a4_4.mdl", "vehicle/car_load/bko/2000s/bko_a4_5.mdl", },
+					randomId = 0,
+					transf = { 1, 0, -0.01999600417912, 0, 0, 1, 0, 0, 0.01999200694263, 0, 0.99980014562607, 0, -10.069999694824, 0, 1.1000000238419, 1, },
+				},
+				{
+					group = 0,
+					models = { "vehicle/car_load/urban/toyota_mirai_ladung_1.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_2.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_3.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_4.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_5.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_6.mdl", "vehicle/car_load/urban/opel_limo_ladung_1.mdl", "vehicle/car_load/urban/opel_limo_ladung_2.mdl", "vehicle/car_load/urban/opel_limo_ladung_3.mdl", "vehicle/car_load/urban/opel_limo_ladung_4.mdl", "vehicle/car_load/urban/opel_limo_ladung_5.mdl", "vehicle/car_load/urban/opel_limo_ladung_6.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_1.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_2.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_3.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_4.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_5.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_6.mdl", "vehicle/car_load/urban/corolla_ladung_1.mdl", "vehicle/car_load/urban/corolla_ladung_2.mdl", "vehicle/car_load/urban/corolla_ladung_3.mdl", "vehicle/car_load/urban/corolla_ladung_4.mdl", "vehicle/car_load/urban/corolla_ladung_5.mdl", "vehicle/car_load/urban/corolla_ladung_6.mdl", "vehicle/car_load/bko/bko_e36_1.mdl", "vehicle/car_load/bko/bko_e36_2.mdl", "vehicle/car_load/bko/bko_e36_3.mdl", "vehicle/car_load/bko/bko_e36_4.mdl", "vehicle/car_load/bko/bko_e36_5.mdl", "vehicle/car_load/bko/bko_astra_1.mdl", "vehicle/car_load/bko/bko_astra_2.mdl", "vehicle/car_load/bko/bko_astra_3.mdl", "vehicle/car_load/bko/bko_clio_1.mdl", "vehicle/car_load/bko/bko_clio_2.mdl", "vehicle/car_load/bko/bko_clio_3.mdl", "vehicle/car_load/bko/bko_clio_4.mdl", "vehicle/car_load/bko/bko_clio_5.mdl", "vehicle/car_load/bko/bko_golf_1.mdl", "vehicle/car_load/bko/bko_golf_2.mdl", "vehicle/car_load/bko/bko_golf_3.mdl", "vehicle/car_load/bko/bko_golf_4.mdl", "vehicle/car_load/bko/bko_golf_5.mdl", "vehicle/car_load/bko/bko_volvo_1.mdl", "vehicle/car_load/bko/bko_volvo_2.mdl", "vehicle/car_load/bko/bko_volvo_3.mdl", "vehicle/car_load/bko/bko_volvo_4.mdl", "vehicle/car_load/bko/bko_volvo_5.mdl", "vehicle/car_load/bko/bko_406_1.mdl", "vehicle/car_load/bko/bko_406_2.mdl", "vehicle/car_load/bko/bko_406_3.mdl", "vehicle/car_load/bko/bko_406_4.mdl", "vehicle/car_load/bko/bko_406_5.mdl", "vehicle/car_load/bko/bko_a6c5_1.mdl", "vehicle/car_load/bko/bko_a6c5_2.mdl", "vehicle/car_load/bko/bko_a6c5_3.mdl", "vehicle/car_load/bko/bko_a6c5_4.mdl", "vehicle/car_load/bko/bko_a6c5_5.mdl", "vehicle/car_load/bko/bko_w202_1.mdl", "vehicle/car_load/bko/bko_w202_2.mdl", "vehicle/car_load/bko/bko_w202_3.mdl", "vehicle/car_load/bko/bko_w202_4.mdl", "vehicle/car_load/bko/bko_w202_5.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_1.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_2.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_3.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_4.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_5.mdl", "vehicle/car_load/bko/2000s/bko_a4_1.mdl", "vehicle/car_load/bko/2000s/bko_a4_2.mdl", "vehicle/car_load/bko/2000s/bko_a4_3.mdl", "vehicle/car_load/bko/2000s/bko_a4_4.mdl", "vehicle/car_load/bko/2000s/bko_a4_5.mdl", },
+					randomId = 1,
+					transf = { 0.99964392185211, 0, -0.040149848908186, 0, 0, 1, 0, 0, 0.040131792426109, 0, 0.99919438362122, 0, -4.9000000953674, 0, 0.9200000166893, 1, },
+				},
+				{
+					group = 0,
+					models = { "vehicle/car_load/urban/toyota_mirai_ladung_1.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_2.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_3.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_4.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_5.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_6.mdl", "vehicle/car_load/urban/opel_limo_ladung_1.mdl", "vehicle/car_load/urban/opel_limo_ladung_2.mdl", "vehicle/car_load/urban/opel_limo_ladung_3.mdl", "vehicle/car_load/urban/opel_limo_ladung_4.mdl", "vehicle/car_load/urban/opel_limo_ladung_5.mdl", "vehicle/car_load/urban/opel_limo_ladung_6.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_1.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_2.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_3.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_4.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_5.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_6.mdl", "vehicle/car_load/urban/corolla_ladung_1.mdl", "vehicle/car_load/urban/corolla_ladung_2.mdl", "vehicle/car_load/urban/corolla_ladung_3.mdl", "vehicle/car_load/urban/corolla_ladung_4.mdl", "vehicle/car_load/urban/corolla_ladung_5.mdl", "vehicle/car_load/urban/corolla_ladung_6.mdl", "vehicle/car_load/bko/bko_e36_1.mdl", "vehicle/car_load/bko/bko_e36_2.mdl", "vehicle/car_load/bko/bko_e36_3.mdl", "vehicle/car_load/bko/bko_e36_4.mdl", "vehicle/car_load/bko/bko_e36_5.mdl", "vehicle/car_load/bko/bko_astra_1.mdl", "vehicle/car_load/bko/bko_astra_2.mdl", "vehicle/car_load/bko/bko_astra_3.mdl", "vehicle/car_load/bko/bko_clio_1.mdl", "vehicle/car_load/bko/bko_clio_2.mdl", "vehicle/car_load/bko/bko_clio_3.mdl", "vehicle/car_load/bko/bko_clio_4.mdl", "vehicle/car_load/bko/bko_clio_5.mdl", "vehicle/car_load/bko/bko_golf_1.mdl", "vehicle/car_load/bko/bko_golf_2.mdl", "vehicle/car_load/bko/bko_golf_3.mdl", "vehicle/car_load/bko/bko_golf_4.mdl", "vehicle/car_load/bko/bko_golf_5.mdl", "vehicle/car_load/bko/bko_volvo_1.mdl", "vehicle/car_load/bko/bko_volvo_2.mdl", "vehicle/car_load/bko/bko_volvo_3.mdl", "vehicle/car_load/bko/bko_volvo_4.mdl", "vehicle/car_load/bko/bko_volvo_5.mdl", "vehicle/car_load/bko/bko_406_1.mdl", "vehicle/car_load/bko/bko_406_2.mdl", "vehicle/car_load/bko/bko_406_3.mdl", "vehicle/car_load/bko/bko_406_4.mdl", "vehicle/car_load/bko/bko_406_5.mdl", "vehicle/car_load/bko/bko_a6c5_1.mdl", "vehicle/car_load/bko/bko_a6c5_2.mdl", "vehicle/car_load/bko/bko_a6c5_3.mdl", "vehicle/car_load/bko/bko_a6c5_4.mdl", "vehicle/car_load/bko/bko_a6c5_5.mdl", "vehicle/car_load/bko/bko_w202_1.mdl", "vehicle/car_load/bko/bko_w202_2.mdl", "vehicle/car_load/bko/bko_w202_3.mdl", "vehicle/car_load/bko/bko_w202_4.mdl", "vehicle/car_load/bko/bko_w202_5.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_1.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_2.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_3.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_4.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_5.mdl", "vehicle/car_load/bko/2000s/bko_a4_1.mdl", "vehicle/car_load/bko/2000s/bko_a4_2.mdl", "vehicle/car_load/bko/2000s/bko_a4_3.mdl", "vehicle/car_load/bko/2000s/bko_a4_4.mdl", "vehicle/car_load/bko/2000s/bko_a4_5.mdl", },
+					randomId = 2,
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0.43999999761581, 0, 0.89999997615814, 1, },
+				},
+				{
+					group = 0,
+					models = { "vehicle/car_load/urban/toyota_mirai_ladung_1.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_2.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_3.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_4.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_5.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_6.mdl", "vehicle/car_load/urban/opel_limo_ladung_1.mdl", "vehicle/car_load/urban/opel_limo_ladung_2.mdl", "vehicle/car_load/urban/opel_limo_ladung_3.mdl", "vehicle/car_load/urban/opel_limo_ladung_4.mdl", "vehicle/car_load/urban/opel_limo_ladung_5.mdl", "vehicle/car_load/urban/opel_limo_ladung_6.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_1.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_2.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_3.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_4.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_5.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_6.mdl", "vehicle/car_load/urban/corolla_ladung_1.mdl", "vehicle/car_load/urban/corolla_ladung_2.mdl", "vehicle/car_load/urban/corolla_ladung_3.mdl", "vehicle/car_load/urban/corolla_ladung_4.mdl", "vehicle/car_load/urban/corolla_ladung_5.mdl", "vehicle/car_load/urban/corolla_ladung_6.mdl", "vehicle/car_load/bko/bko_e36_1.mdl", "vehicle/car_load/bko/bko_e36_2.mdl", "vehicle/car_load/bko/bko_e36_3.mdl", "vehicle/car_load/bko/bko_e36_4.mdl", "vehicle/car_load/bko/bko_e36_5.mdl", "vehicle/car_load/bko/bko_astra_1.mdl", "vehicle/car_load/bko/bko_astra_2.mdl", "vehicle/car_load/bko/bko_astra_3.mdl", "vehicle/car_load/bko/bko_clio_1.mdl", "vehicle/car_load/bko/bko_clio_2.mdl", "vehicle/car_load/bko/bko_clio_3.mdl", "vehicle/car_load/bko/bko_clio_4.mdl", "vehicle/car_load/bko/bko_clio_5.mdl", "vehicle/car_load/bko/bko_golf_1.mdl", "vehicle/car_load/bko/bko_golf_2.mdl", "vehicle/car_load/bko/bko_golf_3.mdl", "vehicle/car_load/bko/bko_golf_4.mdl", "vehicle/car_load/bko/bko_golf_5.mdl", "vehicle/car_load/bko/bko_volvo_1.mdl", "vehicle/car_load/bko/bko_volvo_2.mdl", "vehicle/car_load/bko/bko_volvo_3.mdl", "vehicle/car_load/bko/bko_volvo_4.mdl", "vehicle/car_load/bko/bko_volvo_5.mdl", "vehicle/car_load/bko/bko_406_1.mdl", "vehicle/car_load/bko/bko_406_2.mdl", "vehicle/car_load/bko/bko_406_3.mdl", "vehicle/car_load/bko/bko_406_4.mdl", "vehicle/car_load/bko/bko_406_5.mdl", "vehicle/car_load/bko/bko_a6c5_1.mdl", "vehicle/car_load/bko/bko_a6c5_2.mdl", "vehicle/car_load/bko/bko_a6c5_3.mdl", "vehicle/car_load/bko/bko_a6c5_4.mdl", "vehicle/car_load/bko/bko_a6c5_5.mdl", "vehicle/car_load/bko/bko_w202_1.mdl", "vehicle/car_load/bko/bko_w202_2.mdl", "vehicle/car_load/bko/bko_w202_3.mdl", "vehicle/car_load/bko/bko_w202_4.mdl", "vehicle/car_load/bko/bko_w202_5.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_1.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_2.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_3.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_4.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_5.mdl", "vehicle/car_load/bko/2000s/bko_a4_1.mdl", "vehicle/car_load/bko/2000s/bko_a4_2.mdl", "vehicle/car_load/bko/2000s/bko_a4_3.mdl", "vehicle/car_load/bko/2000s/bko_a4_4.mdl", "vehicle/car_load/bko/2000s/bko_a4_5.mdl", },
+					randomId = 3,
+					transf = { 0.99982833862305, 0, 0.050649128854275, 0, -0, 1, 0, 0, -0.050592947751284, -0, 0.99871933460236, 0, 5.1799998283386, 0, 0.95999997854233, 1, },
+				},
+				{
+					group = 0,
+					models = { "vehicle/car_load/urban/toyota_mirai_ladung_1.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_2.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_3.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_4.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_5.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_6.mdl", "vehicle/car_load/urban/opel_limo_ladung_1.mdl", "vehicle/car_load/urban/opel_limo_ladung_2.mdl", "vehicle/car_load/urban/opel_limo_ladung_3.mdl", "vehicle/car_load/urban/opel_limo_ladung_4.mdl", "vehicle/car_load/urban/opel_limo_ladung_5.mdl", "vehicle/car_load/urban/opel_limo_ladung_6.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_1.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_2.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_3.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_4.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_5.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_6.mdl", "vehicle/car_load/urban/corolla_ladung_1.mdl", "vehicle/car_load/urban/corolla_ladung_2.mdl", "vehicle/car_load/urban/corolla_ladung_3.mdl", "vehicle/car_load/urban/corolla_ladung_4.mdl", "vehicle/car_load/urban/corolla_ladung_5.mdl", "vehicle/car_load/urban/corolla_ladung_6.mdl", "vehicle/car_load/bko/bko_e36_1.mdl", "vehicle/car_load/bko/bko_e36_2.mdl", "vehicle/car_load/bko/bko_e36_3.mdl", "vehicle/car_load/bko/bko_e36_4.mdl", "vehicle/car_load/bko/bko_e36_5.mdl", "vehicle/car_load/bko/bko_astra_1.mdl", "vehicle/car_load/bko/bko_astra_2.mdl", "vehicle/car_load/bko/bko_astra_3.mdl", "vehicle/car_load/bko/bko_clio_1.mdl", "vehicle/car_load/bko/bko_clio_2.mdl", "vehicle/car_load/bko/bko_clio_3.mdl", "vehicle/car_load/bko/bko_clio_4.mdl", "vehicle/car_load/bko/bko_clio_5.mdl", "vehicle/car_load/bko/bko_golf_1.mdl", "vehicle/car_load/bko/bko_golf_2.mdl", "vehicle/car_load/bko/bko_golf_3.mdl", "vehicle/car_load/bko/bko_golf_4.mdl", "vehicle/car_load/bko/bko_golf_5.mdl", "vehicle/car_load/bko/bko_volvo_1.mdl", "vehicle/car_load/bko/bko_volvo_2.mdl", "vehicle/car_load/bko/bko_volvo_3.mdl", "vehicle/car_load/bko/bko_volvo_4.mdl", "vehicle/car_load/bko/bko_volvo_5.mdl", "vehicle/car_load/bko/bko_406_1.mdl", "vehicle/car_load/bko/bko_406_2.mdl", "vehicle/car_load/bko/bko_406_3.mdl", "vehicle/car_load/bko/bko_406_4.mdl", "vehicle/car_load/bko/bko_406_5.mdl", "vehicle/car_load/bko/bko_a6c5_1.mdl", "vehicle/car_load/bko/bko_a6c5_2.mdl", "vehicle/car_load/bko/bko_a6c5_3.mdl", "vehicle/car_load/bko/bko_a6c5_4.mdl", "vehicle/car_load/bko/bko_a6c5_5.mdl", "vehicle/car_load/bko/bko_w202_1.mdl", "vehicle/car_load/bko/bko_w202_2.mdl", "vehicle/car_load/bko/bko_w202_3.mdl", "vehicle/car_load/bko/bko_w202_4.mdl", "vehicle/car_load/bko/bko_w202_5.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_1.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_2.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_3.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_4.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_5.mdl", "vehicle/car_load/bko/2000s/bko_a4_1.mdl", "vehicle/car_load/bko/2000s/bko_a4_2.mdl", "vehicle/car_load/bko/2000s/bko_a4_3.mdl", "vehicle/car_load/bko/2000s/bko_a4_4.mdl", "vehicle/car_load/bko/2000s/bko_a4_5.mdl", },
+					randomId = 4,
+					transf = { 0.99999994039536, 0, 0.0099994977936149, 0, -0, 1, 0, 0, -0.0099989976733923, -0, 0.99994987249374, 0, 10.050000190735, 0, 1.1499999761581, 1, },
+				},
+				{
+					group = 0,
+					models = { "vehicle/car_load/urban/toyota_mirai_ladung_1.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_2.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_3.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_4.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_5.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_6.mdl", "vehicle/car_load/urban/opel_limo_ladung_1.mdl", "vehicle/car_load/urban/opel_limo_ladung_2.mdl", "vehicle/car_load/urban/opel_limo_ladung_3.mdl", "vehicle/car_load/urban/opel_limo_ladung_4.mdl", "vehicle/car_load/urban/opel_limo_ladung_5.mdl", "vehicle/car_load/urban/opel_limo_ladung_6.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_1.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_2.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_3.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_4.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_5.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_6.mdl", "vehicle/car_load/urban/corolla_ladung_1.mdl", "vehicle/car_load/urban/corolla_ladung_2.mdl", "vehicle/car_load/urban/corolla_ladung_3.mdl", "vehicle/car_load/urban/corolla_ladung_4.mdl", "vehicle/car_load/urban/corolla_ladung_5.mdl", "vehicle/car_load/urban/corolla_ladung_6.mdl", "vehicle/car_load/bko/bko_e36_1.mdl", "vehicle/car_load/bko/bko_e36_2.mdl", "vehicle/car_load/bko/bko_e36_3.mdl", "vehicle/car_load/bko/bko_e36_4.mdl", "vehicle/car_load/bko/bko_e36_5.mdl", "vehicle/car_load/bko/bko_astra_1.mdl", "vehicle/car_load/bko/bko_astra_2.mdl", "vehicle/car_load/bko/bko_astra_3.mdl", "vehicle/car_load/bko/bko_clio_1.mdl", "vehicle/car_load/bko/bko_clio_2.mdl", "vehicle/car_load/bko/bko_clio_3.mdl", "vehicle/car_load/bko/bko_clio_4.mdl", "vehicle/car_load/bko/bko_clio_5.mdl", "vehicle/car_load/bko/bko_golf_1.mdl", "vehicle/car_load/bko/bko_golf_2.mdl", "vehicle/car_load/bko/bko_golf_3.mdl", "vehicle/car_load/bko/bko_golf_4.mdl", "vehicle/car_load/bko/bko_golf_5.mdl", "vehicle/car_load/bko/bko_volvo_1.mdl", "vehicle/car_load/bko/bko_volvo_2.mdl", "vehicle/car_load/bko/bko_volvo_3.mdl", "vehicle/car_load/bko/bko_volvo_4.mdl", "vehicle/car_load/bko/bko_volvo_5.mdl", "vehicle/car_load/bko/bko_406_1.mdl", "vehicle/car_load/bko/bko_406_2.mdl", "vehicle/car_load/bko/bko_406_3.mdl", "vehicle/car_load/bko/bko_406_4.mdl", "vehicle/car_load/bko/bko_406_5.mdl", "vehicle/car_load/bko/bko_a6c5_1.mdl", "vehicle/car_load/bko/bko_a6c5_2.mdl", "vehicle/car_load/bko/bko_a6c5_3.mdl", "vehicle/car_load/bko/bko_a6c5_4.mdl", "vehicle/car_load/bko/bko_a6c5_5.mdl", "vehicle/car_load/bko/bko_w202_1.mdl", "vehicle/car_load/bko/bko_w202_2.mdl", "vehicle/car_load/bko/bko_w202_3.mdl", "vehicle/car_load/bko/bko_w202_4.mdl", "vehicle/car_load/bko/bko_w202_5.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_1.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_2.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_3.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_4.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_5.mdl", "vehicle/car_load/bko/2000s/bko_a4_1.mdl", "vehicle/car_load/bko/2000s/bko_a4_2.mdl", "vehicle/car_load/bko/2000s/bko_a4_3.mdl", "vehicle/car_load/bko/2000s/bko_a4_4.mdl", "vehicle/car_load/bko/2000s/bko_a4_5.mdl", "vehicle/car_load/urban/vw_touran_ladung_1.mdl", "vehicle/car_load/urban/vw_touran_ladung_2.mdl", "vehicle/car_load/urban/vw_touran_ladung_3.mdl", "vehicle/car_load/urban/vw_touran_ladung_4.mdl", "vehicle/car_load/urban/vw_touran_ladung_5.mdl", "vehicle/car_load/urban/haval_h6_ladung_1.mdl", "vehicle/car_load/urban/haval_h6_ladung_2.mdl", "vehicle/car_load/urban/haval_h6_ladung_3.mdl", "vehicle/car_load/urban/haval_h6_ladung_4.mdl", "vehicle/car_load/urban/haval_h6_ladung_5.mdl", },
+					randomId = 5,
+					transf = { 1, 0, -0.059999998658895, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.10000038147, 0, 2.789999961853, 1, },
+				},
+				{
+					group = 0,
+					models = { "vehicle/car_load/urban/toyota_mirai_ladung_1.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_2.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_3.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_4.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_5.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_6.mdl", "vehicle/car_load/urban/opel_limo_ladung_1.mdl", "vehicle/car_load/urban/opel_limo_ladung_2.mdl", "vehicle/car_load/urban/opel_limo_ladung_3.mdl", "vehicle/car_load/urban/opel_limo_ladung_4.mdl", "vehicle/car_load/urban/opel_limo_ladung_5.mdl", "vehicle/car_load/urban/opel_limo_ladung_6.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_1.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_2.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_3.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_4.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_5.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_6.mdl", "vehicle/car_load/urban/corolla_ladung_1.mdl", "vehicle/car_load/urban/corolla_ladung_2.mdl", "vehicle/car_load/urban/corolla_ladung_3.mdl", "vehicle/car_load/urban/corolla_ladung_4.mdl", "vehicle/car_load/urban/corolla_ladung_5.mdl", "vehicle/car_load/urban/corolla_ladung_6.mdl", "vehicle/car_load/bko/bko_e36_1.mdl", "vehicle/car_load/bko/bko_e36_2.mdl", "vehicle/car_load/bko/bko_e36_3.mdl", "vehicle/car_load/bko/bko_e36_4.mdl", "vehicle/car_load/bko/bko_e36_5.mdl", "vehicle/car_load/bko/bko_astra_1.mdl", "vehicle/car_load/bko/bko_astra_2.mdl", "vehicle/car_load/bko/bko_astra_3.mdl", "vehicle/car_load/bko/bko_clio_1.mdl", "vehicle/car_load/bko/bko_clio_2.mdl", "vehicle/car_load/bko/bko_clio_3.mdl", "vehicle/car_load/bko/bko_clio_4.mdl", "vehicle/car_load/bko/bko_clio_5.mdl", "vehicle/car_load/bko/bko_golf_1.mdl", "vehicle/car_load/bko/bko_golf_2.mdl", "vehicle/car_load/bko/bko_golf_3.mdl", "vehicle/car_load/bko/bko_golf_4.mdl", "vehicle/car_load/bko/bko_golf_5.mdl", "vehicle/car_load/bko/bko_volvo_1.mdl", "vehicle/car_load/bko/bko_volvo_2.mdl", "vehicle/car_load/bko/bko_volvo_3.mdl", "vehicle/car_load/bko/bko_volvo_4.mdl", "vehicle/car_load/bko/bko_volvo_5.mdl", "vehicle/car_load/bko/bko_406_1.mdl", "vehicle/car_load/bko/bko_406_2.mdl", "vehicle/car_load/bko/bko_406_3.mdl", "vehicle/car_load/bko/bko_406_4.mdl", "vehicle/car_load/bko/bko_406_5.mdl", "vehicle/car_load/bko/bko_a6c5_1.mdl", "vehicle/car_load/bko/bko_a6c5_2.mdl", "vehicle/car_load/bko/bko_a6c5_3.mdl", "vehicle/car_load/bko/bko_a6c5_4.mdl", "vehicle/car_load/bko/bko_a6c5_5.mdl", "vehicle/car_load/bko/bko_w202_1.mdl", "vehicle/car_load/bko/bko_w202_2.mdl", "vehicle/car_load/bko/bko_w202_3.mdl", "vehicle/car_load/bko/bko_w202_4.mdl", "vehicle/car_load/bko/bko_w202_5.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_1.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_2.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_3.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_4.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_5.mdl", "vehicle/car_load/bko/2000s/bko_a4_1.mdl", "vehicle/car_load/bko/2000s/bko_a4_2.mdl", "vehicle/car_load/bko/2000s/bko_a4_3.mdl", "vehicle/car_load/bko/2000s/bko_a4_4.mdl", "vehicle/car_load/bko/2000s/bko_a4_5.mdl", "vehicle/car_load/urban/vw_touran_ladung_1.mdl", "vehicle/car_load/urban/vw_touran_ladung_2.mdl", "vehicle/car_load/urban/vw_touran_ladung_3.mdl", "vehicle/car_load/urban/vw_touran_ladung_4.mdl", "vehicle/car_load/urban/vw_touran_ladung_5.mdl", "vehicle/car_load/urban/haval_h6_ladung_1.mdl", "vehicle/car_load/urban/haval_h6_ladung_2.mdl", "vehicle/car_load/urban/haval_h6_ladung_3.mdl", "vehicle/car_load/urban/haval_h6_ladung_4.mdl", "vehicle/car_load/urban/haval_h6_ladung_5.mdl", },
+					randomId = 6,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5, 0, 2.5499999523163, 1, },
+				},
+				{
+					group = 0,
+					models = { "vehicle/car_load/urban/toyota_mirai_ladung_1.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_2.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_3.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_4.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_5.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_6.mdl", "vehicle/car_load/urban/opel_limo_ladung_1.mdl", "vehicle/car_load/urban/opel_limo_ladung_2.mdl", "vehicle/car_load/urban/opel_limo_ladung_3.mdl", "vehicle/car_load/urban/opel_limo_ladung_4.mdl", "vehicle/car_load/urban/opel_limo_ladung_5.mdl", "vehicle/car_load/urban/opel_limo_ladung_6.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_1.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_2.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_3.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_4.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_5.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_6.mdl", "vehicle/car_load/urban/corolla_ladung_1.mdl", "vehicle/car_load/urban/corolla_ladung_2.mdl", "vehicle/car_load/urban/corolla_ladung_3.mdl", "vehicle/car_load/urban/corolla_ladung_4.mdl", "vehicle/car_load/urban/corolla_ladung_5.mdl", "vehicle/car_load/urban/corolla_ladung_6.mdl", "vehicle/car_load/bko/bko_e36_1.mdl", "vehicle/car_load/bko/bko_e36_2.mdl", "vehicle/car_load/bko/bko_e36_3.mdl", "vehicle/car_load/bko/bko_e36_4.mdl", "vehicle/car_load/bko/bko_e36_5.mdl", "vehicle/car_load/bko/bko_astra_1.mdl", "vehicle/car_load/bko/bko_astra_2.mdl", "vehicle/car_load/bko/bko_astra_3.mdl", "vehicle/car_load/bko/bko_clio_1.mdl", "vehicle/car_load/bko/bko_clio_2.mdl", "vehicle/car_load/bko/bko_clio_3.mdl", "vehicle/car_load/bko/bko_clio_4.mdl", "vehicle/car_load/bko/bko_clio_5.mdl", "vehicle/car_load/bko/bko_golf_1.mdl", "vehicle/car_load/bko/bko_golf_2.mdl", "vehicle/car_load/bko/bko_golf_3.mdl", "vehicle/car_load/bko/bko_golf_4.mdl", "vehicle/car_load/bko/bko_golf_5.mdl", "vehicle/car_load/bko/bko_volvo_1.mdl", "vehicle/car_load/bko/bko_volvo_2.mdl", "vehicle/car_load/bko/bko_volvo_3.mdl", "vehicle/car_load/bko/bko_volvo_4.mdl", "vehicle/car_load/bko/bko_volvo_5.mdl", "vehicle/car_load/bko/bko_406_1.mdl", "vehicle/car_load/bko/bko_406_2.mdl", "vehicle/car_load/bko/bko_406_3.mdl", "vehicle/car_load/bko/bko_406_4.mdl", "vehicle/car_load/bko/bko_406_5.mdl", "vehicle/car_load/bko/bko_a6c5_1.mdl", "vehicle/car_load/bko/bko_a6c5_2.mdl", "vehicle/car_load/bko/bko_a6c5_3.mdl", "vehicle/car_load/bko/bko_a6c5_4.mdl", "vehicle/car_load/bko/bko_a6c5_5.mdl", "vehicle/car_load/bko/bko_w202_1.mdl", "vehicle/car_load/bko/bko_w202_2.mdl", "vehicle/car_load/bko/bko_w202_3.mdl", "vehicle/car_load/bko/bko_w202_4.mdl", "vehicle/car_load/bko/bko_w202_5.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_1.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_2.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_3.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_4.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_5.mdl", "vehicle/car_load/bko/2000s/bko_a4_1.mdl", "vehicle/car_load/bko/2000s/bko_a4_2.mdl", "vehicle/car_load/bko/2000s/bko_a4_3.mdl", "vehicle/car_load/bko/2000s/bko_a4_4.mdl", "vehicle/car_load/bko/2000s/bko_a4_5.mdl", "vehicle/car_load/urban/vw_touran_ladung_1.mdl", "vehicle/car_load/urban/vw_touran_ladung_2.mdl", "vehicle/car_load/urban/vw_touran_ladung_3.mdl", "vehicle/car_load/urban/vw_touran_ladung_4.mdl", "vehicle/car_load/urban/vw_touran_ladung_5.mdl", "vehicle/car_load/urban/haval_h6_ladung_1.mdl", "vehicle/car_load/urban/haval_h6_ladung_2.mdl", "vehicle/car_load/urban/haval_h6_ladung_3.mdl", "vehicle/car_load/urban/haval_h6_ladung_4.mdl", "vehicle/car_load/urban/haval_h6_ladung_5.mdl", },
+					randomId = 7,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.10000000149012, 0, 2.5499999523163, 1, },
+				},
+				{
+					group = 0,
+					models = { "vehicle/car_load/urban/toyota_mirai_ladung_1.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_2.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_3.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_4.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_5.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_6.mdl", "vehicle/car_load/urban/opel_limo_ladung_1.mdl", "vehicle/car_load/urban/opel_limo_ladung_2.mdl", "vehicle/car_load/urban/opel_limo_ladung_3.mdl", "vehicle/car_load/urban/opel_limo_ladung_4.mdl", "vehicle/car_load/urban/opel_limo_ladung_5.mdl", "vehicle/car_load/urban/opel_limo_ladung_6.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_1.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_2.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_3.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_4.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_5.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_6.mdl", "vehicle/car_load/urban/corolla_ladung_1.mdl", "vehicle/car_load/urban/corolla_ladung_2.mdl", "vehicle/car_load/urban/corolla_ladung_3.mdl", "vehicle/car_load/urban/corolla_ladung_4.mdl", "vehicle/car_load/urban/corolla_ladung_5.mdl", "vehicle/car_load/urban/corolla_ladung_6.mdl", "vehicle/car_load/bko/bko_e36_1.mdl", "vehicle/car_load/bko/bko_e36_2.mdl", "vehicle/car_load/bko/bko_e36_3.mdl", "vehicle/car_load/bko/bko_e36_4.mdl", "vehicle/car_load/bko/bko_e36_5.mdl", "vehicle/car_load/bko/bko_astra_1.mdl", "vehicle/car_load/bko/bko_astra_2.mdl", "vehicle/car_load/bko/bko_astra_3.mdl", "vehicle/car_load/bko/bko_clio_1.mdl", "vehicle/car_load/bko/bko_clio_2.mdl", "vehicle/car_load/bko/bko_clio_3.mdl", "vehicle/car_load/bko/bko_clio_4.mdl", "vehicle/car_load/bko/bko_clio_5.mdl", "vehicle/car_load/bko/bko_golf_1.mdl", "vehicle/car_load/bko/bko_golf_2.mdl", "vehicle/car_load/bko/bko_golf_3.mdl", "vehicle/car_load/bko/bko_golf_4.mdl", "vehicle/car_load/bko/bko_golf_5.mdl", "vehicle/car_load/bko/bko_volvo_1.mdl", "vehicle/car_load/bko/bko_volvo_2.mdl", "vehicle/car_load/bko/bko_volvo_3.mdl", "vehicle/car_load/bko/bko_volvo_4.mdl", "vehicle/car_load/bko/bko_volvo_5.mdl", "vehicle/car_load/bko/bko_406_1.mdl", "vehicle/car_load/bko/bko_406_2.mdl", "vehicle/car_load/bko/bko_406_3.mdl", "vehicle/car_load/bko/bko_406_4.mdl", "vehicle/car_load/bko/bko_406_5.mdl", "vehicle/car_load/bko/bko_a6c5_1.mdl", "vehicle/car_load/bko/bko_a6c5_2.mdl", "vehicle/car_load/bko/bko_a6c5_3.mdl", "vehicle/car_load/bko/bko_a6c5_4.mdl", "vehicle/car_load/bko/bko_a6c5_5.mdl", "vehicle/car_load/bko/bko_w202_1.mdl", "vehicle/car_load/bko/bko_w202_2.mdl", "vehicle/car_load/bko/bko_w202_3.mdl", "vehicle/car_load/bko/bko_w202_4.mdl", "vehicle/car_load/bko/bko_w202_5.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_1.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_2.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_3.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_4.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_5.mdl", "vehicle/car_load/bko/2000s/bko_a4_1.mdl", "vehicle/car_load/bko/2000s/bko_a4_2.mdl", "vehicle/car_load/bko/2000s/bko_a4_3.mdl", "vehicle/car_load/bko/2000s/bko_a4_4.mdl", "vehicle/car_load/bko/2000s/bko_a4_5.mdl", "vehicle/car_load/urban/vw_touran_ladung_1.mdl", "vehicle/car_load/urban/vw_touran_ladung_2.mdl", "vehicle/car_load/urban/vw_touran_ladung_3.mdl", "vehicle/car_load/urban/vw_touran_ladung_4.mdl", "vehicle/car_load/urban/vw_touran_ladung_5.mdl", "vehicle/car_load/urban/haval_h6_ladung_1.mdl", "vehicle/car_load/urban/haval_h6_ladung_2.mdl", "vehicle/car_load/urban/haval_h6_ladung_3.mdl", "vehicle/car_load/urban/haval_h6_ladung_4.mdl", "vehicle/car_load/urban/haval_h6_ladung_5.mdl", },
+					randomId = 8,
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 5.0700001716614, 0, 2.5499999523163, 1, },
+				},
+				{
+					group = 0,
+					models = { "vehicle/car_load/urban/toyota_mirai_ladung_1.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_2.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_3.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_4.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_5.mdl", "vehicle/car_load/urban/toyota_mirai_ladung_6.mdl", "vehicle/car_load/urban/opel_limo_ladung_1.mdl", "vehicle/car_load/urban/opel_limo_ladung_2.mdl", "vehicle/car_load/urban/opel_limo_ladung_3.mdl", "vehicle/car_load/urban/opel_limo_ladung_4.mdl", "vehicle/car_load/urban/opel_limo_ladung_5.mdl", "vehicle/car_load/urban/opel_limo_ladung_6.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_1.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_2.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_3.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_4.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_5.mdl", "vehicle/car_load/urban/opel_kadett_e_carevan_ladung_6.mdl", "vehicle/car_load/urban/corolla_ladung_1.mdl", "vehicle/car_load/urban/corolla_ladung_2.mdl", "vehicle/car_load/urban/corolla_ladung_3.mdl", "vehicle/car_load/urban/corolla_ladung_4.mdl", "vehicle/car_load/urban/corolla_ladung_5.mdl", "vehicle/car_load/urban/corolla_ladung_6.mdl", "vehicle/car_load/bko/bko_e36_1.mdl", "vehicle/car_load/bko/bko_e36_2.mdl", "vehicle/car_load/bko/bko_e36_3.mdl", "vehicle/car_load/bko/bko_e36_4.mdl", "vehicle/car_load/bko/bko_e36_5.mdl", "vehicle/car_load/bko/bko_astra_1.mdl", "vehicle/car_load/bko/bko_astra_2.mdl", "vehicle/car_load/bko/bko_astra_3.mdl", "vehicle/car_load/bko/bko_clio_1.mdl", "vehicle/car_load/bko/bko_clio_2.mdl", "vehicle/car_load/bko/bko_clio_3.mdl", "vehicle/car_load/bko/bko_clio_4.mdl", "vehicle/car_load/bko/bko_clio_5.mdl", "vehicle/car_load/bko/bko_golf_1.mdl", "vehicle/car_load/bko/bko_golf_2.mdl", "vehicle/car_load/bko/bko_golf_3.mdl", "vehicle/car_load/bko/bko_golf_4.mdl", "vehicle/car_load/bko/bko_golf_5.mdl", "vehicle/car_load/bko/bko_volvo_1.mdl", "vehicle/car_load/bko/bko_volvo_2.mdl", "vehicle/car_load/bko/bko_volvo_3.mdl", "vehicle/car_load/bko/bko_volvo_4.mdl", "vehicle/car_load/bko/bko_volvo_5.mdl", "vehicle/car_load/bko/bko_406_1.mdl", "vehicle/car_load/bko/bko_406_2.mdl", "vehicle/car_load/bko/bko_406_3.mdl", "vehicle/car_load/bko/bko_406_4.mdl", "vehicle/car_load/bko/bko_406_5.mdl", "vehicle/car_load/bko/bko_a6c5_1.mdl", "vehicle/car_load/bko/bko_a6c5_2.mdl", "vehicle/car_load/bko/bko_a6c5_3.mdl", "vehicle/car_load/bko/bko_a6c5_4.mdl", "vehicle/car_load/bko/bko_a6c5_5.mdl", "vehicle/car_load/bko/bko_w202_1.mdl", "vehicle/car_load/bko/bko_w202_2.mdl", "vehicle/car_load/bko/bko_w202_3.mdl", "vehicle/car_load/bko/bko_w202_4.mdl", "vehicle/car_load/bko/bko_w202_5.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_1.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_2.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_3.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_4.mdl", "vehicle/car_load/bko/2000s/bko_golf_g4_5.mdl", "vehicle/car_load/bko/2000s/bko_a4_1.mdl", "vehicle/car_load/bko/2000s/bko_a4_2.mdl", "vehicle/car_load/bko/2000s/bko_a4_3.mdl", "vehicle/car_load/bko/2000s/bko_a4_4.mdl", "vehicle/car_load/bko/2000s/bko_a4_5.mdl", "vehicle/car_load/urban/vw_touran_ladung_1.mdl", "vehicle/car_load/urban/vw_touran_ladung_2.mdl", "vehicle/car_load/urban/vw_touran_ladung_3.mdl", "vehicle/car_load/urban/vw_touran_ladung_4.mdl", "vehicle/car_load/urban/vw_touran_ladung_5.mdl", "vehicle/car_load/urban/haval_h6_ladung_1.mdl", "vehicle/car_load/urban/haval_h6_ladung_2.mdl", "vehicle/car_load/urban/haval_h6_ladung_3.mdl", "vehicle/car_load/urban/haval_h6_ladung_4.mdl", "vehicle/car_load/urban/haval_h6_ladung_5.mdl", },
+					randomId = 9,
+					transf = { 1.0000064373016, 0, 0.059892650693655, 0, -0, 1, 0, 0, -0.059785135090351, -0, 0.99821126461029, 0, 9.9499998092651, 0, 2.7999999523163, 1, },
+				},
+			},
+		},
+		cost = {
+			price = -1,
+			priceScale = 0.1,
+		},
+		description = {
+			description = _("DD_oebb_desc"),
+			name = _("DDm 98-70 (Ceske Drahy) [2016]"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 292200,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/waggon/Autotransport/ddm/achse_lod0.msh", "vehicle/waggon/Autotransport/ddm/achse2_lod0.msh", },
+					backBackwardParts = { },
+					backForwardParts = { 1, },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/waggon/Autotransport/ddm/achse_lod1.msh", "vehicle/waggon/Autotransport/ddm/achse2_lod1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/waggon/Autotransport/ddm/achse_lod2.msh", "vehicle/waggon/Autotransport/ddm/achse2_lod2.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = { },
+			soundSet = {
+				horn = "",
+				name = "mw_leicht",
+			},
+			topSpeed = 44.444442749023,
+			weight = 27.799999237061,
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 4,
+									customCargoModels = {
+										configurations = {
+											{
+												slotLevels = {
+													{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, },
+												},
+											},
+										},
+									},
+									seats = { },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "vehicle/waggon/Autotransport/menu_autotransport_person_fake.mdl",
+			loadSpeed = 2,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+	},
+	version = 1,
+}
+end

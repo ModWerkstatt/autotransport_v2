@@ -1,0 +1,81 @@
+function data()
+return {
+	__version = "",
+	order = 0,
+	params = {
+		albedo_scale = {
+			albedoScale = { 1, 1, 1, },
+		},
+		color_blend = {
+			albedoScales = { 0, },
+			colors = {
+				{ 0, 0, 0, },
+			},
+		},
+		dirt_rust = {
+			age = 0,
+			dirtColor = { 0.15686273574829, 0.1172472089529, 0.097808532416821, },
+			dirtFactor = 0,
+			dirtOpacity = 0.090000003576279,
+			dirtScale = 1,
+			rustColor = { 0.42352938652039, 0.33457779884338, 0.21923872828484, },
+			rustFactor = 0,
+			rustOpacity = 0.46999999880791,
+			rustScale = 1,
+		},
+		fade_out_range = {
+			fadeOutEndDist = 20000,
+			fadeOutStartDist = 10000,
+		},
+		map_albedo = {
+			fileName = "models/vehicle/waggon/Off52/Laae540_albedo.dds",
+			type = "TWOD",
+		},
+		map_cblend_dirt_rust = {
+			fileName = "models/vehicle/waggon/Off52/Offs52_dca.dds",
+			type = "TWOD",
+		},
+		map_dirt = {
+			fileName = "models/vehicle/dirt_albedo.dds",
+			type = "TWOD",
+		},
+		map_dirt_normal = {
+			fileName = "models/vehicle/dirt_normal.dds",
+			redGreen = true,
+			type = "TWOD",
+		},
+		map_metal_gloss_ao = {
+			fileName = "models/vehicle/waggon/Off52/Offs52_mga.dds",
+			scaleDownAllowed = false,
+			type = "TWOD",
+		},
+		map_normal = {
+			fileName = "models/vehicle/waggon/Off52/Offs52_nrml.dds",
+			redGreen = true,
+			type = "TWOD",
+		},
+		map_rust = {
+			fileName = "models/vehicle/rust_albedo.dds",
+			type = "TWOD",
+		},
+		map_rust_normal = {
+			fileName = "models/vehicle/rust_normal.dds",
+			redGreen = true,
+			type = "TWOD",
+		},
+		normal_scale = {
+			normalScale = 1,
+		},
+		polygon_offset = {
+			factor = 0,
+			forceDepthWrite = false,
+			units = 0,
+		},
+		two_sided = {
+			flipNormal = true,
+			twoSided = false,
+		},
+	},
+	type = "PHYSICAL_NRML_MAP_CBLEND_DIRT",
+}
+end

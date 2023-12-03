@@ -1,0 +1,436 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 13.192854881287, 1.5117837190628, 3.4585859775543, },
+		bbMin = { -13.192854881287, -1.5117832422256, -0.050224453210831, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 13.192854881287, 1.5117834806442, 1.7544052600861, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/bogie_lod0.msh",
+								name = "bogie",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.1035154885758e-07, 0, 7.6293943607197e-08, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse2_lod0.msh",
+								name = "achse2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2548406124115, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse_lod0.msh",
+								name = "achse",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2565886974335, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+						},
+						name = "bogie",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.5200595855713, -1.1920928955078e-07, 0.73861974477768, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/bogie_lod0.msh",
+								name = "bogie",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.1035154885758e-07, 0, 7.6293943607197e-08, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse2_lod0.msh",
+								name = "achse2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2548406124115, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse_lod0.msh",
+								name = "achse",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2565886974335, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+						},
+						name = "bogie2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.5200595855713, -1.1920928955078e-07, 0.73861974477768, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/ddm/DDm915_ozeanblau.mtl", },
+						mesh = "vehicle/waggon/Autotransport/ddm/DDm915_lod0.msh",
+						name = "DDm915",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/ddm/DDm915_ozeanblau.mtl", },
+						mesh = "vehicle/waggon/Autotransport/ddm/Gelaender_oben_hoch_lod0.msh",
+						name = "Gelander oben hoch",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/ddm/DDm915_ozeanblau.mtl", },
+						mesh = "vehicle/waggon/Autotransport/ddm/Gelaender_unten_lod0.msh",
+						name = "Gelander unten",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/ddm/Licht.mtl", },
+						mesh = "vehicle/waggon/Autotransport/ddm/DDm915_licht02_lod0.msh",
+						name = "DDm915_licht02",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 211.20753479004,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/bogie_lod1.msh",
+								name = "bogie",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.1035154885758e-07, 0, 7.6293943607197e-08, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse2_lod1.msh",
+								name = "achse2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2548406124115, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse_lod1.msh",
+								name = "achse",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2565886974335, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+						},
+						name = "bogie",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.5200595855713, -1.1920928955078e-07, 0.73861974477768, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/bogie_lod1.msh",
+								name = "bogie",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.1035154885758e-07, 0, 7.6293943607197e-08, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse2_lod1.msh",
+								name = "achse2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2548406124115, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse_lod1.msh",
+								name = "achse",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2565886974335, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+						},
+						name = "bogie2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.5200595855713, -1.1920928955078e-07, 0.73861974477768, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/ddm/DDm915_ozeanblau.mtl", },
+						mesh = "vehicle/waggon/Autotransport/ddm/DDm915_lod1.msh",
+						name = "DDm915",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/ddm/DDm915_ozeanblau.mtl", },
+						mesh = "vehicle/waggon/Autotransport/ddm/Gelander oben hoch_lod1.msh",
+						name = "Gelander oben hoch",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/ddm/DDm915_ozeanblau.mtl", },
+						mesh = "vehicle/waggon/Autotransport/ddm/Gelander unten_lod1.msh",
+						name = "Gelander unten",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/ddm/Licht.mtl", },
+						mesh = "vehicle/waggon/Autotransport/ddm/DDm915_licht02_lod0.msh",
+						name = "DDm915_licht02",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/ddm/Licht.mtl", },
+						mesh = "vehicle/waggon/Autotransport/ddm/DDm915_licht01_lod0.msh",
+						name = "DDm915_licht01",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 211.20753479004,
+			visibleTo = 633.62261962891,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse2_lod2.msh",
+								name = "achse2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2548406124115, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse_lod2.msh",
+								name = "achse",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2565886974335, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+						},
+						name = "bogie",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.5200595855713, -1.1920928955078e-07, 0.73861974477768, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse2_lod2.msh",
+								name = "achse2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2548406124115, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/ddm/DDmGestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/ddm/achse_lod2.msh",
+								name = "achse",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2565886974335, 2.3841857910156e-07, -0.30910196900368, 1, },
+							},
+						},
+						name = "bogie2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.5200595855713, -1.1920928955078e-07, 0.73861974477768, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/ddm/DDm915_ozeanblau.mtl", },
+						mesh = "vehicle/waggon/Autotransport/ddm/DDm915_lod2.msh",
+						name = "DDm915",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 633.62261962891,
+			visibleTo = 1900.8679199219,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1975,
+			yearTo = 1987,
+		},
+		cargoSlotProvider = {
+			slots = {
+				{
+					group = 0,
+					models = { "vehicle/car_load/urban/beetle_1948_ladung_1.mdl", "vehicle/car_load/urban/beetle_1948_ladung_2.mdl", "vehicle/car_load/urban/beetle_1948_ladung_3.mdl", "vehicle/car_load/urban/beetle_1948_ladung_4.mdl", "vehicle/car_load/urban/beetle_1948_ladung_5.mdl", "vehicle/car_load/urban/beetle_1948_ladung_6.mdl", "vehicle/car_load/bandion/bandion_audi80_1.mdl", "vehicle/car_load/bandion/bandion_audi80_2.mdl", "vehicle/car_load/bandion/bandion_audi80_3.mdl", "vehicle/car_load/bandion/bandion_audi80_4.mdl", "vehicle/car_load/bandion/bandion_audi80_5.mdl", "vehicle/car_load/bandion/bandion_audi80_6.mdl", "vehicle/car_load/bandion/bandion_ente_1.mdl", "vehicle/car_load/bandion/bandion_ente_2.mdl", "vehicle/car_load/bandion/bandion_ente_3.mdl", "vehicle/car_load/bandion/bandion_ente_4.mdl", "vehicle/car_load/bandion/bandion_ente_5.mdl", "vehicle/car_load/bandion/bandion_nsu_1.mdl", "vehicle/car_load/bandion/bandion_nsu_2.mdl", "vehicle/car_load/bandion/bandion_nsu_3.mdl", "vehicle/car_load/bandion/bandion_nsu_4.mdl", "vehicle/car_load/bandion/bandion_nsu_5.mdl", "vehicle/car_load/bandion/bandion_nsu_6.mdl", "vehicle/car_load/bandion/bandion_taunus_1.mdl", "vehicle/car_load/bandion/bandion_taunus_2.mdl", "vehicle/car_load/bandion/bandion_taunus_3.mdl", "vehicle/car_load/bandion/bandion_taunus_4.mdl", "vehicle/car_load/bandion/bandion_taunus_5.mdl", "vehicle/car_load/bandion/bandion_taunus_6.mdl", "vehicle/car_load/urban/tatra_600_ladung_1.mdl", "vehicle/car_load/urban/tatra_600_ladung_2.mdl", "vehicle/car_load/urban/tatra_600_ladung_3.mdl", },
+					randomId = 0,
+					transf = { 1, 0, -0.01999600417912, 0, 0, 1, 0, 0, 0.01999200694263, 0, 0.99980014562607, 0, -10.060000419617, 0, 1.1000000238419, 1, },
+				},
+				{
+					group = 0,
+					models = { "vehicle/car_load/urban/beetle_1948_ladung_1.mdl", "vehicle/car_load/urban/beetle_1948_ladung_2.mdl", "vehicle/car_load/urban/beetle_1948_ladung_3.mdl", "vehicle/car_load/urban/beetle_1948_ladung_4.mdl", "vehicle/car_load/urban/beetle_1948_ladung_5.mdl", "vehicle/car_load/urban/beetle_1948_ladung_6.mdl", "vehicle/car_load/bandion/bandion_audi80_1.mdl", "vehicle/car_load/bandion/bandion_audi80_2.mdl", "vehicle/car_load/bandion/bandion_audi80_3.mdl", "vehicle/car_load/bandion/bandion_audi80_4.mdl", "vehicle/car_load/bandion/bandion_audi80_5.mdl", "vehicle/car_load/bandion/bandion_audi80_6.mdl", "vehicle/car_load/bandion/bandion_ente_1.mdl", "vehicle/car_load/bandion/bandion_ente_2.mdl", "vehicle/car_load/bandion/bandion_ente_3.mdl", "vehicle/car_load/bandion/bandion_ente_4.mdl", "vehicle/car_load/bandion/bandion_ente_5.mdl", "vehicle/car_load/bandion/bandion_nsu_1.mdl", "vehicle/car_load/bandion/bandion_nsu_2.mdl", "vehicle/car_load/bandion/bandion_nsu_3.mdl", "vehicle/car_load/bandion/bandion_nsu_4.mdl", "vehicle/car_load/bandion/bandion_nsu_5.mdl", "vehicle/car_load/bandion/bandion_nsu_6.mdl", "vehicle/car_load/bandion/bandion_taunus_1.mdl", "vehicle/car_load/bandion/bandion_taunus_2.mdl", "vehicle/car_load/bandion/bandion_taunus_3.mdl", "vehicle/car_load/bandion/bandion_taunus_4.mdl", "vehicle/car_load/bandion/bandion_taunus_5.mdl", "vehicle/car_load/bandion/bandion_taunus_6.mdl", "vehicle/car_load/urban/tatra_600_ladung_1.mdl", "vehicle/car_load/urban/tatra_600_ladung_2.mdl", "vehicle/car_load/urban/tatra_600_ladung_3.mdl", },
+					randomId = 1,
+					transf = { 0.99916863441467, 0, -0.050615705549717, 0, 0, 1, 0, 0, 0.050592944025993, 0, 0.99871933460236, 0, -5.0599999427795, 0, 0.95999997854233, 1, },
+				},
+				{
+					group = 0,
+					models = { "vehicle/car_load/urban/beetle_1948_ladung_1.mdl", "vehicle/car_load/urban/beetle_1948_ladung_2.mdl", "vehicle/car_load/urban/beetle_1948_ladung_3.mdl", "vehicle/car_load/urban/beetle_1948_ladung_4.mdl", "vehicle/car_load/urban/beetle_1948_ladung_5.mdl", "vehicle/car_load/urban/beetle_1948_ladung_6.mdl", "vehicle/car_load/bandion/bandion_audi80_1.mdl", "vehicle/car_load/bandion/bandion_audi80_2.mdl", "vehicle/car_load/bandion/bandion_audi80_3.mdl", "vehicle/car_load/bandion/bandion_audi80_4.mdl", "vehicle/car_load/bandion/bandion_audi80_5.mdl", "vehicle/car_load/bandion/bandion_audi80_6.mdl", "vehicle/car_load/bandion/bandion_ente_1.mdl", "vehicle/car_load/bandion/bandion_ente_2.mdl", "vehicle/car_load/bandion/bandion_ente_3.mdl", "vehicle/car_load/bandion/bandion_ente_4.mdl", "vehicle/car_load/bandion/bandion_ente_5.mdl", "vehicle/car_load/bandion/bandion_nsu_1.mdl", "vehicle/car_load/bandion/bandion_nsu_2.mdl", "vehicle/car_load/bandion/bandion_nsu_3.mdl", "vehicle/car_load/bandion/bandion_nsu_4.mdl", "vehicle/car_load/bandion/bandion_nsu_5.mdl", "vehicle/car_load/bandion/bandion_nsu_6.mdl", "vehicle/car_load/bandion/bandion_taunus_1.mdl", "vehicle/car_load/bandion/bandion_taunus_2.mdl", "vehicle/car_load/bandion/bandion_taunus_3.mdl", "vehicle/car_load/bandion/bandion_taunus_4.mdl", "vehicle/car_load/bandion/bandion_taunus_5.mdl", "vehicle/car_load/bandion/bandion_taunus_6.mdl", "vehicle/car_load/urban/tatra_600_ladung_1.mdl", "vehicle/car_load/urban/tatra_600_ladung_2.mdl", "vehicle/car_load/urban/tatra_600_ladung_3.mdl", },
+					randomId = 2,
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0.029999999329448, 0, 0.89999997615814, 1, },
+				},
+				{
+					group = 0,
+					models = { "vehicle/car_load/urban/beetle_1948_ladung_1.mdl", "vehicle/car_load/urban/beetle_1948_ladung_2.mdl", "vehicle/car_load/urban/beetle_1948_ladung_3.mdl", "vehicle/car_load/urban/beetle_1948_ladung_4.mdl", "vehicle/car_load/urban/beetle_1948_ladung_5.mdl", "vehicle/car_load/urban/beetle_1948_ladung_6.mdl", "vehicle/car_load/bandion/bandion_audi80_1.mdl", "vehicle/car_load/bandion/bandion_audi80_2.mdl", "vehicle/car_load/bandion/bandion_audi80_3.mdl", "vehicle/car_load/bandion/bandion_audi80_4.mdl", "vehicle/car_load/bandion/bandion_audi80_5.mdl", "vehicle/car_load/bandion/bandion_audi80_6.mdl", "vehicle/car_load/bandion/bandion_ente_1.mdl", "vehicle/car_load/bandion/bandion_ente_2.mdl", "vehicle/car_load/bandion/bandion_ente_3.mdl", "vehicle/car_load/bandion/bandion_ente_4.mdl", "vehicle/car_load/bandion/bandion_ente_5.mdl", "vehicle/car_load/bandion/bandion_nsu_1.mdl", "vehicle/car_load/bandion/bandion_nsu_2.mdl", "vehicle/car_load/bandion/bandion_nsu_3.mdl", "vehicle/car_load/bandion/bandion_nsu_4.mdl", "vehicle/car_load/bandion/bandion_nsu_5.mdl", "vehicle/car_load/bandion/bandion_nsu_6.mdl", "vehicle/car_load/bandion/bandion_taunus_1.mdl", "vehicle/car_load/bandion/bandion_taunus_2.mdl", "vehicle/car_load/bandion/bandion_taunus_3.mdl", "vehicle/car_load/bandion/bandion_taunus_4.mdl", "vehicle/car_load/bandion/bandion_taunus_5.mdl", "vehicle/car_load/bandion/bandion_taunus_6.mdl", "vehicle/car_load/urban/tatra_600_ladung_1.mdl", "vehicle/car_load/urban/tatra_600_ladung_2.mdl", "vehicle/car_load/urban/tatra_600_ladung_3.mdl", },
+					randomId = 3,
+					transf = { 0.99879217147827, 0, 0.068090818822384, 0, -0, 1, 0, 0, -0.068015292286873, -0, 0.99768429994583, 0, 5.2600002288818, 0, 0.98000001907349, 1, },
+				},
+				{
+					group = 0,
+					models = { "vehicle/car_load/urban/beetle_1948_ladung_1.mdl", "vehicle/car_load/urban/beetle_1948_ladung_2.mdl", "vehicle/car_load/urban/beetle_1948_ladung_3.mdl", "vehicle/car_load/urban/beetle_1948_ladung_4.mdl", "vehicle/car_load/urban/beetle_1948_ladung_5.mdl", "vehicle/car_load/urban/beetle_1948_ladung_6.mdl", "vehicle/car_load/bandion/bandion_audi80_1.mdl", "vehicle/car_load/bandion/bandion_audi80_2.mdl", "vehicle/car_load/bandion/bandion_audi80_3.mdl", "vehicle/car_load/bandion/bandion_audi80_4.mdl", "vehicle/car_load/bandion/bandion_audi80_5.mdl", "vehicle/car_load/bandion/bandion_audi80_6.mdl", "vehicle/car_load/bandion/bandion_ente_1.mdl", "vehicle/car_load/bandion/bandion_ente_2.mdl", "vehicle/car_load/bandion/bandion_ente_3.mdl", "vehicle/car_load/bandion/bandion_ente_4.mdl", "vehicle/car_load/bandion/bandion_ente_5.mdl", "vehicle/car_load/bandion/bandion_nsu_1.mdl", "vehicle/car_load/bandion/bandion_nsu_2.mdl", "vehicle/car_load/bandion/bandion_nsu_3.mdl", "vehicle/car_load/bandion/bandion_nsu_4.mdl", "vehicle/car_load/bandion/bandion_nsu_5.mdl", "vehicle/car_load/bandion/bandion_nsu_6.mdl", "vehicle/car_load/bandion/bandion_taunus_1.mdl", "vehicle/car_load/bandion/bandion_taunus_2.mdl", "vehicle/car_load/bandion/bandion_taunus_3.mdl", "vehicle/car_load/bandion/bandion_taunus_4.mdl", "vehicle/car_load/bandion/bandion_taunus_5.mdl", "vehicle/car_load/bandion/bandion_taunus_6.mdl", "vehicle/car_load/urban/tatra_600_ladung_1.mdl", "vehicle/car_load/urban/tatra_600_ladung_2.mdl", "vehicle/car_load/urban/tatra_600_ladung_3.mdl", },
+					randomId = 4,
+					transf = { 0.99999994039536, 0, 0.00999949965626, 0, -0, 1, 0, 0, -0.00999900046736, -0, 0.99994999170303, 0, 10.460000038147, 0, 1.1499999761581, 1, },
+				},
+				{
+					group = 0,
+					models = { "vehicle/car_load/urban/beetle_1948_ladung_1.mdl", "vehicle/car_load/urban/beetle_1948_ladung_2.mdl", "vehicle/car_load/urban/beetle_1948_ladung_3.mdl", "vehicle/car_load/urban/beetle_1948_ladung_4.mdl", "vehicle/car_load/urban/beetle_1948_ladung_5.mdl", "vehicle/car_load/urban/beetle_1948_ladung_6.mdl", "vehicle/car_load/bandion/bandion_audi80_1.mdl", "vehicle/car_load/bandion/bandion_audi80_2.mdl", "vehicle/car_load/bandion/bandion_audi80_3.mdl", "vehicle/car_load/bandion/bandion_audi80_4.mdl", "vehicle/car_load/bandion/bandion_audi80_5.mdl", "vehicle/car_load/bandion/bandion_audi80_6.mdl", "vehicle/car_load/bandion/bandion_ente_1.mdl", "vehicle/car_load/bandion/bandion_ente_2.mdl", "vehicle/car_load/bandion/bandion_ente_3.mdl", "vehicle/car_load/bandion/bandion_ente_4.mdl", "vehicle/car_load/bandion/bandion_ente_5.mdl", "vehicle/car_load/bandion/bandion_nsu_1.mdl", "vehicle/car_load/bandion/bandion_nsu_2.mdl", "vehicle/car_load/bandion/bandion_nsu_3.mdl", "vehicle/car_load/bandion/bandion_nsu_4.mdl", "vehicle/car_load/bandion/bandion_nsu_5.mdl", "vehicle/car_load/bandion/bandion_nsu_6.mdl", "vehicle/car_load/bandion/bandion_taunus_1.mdl", "vehicle/car_load/bandion/bandion_taunus_2.mdl", "vehicle/car_load/bandion/bandion_taunus_3.mdl", "vehicle/car_load/bandion/bandion_taunus_4.mdl", "vehicle/car_load/bandion/bandion_taunus_5.mdl", "vehicle/car_load/bandion/bandion_taunus_6.mdl", "vehicle/car_load/urban/tatra_600_ladung_1.mdl", "vehicle/car_load/urban/tatra_600_ladung_2.mdl", "vehicle/car_load/urban/tatra_600_ladung_3.mdl", },
+					randomId = 5,
+					transf = { 1.0000064373016, 0, -0.059892669320107, 0, 0, 1, 0, 0, 0.059785153716803, 0, 0.99821126461029, 0, -10.479999542236, 0, 2.789999961853, 1, },
+				},
+				{
+					group = 0,
+					models = { "vehicle/car_load/urban/vw_type_2_t1_ladung_1.mdl", "vehicle/car_load/urban/vw_type_2_t1_ladung_2.mdl", "vehicle/car_load/urban/vw_type_2_t1_ladung_3.mdl", "vehicle/car_load/urban/vw_type_2_t1_ladung_4.mdl", "vehicle/car_load/urban/vw_type_2_t1_ladung_5.mdl", "vehicle/car_load/urban/vw_type_2_t1_ladung_6.mdl", "vehicle/car_load/urban/beetle_1948_ladung_1.mdl", "vehicle/car_load/urban/beetle_1948_ladung_2.mdl", "vehicle/car_load/urban/beetle_1948_ladung_3.mdl", "vehicle/car_load/urban/beetle_1948_ladung_4.mdl", "vehicle/car_load/urban/beetle_1948_ladung_5.mdl", "vehicle/car_load/urban/beetle_1948_ladung_6.mdl", "vehicle/car_load/bandion/bandion_audi80_1.mdl", "vehicle/car_load/bandion/bandion_audi80_2.mdl", "vehicle/car_load/bandion/bandion_audi80_3.mdl", "vehicle/car_load/bandion/bandion_audi80_4.mdl", "vehicle/car_load/bandion/bandion_audi80_5.mdl", "vehicle/car_load/bandion/bandion_audi80_6.mdl", "vehicle/car_load/bandion/bandion_ente_1.mdl", "vehicle/car_load/bandion/bandion_ente_2.mdl", "vehicle/car_load/bandion/bandion_ente_3.mdl", "vehicle/car_load/bandion/bandion_ente_4.mdl", "vehicle/car_load/bandion/bandion_ente_5.mdl", "vehicle/car_load/bandion/bandion_nsu_1.mdl", "vehicle/car_load/bandion/bandion_nsu_2.mdl", "vehicle/car_load/bandion/bandion_nsu_3.mdl", "vehicle/car_load/bandion/bandion_nsu_4.mdl", "vehicle/car_load/bandion/bandion_nsu_5.mdl", "vehicle/car_load/bandion/bandion_nsu_6.mdl", "vehicle/car_load/bandion/bandion_taunus_1.mdl", "vehicle/car_load/bandion/bandion_taunus_2.mdl", "vehicle/car_load/bandion/bandion_taunus_3.mdl", "vehicle/car_load/bandion/bandion_taunus_4.mdl", "vehicle/car_load/bandion/bandion_taunus_5.mdl", "vehicle/car_load/bandion/bandion_taunus_6.mdl", "vehicle/car_load/urban/tatra_600_ladung_1.mdl", "vehicle/car_load/urban/tatra_600_ladung_2.mdl", "vehicle/car_load/urban/tatra_600_ladung_3.mdl", },
+					randomId = 6,
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -5.4200000762939, 0, 2.5499999523163, 1, },
+				},
+				{
+					group = 0,
+					models = { "vehicle/car_load/urban/vw_type_2_t1_ladung_1.mdl", "vehicle/car_load/urban/vw_type_2_t1_ladung_2.mdl", "vehicle/car_load/urban/vw_type_2_t1_ladung_3.mdl", "vehicle/car_load/urban/vw_type_2_t1_ladung_4.mdl", "vehicle/car_load/urban/vw_type_2_t1_ladung_5.mdl", "vehicle/car_load/urban/vw_type_2_t1_ladung_6.mdl", "vehicle/car_load/urban/beetle_1948_ladung_1.mdl", "vehicle/car_load/urban/beetle_1948_ladung_2.mdl", "vehicle/car_load/urban/beetle_1948_ladung_3.mdl", "vehicle/car_load/urban/beetle_1948_ladung_4.mdl", "vehicle/car_load/urban/beetle_1948_ladung_5.mdl", "vehicle/car_load/urban/beetle_1948_ladung_6.mdl", "vehicle/car_load/bandion/bandion_audi80_1.mdl", "vehicle/car_load/bandion/bandion_audi80_2.mdl", "vehicle/car_load/bandion/bandion_audi80_3.mdl", "vehicle/car_load/bandion/bandion_audi80_4.mdl", "vehicle/car_load/bandion/bandion_audi80_5.mdl", "vehicle/car_load/bandion/bandion_audi80_6.mdl", "vehicle/car_load/bandion/bandion_ente_1.mdl", "vehicle/car_load/bandion/bandion_ente_2.mdl", "vehicle/car_load/bandion/bandion_ente_3.mdl", "vehicle/car_load/bandion/bandion_ente_4.mdl", "vehicle/car_load/bandion/bandion_ente_5.mdl", "vehicle/car_load/bandion/bandion_nsu_1.mdl", "vehicle/car_load/bandion/bandion_nsu_2.mdl", "vehicle/car_load/bandion/bandion_nsu_3.mdl", "vehicle/car_load/bandion/bandion_nsu_4.mdl", "vehicle/car_load/bandion/bandion_nsu_5.mdl", "vehicle/car_load/bandion/bandion_nsu_6.mdl", "vehicle/car_load/bandion/bandion_taunus_1.mdl", "vehicle/car_load/bandion/bandion_taunus_2.mdl", "vehicle/car_load/bandion/bandion_taunus_3.mdl", "vehicle/car_load/bandion/bandion_taunus_4.mdl", "vehicle/car_load/bandion/bandion_taunus_5.mdl", "vehicle/car_load/bandion/bandion_taunus_6.mdl", "vehicle/car_load/urban/tatra_600_ladung_1.mdl", "vehicle/car_load/urban/tatra_600_ladung_2.mdl", "vehicle/car_load/urban/tatra_600_ladung_3.mdl", "vehicle/car_load/urban/gaz_22_wolga_ladung_1.mdl", "vehicle/car_load/urban/gaz_22_wolga_ladung_2.mdl", "vehicle/car_load/urban/gaz_22_wolga_ladung_3.mdl", "vehicle/car_load/urban/gaz_22_wolga_ladung_4.mdl", "vehicle/car_load/urban/gaz_22_wolga_ladung_5.mdl", "vehicle/car_load/urban/gaz_22_wolga_ladung_6.mdl", },
+					randomId = 7,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.10000000149012, 0, 2.5499999523163, 1, },
+				},
+				{
+					group = 0,
+					models = { "vehicle/car_load/urban/vw_type_2_t1_ladung_1.mdl", "vehicle/car_load/urban/vw_type_2_t1_ladung_2.mdl", "vehicle/car_load/urban/vw_type_2_t1_ladung_3.mdl", "vehicle/car_load/urban/vw_type_2_t1_ladung_4.mdl", "vehicle/car_load/urban/vw_type_2_t1_ladung_5.mdl", "vehicle/car_load/urban/vw_type_2_t1_ladung_6.mdl", "vehicle/car_load/urban/beetle_1948_ladung_1.mdl", "vehicle/car_load/urban/beetle_1948_ladung_2.mdl", "vehicle/car_load/urban/beetle_1948_ladung_3.mdl", "vehicle/car_load/urban/beetle_1948_ladung_4.mdl", "vehicle/car_load/urban/beetle_1948_ladung_5.mdl", "vehicle/car_load/urban/beetle_1948_ladung_6.mdl", "vehicle/car_load/bandion/bandion_audi80_1.mdl", "vehicle/car_load/bandion/bandion_audi80_2.mdl", "vehicle/car_load/bandion/bandion_audi80_3.mdl", "vehicle/car_load/bandion/bandion_audi80_4.mdl", "vehicle/car_load/bandion/bandion_audi80_5.mdl", "vehicle/car_load/bandion/bandion_audi80_6.mdl", "vehicle/car_load/bandion/bandion_ente_1.mdl", "vehicle/car_load/bandion/bandion_ente_2.mdl", "vehicle/car_load/bandion/bandion_ente_3.mdl", "vehicle/car_load/bandion/bandion_ente_4.mdl", "vehicle/car_load/bandion/bandion_ente_5.mdl", "vehicle/car_load/bandion/bandion_nsu_1.mdl", "vehicle/car_load/bandion/bandion_nsu_2.mdl", "vehicle/car_load/bandion/bandion_nsu_3.mdl", "vehicle/car_load/bandion/bandion_nsu_4.mdl", "vehicle/car_load/bandion/bandion_nsu_5.mdl", "vehicle/car_load/bandion/bandion_nsu_6.mdl", "vehicle/car_load/bandion/bandion_taunus_1.mdl", "vehicle/car_load/bandion/bandion_taunus_2.mdl", "vehicle/car_load/bandion/bandion_taunus_3.mdl", "vehicle/car_load/bandion/bandion_taunus_4.mdl", "vehicle/car_load/bandion/bandion_taunus_5.mdl", "vehicle/car_load/bandion/bandion_taunus_6.mdl", "vehicle/car_load/urban/tatra_600_ladung_1.mdl", "vehicle/car_load/urban/tatra_600_ladung_2.mdl", "vehicle/car_load/urban/tatra_600_ladung_3.mdl", },
+					randomId = 8,
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 5.1100001335144, 0, 2.5499999523163, 1, },
+				},
+				{
+					group = 0,
+					models = { "vehicle/car_load/urban/beetle_1948_ladung_1.mdl", "vehicle/car_load/urban/beetle_1948_ladung_2.mdl", "vehicle/car_load/urban/beetle_1948_ladung_3.mdl", "vehicle/car_load/urban/beetle_1948_ladung_4.mdl", "vehicle/car_load/urban/beetle_1948_ladung_5.mdl", "vehicle/car_load/urban/beetle_1948_ladung_6.mdl", "vehicle/car_load/bandion/bandion_audi80_1.mdl", "vehicle/car_load/bandion/bandion_audi80_2.mdl", "vehicle/car_load/bandion/bandion_audi80_3.mdl", "vehicle/car_load/bandion/bandion_audi80_4.mdl", "vehicle/car_load/bandion/bandion_audi80_5.mdl", "vehicle/car_load/bandion/bandion_audi80_6.mdl", "vehicle/car_load/bandion/bandion_ente_1.mdl", "vehicle/car_load/bandion/bandion_ente_2.mdl", "vehicle/car_load/bandion/bandion_ente_3.mdl", "vehicle/car_load/bandion/bandion_ente_4.mdl", "vehicle/car_load/bandion/bandion_ente_5.mdl", "vehicle/car_load/bandion/bandion_nsu_1.mdl", "vehicle/car_load/bandion/bandion_nsu_2.mdl", "vehicle/car_load/bandion/bandion_nsu_3.mdl", "vehicle/car_load/bandion/bandion_nsu_4.mdl", "vehicle/car_load/bandion/bandion_nsu_5.mdl", "vehicle/car_load/bandion/bandion_nsu_6.mdl", "vehicle/car_load/bandion/bandion_taunus_1.mdl", "vehicle/car_load/bandion/bandion_taunus_2.mdl", "vehicle/car_load/bandion/bandion_taunus_3.mdl", "vehicle/car_load/bandion/bandion_taunus_4.mdl", "vehicle/car_load/bandion/bandion_taunus_5.mdl", "vehicle/car_load/bandion/bandion_taunus_6.mdl", "vehicle/car_load/urban/tatra_600_ladung_1.mdl", "vehicle/car_load/urban/tatra_600_ladung_2.mdl", "vehicle/car_load/urban/tatra_600_ladung_3.mdl", },
+					randomId = 9,
+					transf = { 0.99935811758041, 0, 0.069881923496723, 0, -0, 1, 0, 0, -0.069756470620632, -0, 0.99756407737732, 0, 10.609999656677, 0, 2.8099999427795, 1, },
+				},
+			},
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("DDm915_desc"),
+			name = _("DDm915_ozeanblau_name"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 29220,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/waggon/Autotransport/ddm/achse_lod0.msh", "vehicle/waggon/Autotransport/ddm/achse2_lod0.msh", },
+					backBackwardParts = { },
+					backForwardParts = { 12, },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/waggon/Autotransport/ddm/achse_lod1.msh", "vehicle/waggon/Autotransport/ddm/achse2_lod1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/waggon/Autotransport/ddm/achse_lod2.msh", "vehicle/waggon/Autotransport/ddm/achse2_lod2.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = { },
+			soundSet = {
+				horn = "",
+				name = "mw_leicht",
+			},
+			topSpeed = 44.444442749023,
+			weight = 27.799999237061,
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 80,
+									customCargoModels = {
+										configurations = {
+											{
+												slotLevels = {
+													{ },
+													{ 0, },
+													{ 0, 1, },
+													{ 0, 1, 2, },
+													{ 0, 1, 2, 3, },
+													{ 0, 1, 2, 3, 4, },
+													{ 0, 1, 2, 3, 4, 5, },
+													{ 0, 1, 2, 3, 4, 5, 6, },
+													{ 0, 1, 2, 3, 4, 5, 6, 7, },
+													{ 0, 1, 2, 3, 4, 5, 6, 7, 8, },
+													{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, },
+												},
+											},
+										},
+									},
+									seats = { },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "vehicle/waggon/Autotransport/menu_autotransport_person.mdl",
+			loadSpeed = 2,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+	},
+	version = 1,
+}
+end

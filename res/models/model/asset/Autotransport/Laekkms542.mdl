@@ -1,0 +1,329 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 12.890112876892, 1.535066485405, 3.9255149364471, },
+		bbMin = { -12.849309921265, -1.535066485405, 0.0029648542404175, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 7.0197114944458, 1.535066485405, 1.961275100708, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						children = {
+
+							{
+								materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/jay_mesh_autotransporter_w1_lod0.msh",
+								name = "jay_mesh_autotransporter_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9893460273743, 0.0036381259560585, 0.4888211786747, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/jay_mesh_autotransporter_laufwerk_bandion_lod0.msh",
+								name = "jay_mesh_autotransporter_laufwerk_bandion",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/Offs55/Laekkms542.mtl", },
+								mesh = "vehicle/waggon/Autotransport/Offs55/Offs55Umgebaut_hinten_lod0.msh",
+								name = "Offs55_hinten",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/Offs55/Laekkms542.mtl", },
+								mesh = "vehicle/waggon/Autotransport/Offs55/Offs55_kupplungBandion_lod0.msh",
+								name = "Offs55_kupplungBandion",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "Wagen 1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.25, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/Offs55/Laekkms542.mtl", },
+								mesh = "vehicle/waggon/Autotransport/Offs55/Offs55_m_lod0.msh",
+								name = "Offs55_mitte",
+								transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -9.2299995422363, 0, 0.050000000745058, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/jay_mesh_autotransporter_w1_lod0.msh",
+								name = "jay_mesh_autotransporter_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9893460273743, 0.0036381259560585, 0.4888211786747, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/jay_mesh_autotransporter_laufwerk_bandion_lod0.msh",
+								name = "jay_mesh_autotransporter_laufwerk_bandion",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "Mitte",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 2.9800000190735, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/jay_mesh_autotransporter_w1_lod0.msh",
+								name = "jay_mesh_autotransporter_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9893460273743, 0.0036381259560585, 0.4888211786747, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/jay_mesh_autotransporter_laufwerk_bandion_lod0.msh",
+								name = "jay_mesh_autotransporter_laufwerk_bandion",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/Offs55/Laekkms542.mtl", },
+								mesh = "vehicle/waggon/Autotransport/Offs55/Offs55Umgebaut_hinten_lod0.msh",
+								name = "Offs55_hinten",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/Offs55/Laekkms542.mtl", },
+								mesh = "vehicle/waggon/Autotransport/Offs55/Offs55_kupplungBandion_lod0.msh",
+								name = "Offs55_kupplungBandion",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "Wagen 2",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 6.25, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 50.831588745117,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+
+							{
+								materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/jay_mesh_autotransporter_w1_lod1.msh",
+								name = "jay_mesh_autotransporter_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9893460273743, 0.0036381259560585, 0.4888211786747, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/jay_mesh_autotransporter_laufwerk_bandion_lod1.msh",
+								name = "jay_mesh_autotransporter_laufwerk_bandion",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/Offs55/Laekkms542.mtl", },
+								mesh = "vehicle/waggon/Autotransport/Offs55/Offs55Umgebaut_hinten_lod1.msh",
+								name = "Offs55_hinten",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "Wagen 1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.25, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/Offs55/Laekkms542.mtl", },
+								mesh = "vehicle/waggon/Autotransport/Offs55/Offs55_m_lod1.msh",
+								name = "Offs55_mitte",
+								transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -9.2299995422363, 0, 0.050000000745058, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/jay_mesh_autotransporter_w1_lod1.msh",
+								name = "jay_mesh_autotransporter_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9893460273743, 0.0036381259560585, 0.4888211786747, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/jay_mesh_autotransporter_laufwerk_bandion_lod1.msh",
+								name = "jay_mesh_autotransporter_laufwerk_bandion",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "Mitte",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 2.9800000190735, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/jay_mesh_autotransporter_w1_lod1.msh",
+								name = "jay_mesh_autotransporter_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9893460273743, 0.0036381259560585, 0.4888211786747, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/jay_mesh_autotransporter_laufwerk_bandion_lod1.msh",
+								name = "jay_mesh_autotransporter_laufwerk_bandion",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/Offs55/Laekkms542.mtl", },
+								mesh = "vehicle/waggon/Autotransport/Offs55/Offs55Umgebaut_hinten_lod1.msh",
+								name = "Offs55_hinten",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "Wagen 2",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 6.25, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 50.831588745117,
+			visibleTo = 100.83158874512,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/jay_mesh_autotransporter_w1_lod2.msh",
+								name = "jay_mesh_autotransporter_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9893460273743, 0.0036381259560585, 0.4888211786747, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/Offs55/Laekkms542.mtl", },
+								mesh = "vehicle/waggon/Autotransport/Offs55/Offs55Umgebaut_hinten_lod2.msh",
+								name = "Offs55_hinten",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "Wagen 1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.25, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/Offs55/Laekkms542.mtl", },
+								mesh = "vehicle/waggon/Autotransport/Offs55/Offs55_m_lod2.msh",
+								name = "Offs55_mitte",
+								transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -9.2299995422363, 0, 0.050000000745058, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/jay_mesh_autotransporter_w1_lod2.msh",
+								name = "jay_mesh_autotransporter_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9893460273743, 0.0036381259560585, 0.4888211786747, 1, },
+							},
+						},
+						name = "Mitte",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 2.9800000190735, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/jay_mesh_autotransporter_w1_lod2.msh",
+								name = "jay_mesh_autotransporter_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9893460273743, 0.0036381259560585, 0.4888211786747, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/Offs55/Laekkms542.mtl", },
+								mesh = "vehicle/waggon/Autotransport/Offs55/Offs55Umgebaut_hinten_lod2.msh",
+								name = "Offs55_hinten",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "Wagen 2",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 6.25, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100.83158874512,
+			visibleTo = 250.83158874512,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/jay_mesh_autotransporter_w1_lod3.msh",
+								name = "jay_mesh_autotransporter_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9893460273743, 0.0036381259560585, 0.4888211786747, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/Offs55/Laekkms542.mtl", },
+								mesh = "vehicle/waggon/Autotransport/Offs55/Offs55_h_lod3.msh",
+								name = "Offs55_hinten",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "Wagen 1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.25, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/Offs55/Laekkms542.mtl", },
+								mesh = "vehicle/waggon/Autotransport/Offs55/Offs55_m_lod3.msh",
+								name = "Offs55_mitte",
+								transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -9.2299995422363, 0, 0.050000000745058, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/jay_mesh_autotransporter_w1_lod3.msh",
+								name = "jay_mesh_autotransporter_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9893460273743, 0.0036381259560585, 0.4888211786747, 1, },
+							},
+						},
+						name = "Mitte",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 2.9800000190735, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+								mesh = "vehicle/waggon/Autotransport/jay_mesh_autotransporter_w1_lod3.msh",
+								name = "jay_mesh_autotransporter_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9893460273743, 0.0036381259560585, 0.4888211786747, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/Autotransport/Offs55/Laekkms542.mtl", },
+								mesh = "vehicle/waggon/Autotransport/Offs55/Offs55_h_lod3.msh",
+								name = "Offs55_hinten",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "Wagen 2",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 6.25, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 250.83158874512,
+			visibleTo = 500.83157348633,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

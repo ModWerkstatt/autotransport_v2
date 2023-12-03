@@ -1,0 +1,329 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 5.4019317626953, 1.5093718767166, 1.4782826900482, },
+		bbMin = { -5.4019317626953, -1.5093733072281, 0.2309101074934, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 5.4019317626953, 1.5093725919724, 0.62368631362915, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+
+					{
+						materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+						mesh = "vehicle/waggon/Autotransport/jay_mesh_autotransporter_laufwerk_bandion_lod0.msh",
+						name = "jay_mesh_xfm36_laufwerkBandion",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -0.62000000476837, 0, -0.029999999329448, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+						mesh = "vehicle/waggon/Autotransport/jay_mesh_autotransporter_laufwerk_bandion_lod0.msh",
+						name = "jay_mesh_xfm36_laufwerkBandion",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 6.5999999046326, 0, -0.029999999329448, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+						mesh = "vehicle/waggon/Autotransport/jay_mesh_autotransporter_w1_lod0.msh",
+						name = "jay_mesh_autotransporter_w1",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -3.5999999046326, 0.0036381259560585, 0.46000000834465, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+						mesh = "vehicle/waggon/Autotransport/jay_mesh_autotransporter_w1_lod0.msh",
+						name = "jay_mesh_autotransporter_w1",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 3.6099998950958, 0.0036381259560585, 0.46000000834465, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/xf08/Xf08.mtl", },
+						mesh = "vehicle/waggon/Autotransport/xf08/jay_mesh_xf08_untenDrunter_lod0.msh",
+						name = "jay_mesh_xf08_untenDrunter",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+						mesh = "vehicle/waggon/Autotransport/xf08/jay_mesh_xf08_kupplungMaikC_lod0.msh",
+						name = "jay_mesh_xf08_kupplungMaikC",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/xf08/Xf08.mtl", },
+						mesh = "vehicle/waggon/Autotransport/xf08/jay_mesh_xf08_tritt_lod0.msh",
+						name = "jay_mesh_xf08_tritt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/xf08/Xf08.mtl", },
+						mesh = "vehicle/waggon/Autotransport/xf08/jay_mesh_xf08_puffer_lod0.msh",
+						name = "jay_mesh_xf08_puffer",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/xf08/Xf08.mtl", },
+						mesh = "vehicle/waggon/Autotransport/xf08/jay_mesh_xf08_platteOben_lod0.msh",
+						name = "jay_mesh_xf08_platteOben",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/xf08/Xf08.mtl", },
+						mesh = "vehicle/waggon/Autotransport/xf08/jay_mesh_xf08_obenDrauf_lod0.msh",
+						name = "jay_mesh_xf08_obenDrauf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/xf08/Xf08.mtl", },
+						mesh = "vehicle/waggon/Autotransport/xf08/jay_mesh_xf08_griffeKupplung_lod0.msh",
+						name = "jay_mesh_xf08_griffeKupplung",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/xf08/Xf08.mtl", },
+						mesh = "vehicle/waggon/Autotransport/xf08/jay_mesh_xf08_tafel_lod0.msh",
+						name = "jay_mesh_xf08_tafel",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/xf08/Xf08.mtl", },
+						mesh = "vehicle/waggon/Autotransport/xf08/jay_mesh_xf08_sprengwerk_lod0.msh",
+						name = "jay_mesh_xf08_sprengwerk",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/xf08/Xf08.mtl", },
+						mesh = "vehicle/waggon/Autotransport/xf08/jay_mesh_xf08_halterPlatte_lod0.msh",
+						name = "jay_mesh_xf08_halterPlatte",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 50,
+		},
+		{
+			node = {
+				children = {
+
+					{
+						materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+						mesh = "vehicle/waggon/Autotransport/jay_mesh_autotransporter_laufwerk_bandion_lod1.msh",
+						name = "jay_mesh_xfm36_laufwerkBandion",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -0.62000000476837, 0, -0.029999999329448, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+						mesh = "vehicle/waggon/Autotransport/jay_mesh_autotransporter_laufwerk_bandion_lod1.msh",
+						name = "jay_mesh_xfm36_laufwerkBandion",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 6.5999999046326, 0, -0.029999999329448, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+						mesh = "vehicle/waggon/Autotransport/jay_mesh_autotransporter_w1_lod1.msh",
+						name = "jay_mesh_autotransporter_w1",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -3.5999999046326, 0.0036381259560585, 0.46000000834465, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+						mesh = "vehicle/waggon/Autotransport/jay_mesh_autotransporter_w1_lod1.msh",
+						name = "jay_mesh_autotransporter_w1",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 3.6099998950958, 0.0036381259560585, 0.46000000834465, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/xf08/Xf08.mtl", },
+						mesh = "vehicle/waggon/Autotransport/xf08/jay_mesh_xf08_untenDrunter_lod0.msh",
+						name = "jay_mesh_xf08_untenDrunter",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+						mesh = "vehicle/waggon/Autotransport/xf08/jay_mesh_xf08_kupplungMaikC_lod0.msh",
+						name = "jay_mesh_xf08_kupplungMaikC",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/xf08/Xf08.mtl", },
+						mesh = "vehicle/waggon/Autotransport/xf08/jay_mesh_xf08_tritt_lod0.msh",
+						name = "jay_mesh_xf08_tritt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/xf08/Xf08.mtl", },
+						mesh = "vehicle/waggon/Autotransport/xf08/jay_mesh_xf08_puffer_lod0.msh",
+						name = "jay_mesh_xf08_puffer",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/xf08/Xf08.mtl", },
+						mesh = "vehicle/waggon/Autotransport/xf08/jay_mesh_xf08_platteOben_lod0.msh",
+						name = "jay_mesh_xf08_platteOben",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/xf08/Xf08.mtl", },
+						mesh = "vehicle/waggon/Autotransport/xf08/jay_mesh_xf08_obenDrauf_lod0.msh",
+						name = "jay_mesh_xf08_obenDrauf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/xf08/Xf08.mtl", },
+						mesh = "vehicle/waggon/Autotransport/xf08/jay_mesh_xf08_griffeKupplung_lod0.msh",
+						name = "jay_mesh_xf08_griffeKupplung",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/xf08/Xf08.mtl", },
+						mesh = "vehicle/waggon/Autotransport/xf08/jay_mesh_xf08_tafel_lod0.msh",
+						name = "jay_mesh_xf08_tafel",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/xf08/Xf08.mtl", },
+						mesh = "vehicle/waggon/Autotransport/xf08/jay_mesh_xf08_sprengwerk_lod0.msh",
+						name = "jay_mesh_xf08_sprengwerk",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/xf08/Xf08.mtl", },
+						mesh = "vehicle/waggon/Autotransport/xf08/jay_mesh_xf08_halterPlatte_lod0.msh",
+						name = "jay_mesh_xf08_halterPlatte",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 50,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+						mesh = "vehicle/waggon/Autotransport/jay_mesh_autotransporter_laufwerk_bandion_lod1.msh",
+						name = "jay_mesh_xfm36_laufwerkBandion",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -0.62000000476837, 0, -0.029999999329448, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+						mesh = "vehicle/waggon/Autotransport/jay_mesh_autotransporter_laufwerk_bandion_lod1.msh",
+						name = "jay_mesh_xfm36_laufwerkBandion",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 6.5999999046326, 0, -0.029999999329448, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+						mesh = "vehicle/waggon/Autotransport/jay_mesh_autotransporter_w1_lod1.msh",
+						name = "jay_mesh_autotransporter_w1",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -3.5999999046326, 0.0036381259560585, 0.46000000834465, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+						mesh = "vehicle/waggon/Autotransport/jay_mesh_autotransporter_w1_lod2.msh",
+						name = "jay_mesh_autotransporter_w1",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 3.6099998950958, 0.0036381259560585, 0.46000000834465, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/xf08/Xf08.mtl", },
+						mesh = "vehicle/waggon/Autotransport/xf08/jay_mesh_xf08_untenDrunter_lod0.msh",
+						name = "jay_mesh_xf08_untenDrunter",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/xf08/Xf08.mtl", },
+						mesh = "vehicle/waggon/Autotransport/xf08/jay_mesh_xf08_puffer_lod0.msh",
+						name = "jay_mesh_xf08_puffer",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/xf08/Xf08.mtl", },
+						mesh = "vehicle/waggon/Autotransport/xf08/jay_mesh_xf08_platteOben_lod0.msh",
+						name = "jay_mesh_xf08_platteOben",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/xf08/Xf08.mtl", },
+						mesh = "vehicle/waggon/Autotransport/xf08/jay_mesh_xf08_obenDrauf_lod0.msh",
+						name = "jay_mesh_xf08_obenDrauf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/xf08/Xf08.mtl", },
+						mesh = "vehicle/waggon/Autotransport/xf08/jay_mesh_xf08_sprengwerk_lod0.msh",
+						name = "jay_mesh_xf08_sprengwerk",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/xf08/Xf08.mtl", },
+						mesh = "vehicle/waggon/Autotransport/xf08/jay_mesh_xf08_halterPlatte_lod0.msh",
+						name = "jay_mesh_xf08_halterPlatte",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 200,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+						mesh = "vehicle/waggon/Autotransport/jay_mesh_autotransporter_w1_lod3.msh",
+						name = "jay_mesh_autotransporter_w1",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -3.5999999046326, 0.0036381259560585, 0.4888211786747, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/Auto_Gestell.mtl", },
+						mesh = "vehicle/waggon/Autotransport/jay_mesh_autotransporter_w1_lod3.msh",
+						name = "jay_mesh_autotransporter_w1",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 3.6099998950958, 0.0036381259560585, 0.4888211786747, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/xf08/Xf08.mtl", },
+						mesh = "vehicle/waggon/Autotransport/xf08/jay_mesh_xf08_untenDrunter_lod0.msh",
+						name = "jay_mesh_xf08_untenDrunter",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/xf08/Xf08.mtl", },
+						mesh = "vehicle/waggon/Autotransport/xf08/jay_mesh_xf08_platteOben_lod0.msh",
+						name = "jay_mesh_xf08_platteOben",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/xf08/Xf08.mtl", },
+						mesh = "vehicle/waggon/Autotransport/xf08/jay_mesh_xf08_obenDrauf_lod0.msh",
+						name = "jay_mesh_xf08_obenDrauf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/Autotransport/xf08/Xf08.mtl", },
+						mesh = "vehicle/waggon/Autotransport/xf08/jay_mesh_xf08_sprengwerk_lod0.msh",
+						name = "jay_mesh_xf08_sprengwerk",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 200,
+			visibleTo = 1047.3400878906,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

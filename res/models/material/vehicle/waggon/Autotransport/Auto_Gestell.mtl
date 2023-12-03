@@ -1,0 +1,88 @@
+function data()
+return {
+	__version = "",
+	order = 0,
+	params = {
+		albedo_scale = {
+			albedoScale = { 1, 1, 1, },
+		},
+		color_blend = {
+			albedoScales = { 0, },
+			colors = {
+				{ 0, 0, 0, },
+			},
+		},
+		dirt_rust = {
+			age = 0,
+			dirtColor = { 0.25490194559097, 0.23474824428558, 0.21991540491581, },
+			dirtFactor = 0,
+			dirtOpacity = 0,
+			dirtScale = 1,
+			rustColor = { 0.22745096683502, 0.22745096683502, 0.22745096683502, },
+			rustFactor = 0,
+			rustOpacity = 0.15999999642372,
+			rustScale = 1,
+		},
+		fade_out_range = {
+			fadeOutEndDist = 20000,
+			fadeOutStartDist = 10000,
+		},
+		map_albedo = {
+			compressionAllowed = false,
+			fileName = "models/vehicle/waggon/Autotransport_Gestell/drehgestellEinzeln_albedo.dds",
+			type = "TWOD",
+			wrapS = "REPEAT",
+			wrapT = "REPEAT",
+		},
+		map_cblend_dirt_rust = {
+			compressionAllowed = false,
+			fileName = "models/vehicle/waggon/Laaers224/L224b_dca.dds",
+			type = "TWOD",
+		},
+		map_dirt = {
+			fileName = "models/vehicle/dirt_albedo.dds",
+			type = "TWOD",
+		},
+		map_dirt_normal = {
+			fileName = "models/vehicle/dirt_normal.dds",
+			redGreen = true,
+			type = "TWOD",
+		},
+		map_metal_gloss_ao = {
+			compressionAllowed = false,
+			fileName = "models/vehicle/waggon/Autotransport_Gestell/drehgestellEinzeln_mga.dds",
+			type = "TWOD",
+			wrapS = "REPEAT",
+			wrapT = "REPEAT",
+		},
+		map_normal = {
+			compressionAllowed = false,
+			fileName = "models/vehicle/waggon/Autotransport_Gestell/drehgestellEinzeln_nrml.dds",
+			redGreen = true,
+			type = "TWOD",
+		},
+		map_rust = {
+			fileName = "models/vehicle/rust_albedo.dds",
+			type = "TWOD",
+		},
+		map_rust_normal = {
+			fileName = "models/vehicle/rust_normal.dds",
+			redGreen = true,
+			type = "TWOD",
+		},
+		normal_scale = {
+			normalScale = 1,
+		},
+		polygon_offset = {
+			factor = 0,
+			forceDepthWrite = false,
+			units = 0,
+		},
+		two_sided = {
+			flipNormal = true,
+			twoSided = false,
+		},
+	},
+	type = "PHYSICAL_NRML_MAP_CBLEND_DIRT",
+}
+end

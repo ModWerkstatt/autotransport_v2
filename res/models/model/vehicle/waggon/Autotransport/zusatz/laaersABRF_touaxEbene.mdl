@@ -1,0 +1,36 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 7.7340598106384, 1.475005865097, 3.6119844913483, },
+		bbMin = { -7.5732803344727, -1.475005865097, 2.4328489303589, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 7.6536703109741, 1.475005865097, 0.58956778049469, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/Autotransport/laaersABRF/LaaersABRF_touax.mtl", },
+						mesh = "vehicle/waggon/Autotransport/laaersABRF/jay_mesh_laaersABRF_obereEbene_lod0.msh",
+						name = "jay_mesh_laaersABRF_obereEbene",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 1253.6789550781,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end
