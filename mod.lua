@@ -102,6 +102,7 @@
 			["db_fake.mdl"] = true,  
 			["db_2_fake.mdl"] = true,  
 			["db_3_fake.mdl"] = true,  
+			["db_4_fake.mdl"] = true,
 			["fake.mdl"] = true,  
 			["3_umgebaut_fake.mdl"] = true,  
 			["2_fake.mdl"] = true,  
@@ -110,6 +111,10 @@
 			["3_fake.mdl"] = true,  
 			["alt_fake.lua"] = true,
 			["blau_fake.lua"] = true,
+			["drg_fake.mdl"] = true,
+			["person_db_fake.mdl"] = true, 
+			["person_db_2_fake.mdl"] = true, 
+			["person_drg_fake.mdl"] = true, 
 			
         }
 
@@ -137,6 +142,8 @@
 							or fileName:match('/Laekks547_([^/]*.mdl)')
 							or fileName:match('/Xfl08_([^/]*.mdl)')
 							or fileName:match('/Xfm36_([^/]*.mdl)')
+							or fileName:match('/rrho_([^/]*.mdl)')
+							or fileName:match('/rmmsoHP_([^/]*.mdl)')
 			return (modelName==nil or hidden[modelName]~=true)
 		end
 		
