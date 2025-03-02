@@ -521,20 +521,13 @@ return {
 			configs = {
 				{
 					axles = { "vehicle/waggon/Autotransport/laes547/jay_mesh_laes547_laufwerk_w1_lod0.msh", },
-					backBackwardParts = { },
-					backForwardParts = { },
-					blinkLightsLeft0 = { },
-					blinkLightsLeft1 = { },
-					blinkLightsRight0 = { },
-					blinkLightsRight1 = { },
-					blinkingLights0 = { },
-					blinkingLights1 = { },
-					brakeLights = { },
-					fakeBogies = { },
-					frontBackwardParts = { },
-					frontForwardParts = { },
-					innerBackwardParts = { },
-					innerForwardParts = { },
+                    fakeBogies = {
+                        {
+                            group = 0,
+                            offset = 0,
+                            position = 4.7,
+                        },
+                    },
 				},
 				{
 					axles = { "vehicle/waggon/Autotransport/laes547/jay_mesh_laes547_laufwerk_w1_lod1.msh", },
