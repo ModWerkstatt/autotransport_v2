@@ -1,0 +1,414 @@
+function data()
+return { 
+		boundingInfo = { 
+			bbMax = { 13.19285488128662109375, 1.51178371906280517578125, 3.4585859775543212890625, },
+			bbMin = { -13.19285488128662109375, -1.51178324222564697265625, -0.0502244532108306884765625, },
+		},
+		collider = { 
+			params = { 
+				halfExtents = { 13.19285488128662109375, 1.51178348064422607421875, 1.7544052600860595703125, },
+			},
+			transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			type = "BOX",
+		},
+		lods = {
+			{ 
+				node = { 
+					children = {
+						{ 
+							animations = { 
+								back_forward_parts_off = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/back_forward_parts_off.ani",
+									},
+									type = "FILE_REF",
+								},
+								back_forward_parts_on = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/back_forward_parts_on.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "/vehicle/waggon/modwerkstatt_basis/mat/zugschluss.mtl", },
+							mesh = "/vehicle/waggon/modwerkstatt_basis/zugschluss/msh/zugschluss_de_lod0.msh",
+							name = "zugschluss_de_front",
+							transf = { 0.993372261524200439453125, 0, 0.114937119185924530029296875, 0, 0.0054142796434462070465087890625, 0.99888956546783447265625, -0.0467942394316196441650390625, 0, -0.114809505641460418701171875, 0.0471064113080501556396484375, 0.992269337177276611328125, 0, -12.6700000762939453125, 1.019999980926513671875, 1.519999980926513671875, 1, },
+						},
+						{ 
+							children = {
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/ddm/mat/DDmGestell.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/ddm/msh/bogie_lod0.msh",
+									name = "bogie",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.0000006103515488575794734060764312744140625, 0, 0.0000000762939436071974341757595539093017578125, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/ddm/mat/DDmGestell.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/ddm/msh/achse2_lod0.msh",
+									name = "achse2",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2548406124114990234375, 0.0000002384185791015625, -0.3091019690036773681640625, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/ddm/mat/DDmGestell.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/ddm/msh/achse_lod0.msh",
+									name = "achse",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2565886974334716796875, 0.0000002384185791015625, -0.3091019690036773681640625, 1, },
+								},
+							},
+							name = "bogie",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.5200595855712890625, -0.00000011920928955078125, 0.738619744777679443359375, 1, },
+						},
+						{ 
+							children = {
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/ddm/mat/DDmGestell.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/ddm/msh/bogie_lod0.msh",
+									name = "bogie",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.0000006103515488575794734060764312744140625, 0, 0.0000000762939436071974341757595539093017578125, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/ddm/mat/DDmGestell.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/ddm/msh/achse2_lod0.msh",
+									name = "achse2",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2548406124114990234375, 0.0000002384185791015625, -0.3091019690036773681640625, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/ddm/mat/DDmGestell.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/ddm/msh/achse_lod0.msh",
+									name = "achse",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2565886974334716796875, 0.0000002384185791015625, -0.3091019690036773681640625, 1, },
+								},
+							},
+							name = "bogie2",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.5200595855712890625, -0.00000011920928955078125, 0.738619744777679443359375, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/ddm/mat/DDmOBB_orange_banner.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/ddm/msh/DDmOBB_lod0.msh",
+							name = "DDm915",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/ddm/mat/DDmOBB_orange_banner.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/ddm/msh/Gelaender_oben_hoch_lod0.msh",
+							name = "Gelander oben hoch",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/ddm/mat/DDmOBB_orange_banner.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/ddm/msh/Gelaender_unten_lod0.msh",
+							name = "Gelander unten",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				},
+				visibleFrom = 0,
+				visibleTo = 211.2075347900390625,
+			},
+			{ 
+				node = { 
+					children = {
+						{ 
+							children = {
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/ddm/mat/DDmGestell.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/ddm/msh/bogie_lod1.msh",
+									name = "bogie",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.0000006103515488575794734060764312744140625, 0, 0.0000000762939436071974341757595539093017578125, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/ddm/mat/DDmGestell.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/ddm/msh/achse2_lod1.msh",
+									name = "achse2",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2548406124114990234375, 0.0000002384185791015625, -0.3091019690036773681640625, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/ddm/mat/DDmGestell.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/ddm/msh/achse_lod1.msh",
+									name = "achse",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2565886974334716796875, 0.0000002384185791015625, -0.3091019690036773681640625, 1, },
+								},
+							},
+							name = "bogie",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.5200595855712890625, -0.00000011920928955078125, 0.738619744777679443359375, 1, },
+						},
+						{ 
+							children = {
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/ddm/mat/DDmGestell.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/ddm/msh/bogie_lod1.msh",
+									name = "bogie",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.0000006103515488575794734060764312744140625, 0, 0.0000000762939436071974341757595539093017578125, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/ddm/mat/DDmGestell.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/ddm/msh/achse2_lod1.msh",
+									name = "achse2",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2548406124114990234375, 0.0000002384185791015625, -0.3091019690036773681640625, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/ddm/mat/DDmGestell.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/ddm/msh/achse_lod1.msh",
+									name = "achse",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2565886974334716796875, 0.0000002384185791015625, -0.3091019690036773681640625, 1, },
+								},
+							},
+							name = "bogie2",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.5200595855712890625, -0.00000011920928955078125, 0.738619744777679443359375, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/ddm/mat/DDmOBB_orange_banner.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/ddm/msh/DDm915_lod1.msh",
+							name = "DDm915",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/ddm/mat/DDmOBB_orange_banner.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/ddm/msh/Gelander oben hoch_lod1.msh",
+							name = "Gelander oben hoch",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/ddm/mat/DDmOBB_orange_banner.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/ddm/msh/Gelander unten_lod1.msh",
+							name = "Gelander unten",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				},
+				visibleFrom = 211.2075347900390625,
+				visibleTo = 633.62261962890625,
+			},
+			{ 
+				node = { 
+					children = {
+						{ 
+							children = {
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/ddm/mat/DDmGestell.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/ddm/msh/achse2_lod2.msh",
+									name = "achse2",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2548406124114990234375, 0.0000002384185791015625, -0.3091019690036773681640625, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/ddm/mat/DDmGestell.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/ddm/msh/achse_lod2.msh",
+									name = "achse",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2565886974334716796875, 0.0000002384185791015625, -0.3091019690036773681640625, 1, },
+								},
+							},
+							name = "bogie",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.5200595855712890625, -0.00000011920928955078125, 0.738619744777679443359375, 1, },
+						},
+						{ 
+							children = {
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/ddm/mat/DDmGestell.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/ddm/msh/achse2_lod2.msh",
+									name = "achse2",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2548406124114990234375, 0.0000002384185791015625, -0.3091019690036773681640625, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/ddm/mat/DDmGestell.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/ddm/msh/achse_lod2.msh",
+									name = "achse",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2565886974334716796875, 0.0000002384185791015625, -0.3091019690036773681640625, 1, },
+								},
+							},
+							name = "bogie2",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.5200595855712890625, -0.00000011920928955078125, 0.738619744777679443359375, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/ddm/mat/DDmOBB_orange_banner.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/ddm/msh/DDm915_lod2.msh",
+							name = "DDm915",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				},
+				visibleFrom = 633.62261962890625,
+				visibleTo = 1900.867919921875,
+			},
+		},
+		metadata = { 
+			availability = { 
+				yearFrom = 1982,
+				yearTo = 2000,
+			},
+			cost = { 
+				price = -1,
+			},
+			description = { 
+				description = _("DD_oebb_desc"),
+				name = _("DDm 98-70 (BB \"Null Liter Benzin\") [1982]"),
+			},
+			emissions = { 
+				noise = { 
+					idle = -1,
+					power = -1,
+					speed = -1,
+				},
+				pollution = { 
+					idle = -1,
+					power = -1,
+					speed = -1,
+				},
+			},
+			landVehicle = { 
+				brakeDeceleration = 2.5,
+				engines = { },
+				friction = 0.0199999995529651641845703125,
+				topSpeed = 44.4444427490234375,
+				weightEmpty = 27800,
+				weightMaxPayload = 0,
+			},
+			loadIndicator = { 
+				configs = { 
+					slots_0 = { 
+						cargoSlots = { 
+							configurations = {
+								{
+									{ },
+									{ 0, },
+									{ 0, 1, },
+									{ 0, 1, 2, },
+									{ 0, 1, 2, 3, },
+									{ 0, 1, 2, 3, 4, },
+									{ 0, 1, 2, 3, 4, 5, },
+									{ 0, 1, 2, 3, 4, 5, 6, },
+									{ 0, 1, 2, 3, 4, 5, 6, 7, },
+									{ 0, 1, 2, 3, 4, 5, 6, 7, 8, },
+									{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, },
+								},
+							},
+						},
+					},
+				},
+				slots = {
+					{ 
+						group = "RootNode",
+						models = { "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_6.mdl", },
+						randomId = 0,
+						transf = { 1, 0, -0.0199999995529651641845703125, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.5, 0, 1.10000002384185791015625, 1, },
+					},
+					{ 
+						group = "RootNode",
+						models = { "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_6.mdl", },
+						randomId = 1,
+						transf = { 1, 0, -0.02999999932944774627685546875, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.19999980926513671875, 0, 0.920000016689300537109375, 1, },
+					},
+					{ 
+						group = "RootNode",
+						models = { "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_6.mdl", },
+						randomId = 2,
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.699999988079071044921875, 0, 0.89999997615814208984375, 1, },
+					},
+					{ 
+						group = "RootNode",
+						models = { "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_6.mdl", },
+						randomId = 3,
+						transf = { 1, 0, 0.0471399985253810882568359375, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.599999904632568359375, 0, 0.980000019073486328125, 1, },
+					},
+					{ 
+						group = "RootNode",
+						models = { "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_6.mdl", },
+						randomId = 4,
+						transf = { 1, 0, 0.00999999977648258209228515625, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.19999980926513671875, 0, 1.14999997615814208984375, 1, },
+					},
+					{ 
+						group = "RootNode",
+						models = { "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/bandion/bandion_t3_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/bandion/bandion_t3_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/bandion/bandion_t3_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/bandion/bandion_t3_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/bandion/bandion_t3_5.mdl", },
+						randomId = 5,
+						transf = { 1, 0, -0.0599999986588954925537109375, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.1000003814697265625, 0, 2.78999996185302734375, 1, },
+					},
+					{ 
+						group = "RootNode",
+						models = { "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/bandion/bandion_t3_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/bandion/bandion_t3_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/bandion/bandion_t3_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/bandion/bandion_t3_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/bandion/bandion_t3_5.mdl", },
+						randomId = 6,
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5, 0, 2.5499999523162841796875, 1, },
+					},
+					{ 
+						group = "RootNode",
+						models = { "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/bandion/bandion_t3_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/bandion/bandion_t3_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/bandion/bandion_t3_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/bandion/bandion_t3_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/bandion/bandion_t3_5.mdl", },
+						randomId = 7,
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.100000001490116119384765625, 0, 2.5499999523162841796875, 1, },
+					},
+					{ 
+						group = "RootNode",
+						models = { "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/bandion/bandion_t3_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/bandion/bandion_t3_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/bandion/bandion_t3_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/bandion/bandion_t3_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/bandion/bandion_t3_5.mdl", },
+						randomId = 8,
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.599999904632568359375, 0, 2.5499999523162841796875, 1, },
+					},
+					{ 
+						group = "RootNode",
+						models = { "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_golf_1_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/vw_santana_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/renault_4_f4_fourgonnette_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/DDm915/vehicle/car_load/urban/corolla_ladung_6.mdl", },
+						randomId = 9,
+						transf = { 1, 0, 0.0599999986588954925537109375, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.80000019073486328125, 0, 2.769999980926513671875, 1, },
+					},
+				},
+			},
+			maintenance = { 
+				lifespan = 29220,
+				runningCosts = -1,
+			},
+			railVehicle = { 
+				config = { 
+					axles = { "achse", "achse2", },
+					fakeBogies = {
+						{ },
+						{ },
+						{ },
+					},
+				},
+			},
+			soundConfig = { 
+				soundSet = { 
+					name = "/mw_leicht",
+				},
+			},
+			transformatorConfig = { 
+				skipFromLod = 1,
+				transformator = { 
+					name = "::/vehicle/train/shared/default_train.trf",
+				},
+			},
+			transportVehicle = { 
+				carrier = "RAIL",
+				compartments = {
+					{ 
+						loadConfigs = {
+							{ 
+								cargoEntry = { 
+									capacity = 80,
+									cargoTypeSet = { 
+										cargoClassesExcluded = { },
+										cargoClassesIncluded = { },
+										cargoTypesExcluded = { },
+										cargoTypesIncluded = { "::/cargos/passengers/passengers.cargo", },
+									},
+									loadIndicator = "slots_0",
+									seats = { },
+								},
+								toHide = { },
+							},
+						},
+					},
+				},
+				engineTags = { },
+				groupFileName = "/vehicle/waggon/Autotransport/menu_autotransport_person.mdl",
+				loadSpeed = 2,
+				tags = { "TRAIN", "ELECTRIC_TRAIN", },
+			},
+		},
+		version = 2,
+	}
+end

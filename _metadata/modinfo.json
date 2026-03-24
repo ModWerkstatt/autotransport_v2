@@ -1,0 +1,22 @@
+{
+    "name": "Car transport wagons",
+    "summary": "",
+    "description": "The increasing production in the automotive industry in the 1950s rendered transportation on simple flatcars economically impractical. This marked the onset of the development of specialized car transport wagons in Germany. Initially created through modifications of other cars, they became increasingly specialized over time to meet the growing demands of the new, larger cars. This evolution began in the economic boom years when car producers sought tailored logistics solutions. Double-decker car transport wagons were introduced during this period. Today, the transportation of luxury cars from Porsche, Mercedes, Audi, and BMW largely occurs incognito in closed car transport wagons. These transportation methods have continually evolved to meet the needs of the automotive industry, now carrying not only vehicles but also parts, both within Germany and internationally.",
+    "localization" : {
+        "de": {
+            "name": "Autotransportwagen",
+            "summary": "",
+            "description": "Die steigende Produktion in der Autoindustrie in den 1950er Jahren führte dazu, dass der Transport auf einfachen Flachwagen wirtschaftlich unpraktisch wurde. Dies markierte den Anfang der Entwicklung spezialisierter Autotransportwagen in Deutschland. Ursprünglich entstanden durch Umbauten anderer Wagen, wurden sie im Laufe der Zeit immer spezialisierter, um den gestiegenen Anforderungen an die neuen, größeren Autos gerecht zu werden. Diese Entwicklung begann in den Wirtschaftswunderjahren, als Autoproduzenten maßgeschneiderte Logistiklösungen suchten. Doppelstöckige Autotransportwagen wurden in dieser Zeit eingeführt. Heute erfolgt der Transport von Luxusautos von Porsche, Mercedes, Audi und BMW weitgehend inkognito in geschlossenen Autotransportwagen. Diese Transportmittel haben sich im Laufe der Jahre ständig weiterentwickelt, um den Bedürfnissen der Automobilindustrie gerecht zu werden, und transportieren heute nicht nur Fahrzeuge, sondern auch Teile, sowohl innerhalb Deutschlands als auch international."
+        }
+    },
+    "authors": [
+        {
+            "name": "ModWerkstatt",
+            "role": "CREATOR"
+        }
+    ],
+    "tags": [
+        "Wagon"
+    ],
+    "url": "https://modwerkstatt.com/downloads/tpf3/autotransportwagen"
+}

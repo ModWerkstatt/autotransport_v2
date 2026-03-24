@@ -1,0 +1,602 @@
+function data()
+return { 
+		boundingInfo = { 
+			bbMax = { 4.64337635040283203125, 1.6038873195648193359375, 3.950115680694580078125, },
+			bbMin = { -8.60479068756103515625, -1.59595191478729248046875, 0.4535286128520965576171875, },
+		},
+		collider = { 
+			params = { 
+				halfExtents = { 6.87408351898193359375, 1.5999195575714111328125, 1.74829351902008056640625, },
+			},
+			transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			type = "BOX",
+		},
+		lods = {
+			{ 
+				node = { 
+					children = {
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_laufwerk_w1_lod0.msh",
+							name = "jay_mesh_laes547_laufwerk_w1",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -4.4845294952392578125, 0.00363821140490472316741943359375, 0.4099999964237213134765625, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/msh/jay_mesh_autotransporter_kupplungMaikC_lod0.msh",
+							name = "jay_mesh_laaes553_kupplungMaikC",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -1.92999994754791259765625, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_laufwerk_bandion_lod0.msh",
+							name = "jay_mesh_laes547_laufwerk_bandion",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes549_obereSeiten_lod0.msh",
+							name = "jay_mesh_laes549_obereSeiten",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_gerust_lod0.msh",
+							name = "jay_mesh_laes547_gerust",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_untereSeiten_lod0.msh",
+							name = "jay_mesh_laes547_untereSeiten",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_untereEbene_lod0.msh",
+							name = "jay_mesh_laes547_untereEbene",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes549_obereEbene_lod0.msh",
+							name = "jay_mesh_laes549_obereEbene",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_puffer_lod0.msh",
+							name = "jay_mesh_laes547_puffer",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_leitern_lod0.msh",
+							name = "jay_mesh_laes547_leitern",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes549_accecsStangen_lod0.msh",
+							name = "jay_mesh_laes549_accecsStangen",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes549_hbremse_lod0.msh",
+							name = "jay_mesh_laes549_hbremse",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes549_soSeile_lod0.msh",
+							name = "jay_mesh_laes549_soSeile",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_pufferHub_lod0.msh",
+							name = "jay_mesh_laes547_pufferHub",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_seilhaken_lod0.msh",
+							name = "jay_mesh_laes547_seilhaken",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_tritt_lod0.msh",
+							name = "jay_mesh_laes547_tritt",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes549_bremse_lod0.msh",
+							name = "jay_mesh_laes549_bremse",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes549_klappenOben_lod0.msh",
+							name = "jay_mesh_laes549_klappenOben",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_griff_lod0.msh",
+							name = "jay_mesh_laes547_griff",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes549_datenRaster_lod0.msh",
+							name = "jay_mesh_laes549_datenRaster",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes549_untereStangen_lod0.msh",
+							name = "jay_mesh_laes549_untereStangen",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_pufferRampen_lod0.msh",
+							name = "jay_mesh_laes547_pufferRampen",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_hebel_lod0.msh",
+							name = "jay_mesh_laes547_hebel",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes549_schiene_lod0.msh",
+							name = "jay_mesh_laes549_schiene",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes549_stangenUnten_lod0.msh",
+							name = "jay_mesh_laes549_stangenUnten",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes549_stangenSenkrecht_lod0.msh",
+							name = "jay_mesh_laes549_stangenSenkrecht",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes549_stangenOben_lod0.msh",
+							name = "jay_mesh_laes549_stangenOben",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes549_seile_lod0.msh",
+							name = "jay_mesh_laes549_seile",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes549_warnung_lod0.msh",
+							name = "jay_mesh_laes549_warnung",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				},
+				visibleFrom = 0,
+				visibleTo = 42.7461090087890625,
+			},
+			{ 
+				node = { 
+					children = {
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_laufwerk_w1_lod1.msh",
+							name = "jay_mesh_laes547_laufwerk_w1",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -4.4845294952392578125, 0.00363821140490472316741943359375, 0.4099999964237213134765625, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_laufwerk_w2_lod1.msh",
+							name = "jay_mesh_laes547_laufwerk_w2",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 4.61999988555908203125, 0.003638423979282379150390625, 0.4099999964237213134765625, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_laufwerk_bandion_lod0.msh",
+							name = "jay_mesh_laes547_laufwerk_bandion",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes549_obereSeiten_lod1.msh",
+							name = "jay_mesh_laes549_obereSeiten",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_gerust_lod1.msh",
+							name = "jay_mesh_laes547_gerust",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_untereSeiten_lod1.msh",
+							name = "jay_mesh_laes547_untereSeiten",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_untereEbene_lod1.msh",
+							name = "jay_mesh_laes547_untereEbene",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes549_obereEbene_lod1.msh",
+							name = "jay_mesh_laes549_obereEbene",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_puffer_lod1.msh",
+							name = "jay_mesh_laes547_puffer",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes549_soSeile_lod1.msh",
+							name = "jay_mesh_laes549_soSeile",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_pufferHub_lod1.msh",
+							name = "jay_mesh_laes547_pufferHub",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_tritt_lod1.msh",
+							name = "jay_mesh_laes547_tritt",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes549_klappenOben_lod1.msh",
+							name = "jay_mesh_laes549_klappenOben",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_pufferRampen_lod1.msh",
+							name = "jay_mesh_laes547_pufferRampen",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_hebel_lod1.msh",
+							name = "jay_mesh_laes547_hebel",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes549_schiene_lod1.msh",
+							name = "jay_mesh_laes549_schiene",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes549_stangenUnten_lod1.msh",
+							name = "jay_mesh_laes549_stangenUnten",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes549_stangenSenkrecht_lod1.msh",
+							name = "jay_mesh_laes549_stangenSenkrecht",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes549_stangenOben_lod1.msh",
+							name = "jay_mesh_laes549_stangenOben",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				},
+				visibleFrom = 42.7461090087890625,
+				visibleTo = 128.2383270263671875,
+			},
+			{ 
+				node = { 
+					children = {
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_laufwerk_w1_lod2.msh",
+							name = "jay_mesh_laes547_laufwerk_w1",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -4.4845294952392578125, 0.00363821140490472316741943359375, 0.4099999964237213134765625, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_laufwerk_w2_lod2.msh",
+							name = "jay_mesh_laes547_laufwerk_w2",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 4.61999988555908203125, 0.003638423979282379150390625, 0.4099999964237213134765625, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes549_klappenOben_lod1.msh",
+							name = "jay_mesh_laes549_klappenOben",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes549_obereSeiten_lod2.msh",
+							name = "jay_mesh_laes549_obereSeiten",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_gerust_lod2.msh",
+							name = "jay_mesh_laes547_gerust",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_untereSeiten_lod2.msh",
+							name = "jay_mesh_laes547_untereSeiten",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_untereEbene_lod2.msh",
+							name = "jay_mesh_laes547_untereEbene",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes549_obereEbene_lod2.msh",
+							name = "jay_mesh_laes549_obereEbene",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_puffer_lod2.msh",
+							name = "jay_mesh_laes547_puffer",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_pufferHub_lod2.msh",
+							name = "jay_mesh_laes547_pufferHub",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_hebel_lod2.msh",
+							name = "jay_mesh_laes547_hebel",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes549_schiene_lod0.msh",
+							name = "jay_mesh_laes549_schiene",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				},
+				visibleFrom = 128.2383270263671875,
+				visibleTo = 384.7149658203125,
+			},
+			{ 
+				node = { 
+					children = {
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_laufwerk_w1_lod3.msh",
+							name = "jay_mesh_laes547_laufwerk_w1",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -4.4845294952392578125, 0.00363821140490472316741943359375, 0.4099999964237213134765625, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_laufwerk_w2_lod3.msh",
+							name = "jay_mesh_laes547_laufwerk_w2",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 4.61999988555908203125, 0.003638423979282379150390625, 0.4099999964237213134765625, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes549_obereSeiten_lod3.msh",
+							name = "jay_mesh_laes549_obereSeiten",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_gerust_lod3.msh",
+							name = "jay_mesh_laes547_gerust",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_untereSeiten_lod3.msh",
+							name = "jay_mesh_laes547_untereSeiten",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_untereEbene_lod3.msh",
+							name = "jay_mesh_laes547_untereEbene",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes549_obereEbene_lod3.msh",
+							name = "jay_mesh_laes549_obereEbene",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laes547/mat/Laes549.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laes547/msh/jay_mesh_laes547_pufferHub_lod3.msh",
+							name = "jay_mesh_laes547_pufferHub",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				},
+				visibleFrom = 384.7149658203125,
+				visibleTo = 1154.1448974609375,
+			},
+		},
+		metadata = { 
+			availability = { 
+				yearFrom = 1964,
+				yearTo = -1,
+			},
+			cost = { 
+				price = -1,
+			},
+			description = { 
+				description = _("Offhs66_desc"),
+				name = _("Offehss 548 (DB) [1964]"),
+			},
+			emissions = { 
+				noise = { 
+					idle = -1,
+					power = -1,
+					speed = -1,
+				},
+				pollution = { 
+					idle = -1,
+					power = -1,
+					speed = -1,
+				},
+			},
+			landVehicle = { 
+				brakeDeceleration = 2.5,
+				engines = { },
+				friction = 0.0199999995529651641845703125,
+				topSpeed = 33.299999237060546875,
+				weightEmpty = 11100,
+				weightMaxPayload = 0,
+			},
+			loadIndicator = { 
+				configs = { 
+					slots_0 = { 
+						cargoSlots = { 
+							configurations = {
+								{
+									{ },
+									{ 0, },
+									{ 0, 1, },
+									{ 0, 1, 2, },
+									{ 0, 1, 2, 3, },
+								},
+							},
+						},
+					},
+				},
+				slots = {
+					{ 
+						group = "RootNode",
+						models = { "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/beetle_1948_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/beetle_1948_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/beetle_1948_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/beetle_1948_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/beetle_1948_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/beetle_1948_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_audi80_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_audi80_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_audi80_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_audi80_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_audi80_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_audi80_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_ente_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_ente_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_ente_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_ente_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_ente_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_nsu_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_nsu_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_nsu_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_nsu_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_nsu_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_nsu_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_taunus_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_taunus_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_taunus_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_taunus_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_taunus_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_taunus_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/tatra_600_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/tatra_600_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/tatra_600_ladung_3.mdl", },
+						randomId = 11,
+						transf = { -1, -0.00000008742276946804850012995302677154541015625, -0, 0, 0.00000008742276946804850012995302677154541015625, -1, 0, 0, 0, -0, 1, 0, -0.039999999105930328369140625, 0, 0.800000011920928955078125, 1, },
+					},
+					{ 
+						group = "RootNode",
+						models = { "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/beetle_1948_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/beetle_1948_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/beetle_1948_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/beetle_1948_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/beetle_1948_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/beetle_1948_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_audi80_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_audi80_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_audi80_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_audi80_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_audi80_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_audi80_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_ente_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_ente_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_ente_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_ente_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_ente_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_nsu_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_nsu_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_nsu_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_nsu_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_nsu_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_nsu_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_taunus_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_taunus_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_taunus_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_taunus_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_taunus_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_taunus_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/tatra_600_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/tatra_600_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/tatra_600_ladung_3.mdl", },
+						randomId = 13,
+						transf = { -0.994521796703338623046875, -0.0000006243935786187648773193359375, 0.104528449475765228271484375, 0, 0.0000006278329465203569270670413970947265625, -1, 0, 0, 0.104528449475765228271484375, 0.0000000656264091958291828632354736328125, 0.994521796703338623046875, 0, -5.280000209808349609375, 0, 1.0099999904632568359375, 1, },
+					},
+					{ 
+						group = "RootNode",
+						models = { "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/beetle_1948_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/beetle_1948_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/beetle_1948_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/beetle_1948_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/beetle_1948_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/beetle_1948_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_audi80_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_audi80_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_audi80_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_audi80_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_audi80_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_audi80_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_ente_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_ente_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_ente_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_ente_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_ente_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_nsu_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_nsu_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_nsu_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_nsu_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_nsu_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_nsu_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_taunus_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_taunus_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_taunus_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_taunus_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_taunus_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_taunus_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/tatra_600_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/tatra_600_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/tatra_600_ladung_3.mdl", },
+						randomId = 14,
+						transf = { -0.999506533145904541015625, -0.0000008658240631120861507952213287353515625, 0.0314107574522495269775390625, 0, 0.0000008662515256219194270670413970947265625, -1, 0, 0, 0.0314107574522495269775390625, 0.00000002720961589375292533077299594879150390625, 0.999506533145904541015625, 0, 0.25, 0, 2.7999999523162841796875, 1, },
+					},
+					{ 
+						group = "RootNode",
+						models = { "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/beetle_1948_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/beetle_1948_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/beetle_1948_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/beetle_1948_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/beetle_1948_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/beetle_1948_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_audi80_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_audi80_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_audi80_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_audi80_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_audi80_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_audi80_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_ente_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_ente_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_ente_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_ente_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_ente_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_nsu_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_nsu_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_nsu_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_nsu_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_nsu_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_nsu_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_taunus_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_taunus_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_taunus_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_taunus_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_taunus_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bandion/bandion_taunus_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/tatra_600_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/tatra_600_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/tatra_600_ladung_3.mdl", },
+						randomId = 15,
+						transf = { -0.998970448970794677734375, -0.00000062718658000449067912995815277099609375, 0.0453629828989505767822265625, 0, 0.0000006278329465203569270670413970947265625, -1, 0, 0, 0.0453629828989505767822265625, 0.0000000284803736150252007064409554004669189453125, 0.998970448970794677734375, 0, -5.13000011444091796875, 0, 2.9200000762939453125, 1, },
+					},
+				},
+			},
+			maintenance = { 
+				lifespan = 22200,
+				runningCosts = -1,
+			},
+			railVehicle = { 
+				config = { 
+					axles = { "jay_mesh_laes547_laufwerk_w1", },
+					fakeBogies = {
+						{
+							{ 
+								group = "RootNode",
+								offset = 0,
+								position = 4.69999980926513671875,
+							},
+						},
+						{ },
+						{ },
+						{ },
+					},
+				},
+			},
+			soundConfig = { 
+				soundSet = { 
+					name = "/mw_leicht",
+				},
+			},
+			transformatorConfig = { 
+				skipFromLod = 1,
+				transformator = { 
+					name = "::/vehicle/train/shared/default_train.trf",
+				},
+			},
+			transportVehicle = { 
+				carrier = "RAIL",
+				compartments = {
+					{ 
+						loadConfigs = {
+							{ 
+								cargoEntry = { 
+									capacity = 48,
+									cargoTypeSet = { 
+										cargoClassesExcluded = { },
+										cargoClassesIncluded = { },
+										cargoTypesExcluded = { },
+										cargoTypesIncluded = { "::/cargos/passengers/passengers.cargo", },
+									},
+									loadIndicator = "slots_0",
+									seats = { },
+								},
+								toHide = { },
+							},
+						},
+					},
+				},
+				engineTags = { },
+				groupFileName = "/vehicle/waggon/Autotransport/menu_autotransport.mdl",
+				loadSpeed = 3,
+				multipleUnitOnly = true,
+				tags = { "TRAIN", "ELECTRIC_TRAIN", },
+			},
+		},
+		version = 2,
+	}
+end

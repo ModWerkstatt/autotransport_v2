@@ -1,0 +1,35 @@
+function data()
+return { 
+		boundingInfo = { 
+			bbMax = { 1.617968082427978515625, 0.785175740718841552734375, 1.4782826900482177734375, },
+			bbMin = { -1.617968082427978515625, -0.785175740718841552734375, 1.23864209651947021484375, },
+		},
+		collider = { 
+			params = { 
+				halfExtents = { 1.617968082427978515625, 0.785175740718841552734375, 0.119820296764373779296875, },
+			},
+			transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			type = "BOX",
+		},
+		lods = {
+			{ 
+				node = { 
+					children = {
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/xfm36/mat/Xfm36.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/xfm36/msh/jay_mesh_xfm36_radhalter_lod0.msh",
+							name = "jay_mesh_xfm36_radhalter",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				},
+				visibleFrom = 0,
+				visibleTo = 160.3880615234375,
+			},
+		},
+		metadata = { },
+		version = 2,
+	}
+end

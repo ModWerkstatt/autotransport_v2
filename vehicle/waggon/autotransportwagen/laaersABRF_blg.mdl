@@ -1,0 +1,1118 @@
+function data()
+return { 
+		boundingInfo = { 
+			bbMax = { 15.5408649444580078125, 1.66580760478973388671875, 3.5724704265594482421875, },
+			bbMin = { -15.5408649444580078125, -1.5316474437713623046875, 0.3446114957332611083984375, },
+		},
+		collider = { 
+			params = { 
+				halfExtents = { 7.76086521148681640625, 1.5987274646759033203125, 1.6139295101165771484375, },
+			},
+			transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			type = "BOX",
+		},
+		lods = {
+			{ 
+				node = { 
+					children = {
+						{ 
+							children = {
+								{ 
+									animations = { 
+										back_forward_parts_off = { 
+											interpolation = "NEAREST",
+											params = { 
+												id = "::/vehicle/shared/ani/back_forward_parts_off.ani",
+											},
+											type = "FILE_REF",
+										},
+										back_forward_parts_on = { 
+											interpolation = "NEAREST",
+											params = { 
+												id = "::/vehicle/shared/ani/back_forward_parts_on.ani",
+											},
+											type = "FILE_REF",
+										},
+									},
+									materials = { "/vehicle/waggon/modwerkstatt_basis/mat/zugschluss.mtl", },
+									mesh = "/vehicle/waggon/modwerkstatt_basis/zugschluss/msh/zugschluss_de_lod0.msh",
+									name = "zugschluss_de_front",
+									transf = { 0.976671695709228515625, 0, 0.2147351801395416259765625, 0, 0.01011541299521923065185546875, 0.99888956546783447265625, -0.046007536351680755615234375, 0, -0.21449677646160125732421875, 0.0471064038574695587158203125, 0.975587308406829833984375, 0, -7.30000019073486328125, 0.819999992847442626953125, 1.2400000095367431640625, 1, },
+								},
+								{ 
+									animations = { 
+										back_forward_parts_off = { 
+											interpolation = "NEAREST",
+											params = { 
+												id = "::/vehicle/shared/ani/back_forward_parts_off.ani",
+											},
+											type = "FILE_REF",
+										},
+										back_forward_parts_on = { 
+											interpolation = "NEAREST",
+											params = { 
+												id = "::/vehicle/shared/ani/back_forward_parts_on.ani",
+											},
+											type = "FILE_REF",
+										},
+									},
+									materials = { "/vehicle/waggon/modwerkstatt_basis/mat/zugschluss.mtl", },
+									mesh = "/vehicle/waggon/modwerkstatt_basis/zugschluss/msh/zugschluss_de_lod0.msh",
+									name = "zugschluss_de_front",
+									transf = { 0.976671695709228515625, 0, 0.21473515033721923828125, 0, -0.0164742767810821533203125, 0.9970524311065673828125, 0.0749293267726898193359375, 0, -0.2141022384166717529296875, -0.07671897113323211669921875, 0.973792970180511474609375, 0, -7.30000019073486328125, -0.85000002384185791015625, 1.2400000095367431640625, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaers560/msh/jay_mesh_autoGestellKlein_w1_lod0.msh",
+									name = "jay_mesh_autoGestellKlein_w1",
+									transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -4.4899997711181640625, 0.003638125956058502197265625, 0.38999998569488525390625, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaers560/msh/jay_mesh_autoGestellKlein_lod0.msh",
+									name = "jay_mesh_autoGestellKlein",
+									transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -0.519999980926513671875, 0, -0.02999999932944774627685546875, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaers560/msh/jay_mesh_autoGestellKlein_lod0.msh",
+									name = "jay_mesh_autoGestellKlein",
+									transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 0.9700000286102294921875, 0, 8.47000026702880859375, 0, -0.02999999932944774627685546875, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaers560/msh/jay_mesh_autoGestellKlein_w1_lod0.msh",
+									name = "jay_mesh_autoGestellKlein_w1",
+									transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 4.4899997711181640625, 0.003638125956058502197265625, 0.38999998569488525390625, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_body_lod0.msh",
+									name = "jay_mesh_laaersABRF_body",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_pillars_lod0.msh",
+									name = "jay_mesh_laaersABRF_pillars",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_pillarsThin_lod0.msh",
+									name = "jay_mesh_laaersABRF_pillarsThin",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_tafel_lod0.msh",
+									name = "jay_mesh_laaersABRF_tafel",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_logoTafel_lod0.msh",
+									name = "jay_mesh_laaersABRF_logoTafel",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_obereEbene_lod0.msh",
+									name = "jay_mesh_laaersABRF_obereEbene",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_puffer_lod0.msh",
+									name = "jay_mesh_laaersABRF_puffer",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_leiter_lod0.msh",
+									name = "jay_mesh_laaersABRF_leiter",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_seilhaken_lod0.msh",
+									name = "jay_mesh_laaersABRF_seilhaken",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_handbremse_lod0.msh",
+									name = "jay_mesh_laaersABRF_handbremse",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_rohre_lod0.msh",
+									name = "jay_mesh_laaersABRF_rohre",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_rohrhalter_lod0.msh",
+									name = "jay_mesh_laaersABRF_rohrhalter",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_hebel_lod0.msh",
+									name = "jay_mesh_laaersABRF_hebel",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_untenRum_lod0.msh",
+									name = "jay_mesh_laaersABRF_untenRum",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_haltegriff_lod0.msh",
+									name = "jay_mesh_laaersABRF_haltegriff",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_frontklappeUnten_lod0.msh",
+									name = "jay_mesh_laaersABRF_frontklappeUnten",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_ubergang_lod0.msh",
+									name = "jay_mesh_laaersABRF_ubergang",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_touaxHalter_lod0.msh",
+									name = "jay_mesh_laaersABRF_touaxHalter",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_tritt_lod0.msh",
+									name = "jay_mesh_laaersABRF_tritt",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/Gitter.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_gitter_lod0.msh",
+									name = "jay_mesh_laaersABRF_gitter",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_kupplung_lod0.msh",
+									name = "jay_mesh_laaersABRF_kupplung",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_pufferHinten_lod0.msh",
+									name = "jay_mesh_laaersABRF_pufferHinten",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+							},
+							name = "Wagen 1",
+							transf = { -1, -0.0000013430886838250444270670413970947265625, 0, 0, 0.0000013430886838250444270670413970947265625, -1, 0, 0, 0, 0, 1, 0, 7.769999980926513671875, 0, 0, 1, },
+						},
+						{ 
+							children = {
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaers560/msh/jay_mesh_autoGestellKlein_w1_lod0.msh",
+									name = "jay_mesh_autoGestellKlein_w1",
+									transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -4.4899997711181640625, 0.003638125956058502197265625, 0.38999998569488525390625, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaers560/msh/jay_mesh_autoGestellKlein_lod0.msh",
+									name = "jay_mesh_autoGestellKlein",
+									transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -0.519999980926513671875, 0, -0.02999999932944774627685546875, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaers560/msh/jay_mesh_autoGestellKlein_lod0.msh",
+									name = "jay_mesh_autoGestellKlein",
+									transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 0.9700000286102294921875, 0, 8.47000026702880859375, 0, -0.02999999932944774627685546875, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaers560/msh/jay_mesh_autoGestellKlein_w1_lod0.msh",
+									name = "jay_mesh_autoGestellKlein_w1",
+									transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 4.4899997711181640625, 0.003638125956058502197265625, 0.38999998569488525390625, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_body_lod0.msh",
+									name = "jay_mesh_laaersABRF_body",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_pillars_lod0.msh",
+									name = "jay_mesh_laaersABRF_pillars",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_pillarsThin_lod0.msh",
+									name = "jay_mesh_laaersABRF_pillarsThin",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_tafel_lod0.msh",
+									name = "jay_mesh_laaersABRF_tafel",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_logoTafel_lod0.msh",
+									name = "jay_mesh_laaersABRF_logoTafel",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_obereEbene_lod0.msh",
+									name = "jay_mesh_laaersABRF_obereEbene",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_puffer_lod0.msh",
+									name = "jay_mesh_laaersABRF_puffer",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_leiter_lod0.msh",
+									name = "jay_mesh_laaersABRF_leiter",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_seilhaken_lod0.msh",
+									name = "jay_mesh_laaersABRF_seilhaken",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_handbremse_lod0.msh",
+									name = "jay_mesh_laaersABRF_handbremse",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_rohre_lod0.msh",
+									name = "jay_mesh_laaersABRF_rohre",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_rohrhalter_lod0.msh",
+									name = "jay_mesh_laaersABRF_rohrhalter",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_hebel_lod0.msh",
+									name = "jay_mesh_laaersABRF_hebel",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_untenRum_lod0.msh",
+									name = "jay_mesh_laaersABRF_untenRum",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_haltegriff_lod0.msh",
+									name = "jay_mesh_laaersABRF_haltegriff",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_frontklappeUnten_lod0.msh",
+									name = "jay_mesh_laaersABRF_frontklappeUnten",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_ubergang_lod0.msh",
+									name = "jay_mesh_laaersABRF_ubergang",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_touaxHalter_lod0.msh",
+									name = "jay_mesh_laaersABRF_touaxHalter",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_tritt_lod0.msh",
+									name = "jay_mesh_laaersABRF_tritt",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/Gitter.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_gitter_lod0.msh",
+									name = "jay_mesh_laaersABRF_gitter",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_kupplung_lod0.msh",
+									name = "jay_mesh_laaersABRF_kupplung",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_pufferHinten_lod0.msh",
+									name = "jay_mesh_laaersABRF_pufferHinten",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+							},
+							name = "Wagen 2",
+							transf = { 1, -0.00000008742276946804850012995302677154541015625, 0, 0, 0.00000008742276946804850012995302677154541015625, 1, 0, 0, -0, 0, 1, 0, -7.769999980926513671875, 0, 0, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { -1, -0.0000000874227765734758577309548854827880859375, 0, 0, 0.0000000874227765734758577309548854827880859375, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0.070000000298023223876953125, 1, },
+				},
+				visibleFrom = 0,
+				visibleTo = 48.888492584228515625,
+			},
+			{ 
+				node = { 
+					children = {
+						{ 
+							children = {
+								{ 
+									animations = { 
+										back_forward_parts_off = { 
+											interpolation = "NEAREST",
+											params = { 
+												id = "::/vehicle/shared/ani/back_forward_parts_off.ani",
+											},
+											type = "FILE_REF",
+										},
+										back_forward_parts_on = { 
+											interpolation = "NEAREST",
+											params = { 
+												id = "::/vehicle/shared/ani/back_forward_parts_on.ani",
+											},
+											type = "FILE_REF",
+										},
+									},
+									materials = { "/vehicle/waggon/modwerkstatt_basis/mat/zugschluss.mtl", },
+									mesh = "/vehicle/waggon/modwerkstatt_basis/zugschluss/msh/zugschluss_de_lod0.msh",
+									name = "zugschluss_de_front",
+									transf = { 0.976671695709228515625, 0, 0.2147351801395416259765625, 0, 0.01011541299521923065185546875, 0.99888956546783447265625, -0.046007536351680755615234375, 0, -0.21449677646160125732421875, 0.0471064038574695587158203125, 0.975587308406829833984375, 0, -7.30000019073486328125, 0.819999992847442626953125, 1.2400000095367431640625, 1, },
+								},
+								{ 
+									animations = { 
+										back_forward_parts_off = { 
+											interpolation = "NEAREST",
+											params = { 
+												id = "::/vehicle/shared/ani/back_forward_parts_off.ani",
+											},
+											type = "FILE_REF",
+										},
+										back_forward_parts_on = { 
+											interpolation = "NEAREST",
+											params = { 
+												id = "::/vehicle/shared/ani/back_forward_parts_on.ani",
+											},
+											type = "FILE_REF",
+										},
+									},
+									materials = { "/vehicle/waggon/modwerkstatt_basis/mat/zugschluss.mtl", },
+									mesh = "/vehicle/waggon/modwerkstatt_basis/zugschluss/msh/zugschluss_de_lod0.msh",
+									name = "zugschluss_de_front",
+									transf = { 0.976671695709228515625, 0, 0.21473515033721923828125, 0, -0.0164742767810821533203125, 0.9970524311065673828125, 0.0749293267726898193359375, 0, -0.2141022384166717529296875, -0.07671897113323211669921875, 0.973792970180511474609375, 0, -7.30000019073486328125, -0.85000002384185791015625, 1.2400000095367431640625, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaers560/msh/jay_mesh_autoGestellKlein_w1_lod1.msh",
+									name = "jay_mesh_autoGestellKlein_w1",
+									transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -4.4899997711181640625, 0.003638125956058502197265625, 0.38999998569488525390625, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaers560/msh/jay_mesh_autoGestellKlein_lod1.msh",
+									name = "jay_mesh_autoGestellKlein",
+									transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -0.519999980926513671875, 0, -0.02999999932944774627685546875, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaers560/msh/jay_mesh_autoGestellKlein_lod1.msh",
+									name = "jay_mesh_autoGestellKlein",
+									transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 8.47000026702880859375, 0, -0.02999999932944774627685546875, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaers560/msh/jay_mesh_autoGestellKlein_w1_lod1.msh",
+									name = "jay_mesh_autoGestellKlein_w1",
+									transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 4.4899997711181640625, 0.003638125956058502197265625, 0.38999998569488525390625, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_body_lod1.msh",
+									name = "jay_mesh_laaersABRF_body",
+									transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, 0, 0.039999999105930328369140625, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_pillars_lod1.msh",
+									name = "jay_mesh_laaersABRF_pillars",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_pillarsThin_lod1.msh",
+									name = "jay_mesh_laaersABRF_pillarsThin",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_logoTafel_lod1.msh",
+									name = "jay_mesh_laaersABRF_logoTafel",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_obereEbene_lod1.msh",
+									name = "jay_mesh_laaersABRF_obereEbene",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_puffer_lod1.msh",
+									name = "jay_mesh_laaersABRF_puffer",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_leiter_lod1.msh",
+									name = "jay_mesh_laaersABRF_leiter",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_handbremse_lod1.msh",
+									name = "jay_mesh_laaersABRF_handbremse",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_haltegriff_lod1.msh",
+									name = "jay_mesh_laaersABRF_haltegriff",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_frontklappeUnten_lod1.msh",
+									name = "jay_mesh_laaersABRF_frontklappeUnten",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_ubergang_lod1.msh",
+									name = "jay_mesh_laaersABRF_ubergang",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/Gitter.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_gitter_lod0.msh",
+									name = "jay_mesh_laaersABRF_gitter",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+							},
+							name = "Wagen 1",
+							transf = { -1, -0.0000000874227765734758577309548854827880859375, 0, 0, 0.0000000874227765734758577309548854827880859375, -1, 0, 0, 0, 0, 1, 0, 7.76999950408935546875, 0, 0, 1, },
+						},
+						{ 
+							children = {
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaers560/msh/jay_mesh_autoGestellKlein_w1_lod1.msh",
+									name = "jay_mesh_autoGestellKlein_w1",
+									transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -4.4899997711181640625, 0.003638125956058502197265625, 0.38999998569488525390625, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaers560/msh/jay_mesh_autoGestellKlein_lod1.msh",
+									name = "jay_mesh_autoGestellKlein",
+									transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -0.519999980926513671875, 0, -0.02999999932944774627685546875, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaers560/msh/jay_mesh_autoGestellKlein_lod1.msh",
+									name = "jay_mesh_autoGestellKlein",
+									transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 8.47000026702880859375, 0, -0.02999999932944774627685546875, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaers560/msh/jay_mesh_autoGestellKlein_w1_lod1.msh",
+									name = "jay_mesh_autoGestellKlein_w1",
+									transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 4.4899997711181640625, 0.003638125956058502197265625, 0.38999998569488525390625, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_body_lod1.msh",
+									name = "jay_mesh_laaersABRF_body",
+									transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, 0, 0.039999999105930328369140625, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_pillars_lod1.msh",
+									name = "jay_mesh_laaersABRF_pillars",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_pillarsThin_lod1.msh",
+									name = "jay_mesh_laaersABRF_pillarsThin",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_logoTafel_lod1.msh",
+									name = "jay_mesh_laaersABRF_logoTafel",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_obereEbene_lod1.msh",
+									name = "jay_mesh_laaersABRF_obereEbene",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_puffer_lod1.msh",
+									name = "jay_mesh_laaersABRF_puffer",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_leiter_lod1.msh",
+									name = "jay_mesh_laaersABRF_leiter",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_handbremse_lod1.msh",
+									name = "jay_mesh_laaersABRF_handbremse",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_haltegriff_lod1.msh",
+									name = "jay_mesh_laaersABRF_haltegriff",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_frontklappeUnten_lod1.msh",
+									name = "jay_mesh_laaersABRF_frontklappeUnten",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_ubergang_lod1.msh",
+									name = "jay_mesh_laaersABRF_ubergang",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/Gitter.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_gitter_lod0.msh",
+									name = "jay_mesh_laaersABRF_gitter",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+							},
+							name = "Wagen 2",
+							transf = { 1, -0.0000000874227765734758577309548854827880859375, 0, 0, 0.0000000874227765734758577309548854827880859375, 1, 0, 0, 0, 0, 1, 0, -7.76999950408935546875, 0, 0, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { -1, -0.0000000874227765734758577309548854827880859375, 0, 0, 0.0000000874227765734758577309548854827880859375, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0.070000000298023223876953125, 1, },
+				},
+				visibleFrom = 48.888492584228515625,
+				visibleTo = 146.6654815673828125,
+			},
+			{ 
+				node = { 
+					children = {
+						{ 
+							children = {
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/msh/jay_mesh_autotransporter_w1_lod2.msh",
+									name = "jay_mesh_autotransporter_w1",
+									transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -4.5799999237060546875, 0.003638125956058502197265625, 0.4888211786746978759765625, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/msh/jay_mesh_autotransporter_w1_lod2.msh",
+									name = "jay_mesh_autotransporter_w1",
+									transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 4.519999980926513671875, 0.003638125956058502197265625, 0.4888211786746978759765625, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_body_lod2.msh",
+									name = "jay_mesh_laaersABRF_body",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_pillars_lod2.msh",
+									name = "jay_mesh_laaersABRF_pillars",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_pillarsThin_lod2.msh",
+									name = "jay_mesh_laaersABRF_pillarsThin",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_logoTafel_lod2.msh",
+									name = "jay_mesh_laaersABRF_logoTafel",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_obereEbene_lod2.msh",
+									name = "jay_mesh_laaersABRF_obereEbene",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_untenRum_lod2.msh",
+									name = "jay_mesh_laaersABRF_untenRum",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_ubergang_lod2.msh",
+									name = "jay_mesh_laaersABRF_ubergang",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/Gitter.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_gitter_lod0.msh",
+									name = "jay_mesh_laaersABRF_gitter",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+							},
+							name = "Wagen 2",
+							transf = { 1, -0.0000000874227765734758577309548854827880859375, 0, 0, 0.0000000874227765734758577309548854827880859375, 1, 0, 0, 0, 0, 1, 0, -7.76999950408935546875, 0, 0, 1, },
+						},
+						{ 
+							children = {
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/msh/jay_mesh_autotransporter_w1_lod2.msh",
+									name = "jay_mesh_autotransporter_w1",
+									transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -4.5799999237060546875, 0.003638125956058502197265625, 0.4888211786746978759765625, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/msh/jay_mesh_autotransporter_w1_lod2.msh",
+									name = "jay_mesh_autotransporter_w1",
+									transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 4.519999980926513671875, 0.003638125956058502197265625, 0.4888211786746978759765625, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_body_lod2.msh",
+									name = "jay_mesh_laaersABRF_body",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_pillars_lod2.msh",
+									name = "jay_mesh_laaersABRF_pillars",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_pillarsThin_lod2.msh",
+									name = "jay_mesh_laaersABRF_pillarsThin",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_logoTafel_lod2.msh",
+									name = "jay_mesh_laaersABRF_logoTafel",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_obereEbene_lod2.msh",
+									name = "jay_mesh_laaersABRF_obereEbene",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_untenRum_lod2.msh",
+									name = "jay_mesh_laaersABRF_untenRum",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_ubergang_lod2.msh",
+									name = "jay_mesh_laaersABRF_ubergang",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/Gitter.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_gitter_lod0.msh",
+									name = "jay_mesh_laaersABRF_gitter",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+							},
+							name = "Wagen 2",
+							transf = { -1, -0.0000000874227765734758577309548854827880859375, 0, 0, 0.0000000874227765734758577309548854827880859375, -1, 0, 0, 0, 0, 1, 0, 7.76999950408935546875, 0, 0, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { -1, -0.0000000874227765734758577309548854827880859375, 0, 0, 0.0000000874227765734758577309548854827880859375, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0.070000000298023223876953125, 1, },
+				},
+				visibleFrom = 146.6654815673828125,
+				visibleTo = 439.996429443359375,
+			},
+			{ 
+				node = { 
+					children = {
+						{ 
+							children = {
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/msh/jay_mesh_autotransporter_w1_lod3.msh",
+									name = "jay_mesh_autotransporter_w1",
+									transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -4.5799999237060546875, 0.003638125956058502197265625, 0.4888211786746978759765625, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/msh/jay_mesh_autotransporter_w1_lod3.msh",
+									name = "jay_mesh_autotransporter_w1",
+									transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 4.519999980926513671875, 0.003638125956058502197265625, 0.4888211786746978759765625, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_body_lod3.msh",
+									name = "jay_mesh_laaersABRF_body",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_obereEbene_lod3.msh",
+									name = "jay_mesh_laaersABRF_obereEbene",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+							},
+							name = "Wagen 1",
+							transf = { 1, -0.0000000874227765734758577309548854827880859375, 0, 0, 0.0000000874227765734758577309548854827880859375, 1, 0, 0, 0, 0, 1, 0, -7.76999950408935546875, 0, 0, 1, },
+						},
+						{ 
+							children = {
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/msh/jay_mesh_autotransporter_w1_lod3.msh",
+									name = "jay_mesh_autotransporter_w1",
+									transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -4.5799999237060546875, 0.003638125956058502197265625, 0.4888211786746978759765625, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/msh/jay_mesh_autotransporter_w1_lod3.msh",
+									name = "jay_mesh_autotransporter_w1",
+									transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 4.519999980926513671875, 0.003638125956058502197265625, 0.4888211786746978759765625, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_body_lod3.msh",
+									name = "jay_mesh_laaersABRF_body",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_blg.mtl", },
+									mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/jay_mesh_laaersABRF_obereEbene_lod3.msh",
+									name = "jay_mesh_laaersABRF_obereEbene",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+							},
+							name = "Wagen 2",
+							transf = { -1, -0.0000000874227765734758577309548854827880859375, 0, 0, 0.0000000874227765734758577309548854827880859375, -1, 0, 0, 0, 0, 1, 0, 7.76999950408935546875, 0, 0, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { -1, -0.0000000874227765734758577309548854827880859375, 0, 0, 0.0000000874227765734758577309548854827880859375, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				},
+				visibleFrom = 439.996429443359375,
+				visibleTo = 1319.9892578125,
+			},
+		},
+		metadata = { 
+			availability = { 
+				yearFrom = 2008,
+				yearTo = -1,
+			},
+			cost = { 
+				price = -1,
+			},
+			description = { 
+				description = _("laaersABRF_desc"),
+				name = _("Laaers ABRF (BLG) >Toyota< [2008]"),
+			},
+			emissions = { 
+				noise = { 
+					idle = -1,
+					power = -1,
+					speed = -1,
+				},
+				pollution = { 
+					idle = -1,
+					power = -1,
+					speed = -1,
+				},
+			},
+			landVehicle = { 
+				brakeDeceleration = 2.5,
+				engines = { },
+				friction = 0.0199999995529651641845703125,
+				topSpeed = 33.299999237060546875,
+				weightEmpty = 37000,
+				weightMaxPayload = 0,
+			},
+			loadIndicator = { 
+				configs = { 
+					slots_0 = { 
+						cargoSlots = { 
+							configurations = {
+								{
+									{ },
+									{ 3, },
+									{ 3, 2, },
+									{ 3, 2, 0, },
+									{ 3, 2, 0, 1, },
+									{ 3, 2, 0, 1, 7, },
+									{ 3, 2, 0, 1, 7, 6, },
+									{ 3, 2, 0, 1, 7, 6, 4, },
+									{ 3, 2, 0, 1, 7, 6, 4, 5, },
+									{ 3, 2, 0, 1, 7, 6, 4, 5, 9, },
+									{ 3, 2, 0, 1, 7, 6, 4, 5, 9, 10, },
+									{ 3, 2, 0, 1, 7, 8, 6, 4, 5, 9, 10, 11, },
+								},
+							},
+						},
+					},
+					slots_1 = { 
+						cargoSlots = { 
+							configurations = {
+								{
+									{ },
+									{ 3, },
+									{ 3, 2, },
+									{ 3, 2, 0, },
+									{ 3, 2, 0, 1, },
+									{ 3, 2, 0, 1, 7, },
+									{ 3, 2, 0, 1, 7, 6, },
+									{ 3, 2, 0, 1, 7, 6, 4, },
+									{ 3, 2, 0, 1, 7, 6, 4, 5, },
+									{ 3, 2, 0, 1, 7, 6, 4, 5, 9, },
+									{ 3, 2, 0, 1, 7, 6, 4, 5, 9, 10, },
+									{ 3, 2, 0, 1, 7, 8, 6, 4, 5, 9, 10, 11, },
+								},
+							},
+						},
+					},
+					slots_2 = { 
+						cargoSlots = { 
+							configurations = {
+								{
+									{ },
+									{ 3, },
+									{ 3, 2, },
+									{ 3, 2, 0, },
+									{ 3, 2, 0, 1, },
+									{ 3, 2, 0, 1, 7, },
+									{ 3, 2, 0, 1, 7, 6, },
+									{ 3, 2, 0, 1, 7, 6, 4, },
+									{ 3, 2, 0, 1, 7, 6, 4, 5, },
+									{ 3, 2, 0, 1, 7, 6, 4, 5, 9, },
+									{ 3, 2, 0, 1, 7, 6, 4, 5, 9, 10, },
+									{ 3, 2, 0, 1, 7, 8, 6, 4, 5, 9, 10, 11, },
+								},
+							},
+						},
+					},
+				},
+				slots = {
+					{ 
+						group = "Wagen 1",
+						models = { "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_6.mdl", },
+						randomId = 0,
+						transf = { 0.997801482677459716796875, -0.00000008723056765802539302967488765716552734375, -0.066273905336856842041015625, 0, 0.00000008742276946804850012995302677154541015625, 1, 0, 0, 0.066273905336856842041015625, -0.000000005793848512070098877302370965480804443359375, 0.997801482677459716796875, 0, -4.769999980926513671875, 0, 0.939999997615814208984375, 1, },
+					},
+					{ 
+						group = "Wagen 1",
+						models = { "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_6.mdl", },
+						randomId = 1,
+						transf = { 1, -0.0000011046698773498064838349819183349609375, -0, 0, 0.0000011046698773498064838349819183349609375, 1, 0, 0, 0, -0, 1, 0, 5.179999828338623046875, 0, 0.910000026226043701171875, 1, },
+					},
+					{ 
+						group = "Wagen 1",
+						models = { "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_6.mdl", },
+						randomId = 2,
+						transf = { 0.999876439571380615234375, -0.00000038936622104301932267844676971435546875, -0.0157073102891445159912109375, 0, 0.00000038941431057537556625902652740478515625, 1, 0, 0, 0.0157073102891445159912109375, -0.0000000061166520737288010423071682453155517578125, 0.999876439571380615234375, 0, -4.94999980926513671875, 0, 2.7999999523162841796875, 1, },
+					},
+					{ 
+						group = "Wagen 1",
+						models = { "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_6.mdl", },
+						randomId = 3,
+						transf = { 1, -0.00000062783288967693806625902652740478515625, 0, 0, 0.00000062783288967693806625902652740478515625, 1, 0, 0, -0, 0, 1, 0, 0.20000000298023223876953125, 0, 0.87000000476837158203125, 1, },
+					},
+					{ 
+						group = "Wagen 1",
+						models = { "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_6.mdl", },
+						randomId = 4,
+						transf = { 0.999876439571380615234375, -0.00000038936622104301932267844676971435546875, -0.0157073102891445159912109375, 0, 0.00000038941431057537556625902652740478515625, 1, 0, 0, 0.0157073102891445159912109375, -0.0000000061166520737288010423071682453155517578125, 0.999876439571380615234375, 0, -0.17000000178813934326171875, 0, 2.7999999523162841796875, 1, },
+					},
+					{ 
+						group = "Wagen 1",
+						models = { "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_6.mdl", },
+						randomId = 5,
+						transf = { 1, -0.00000062783288967693806625902652740478515625, 0, 0, 0.00000062783288967693806625902652740478515625, 1, 0, 0, -0, 0, 1, 0, 4.55000019073486328125, 0, 2.7999999523162841796875, 1, },
+					},
+					{ 
+						group = "jay_mesh_laaersABRF_pillars",
+						models = { "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_6.mdl", },
+						randomId = 6,
+						transf = { -0.997801482677459716796875, -0.0000013401358955889008939266204833984375, 0.066273905336856842041015625, 0, 0.0000013430886838250444270670413970947265625, -1, 0, 0, 0.066273905336856842041015625, 0.00000008901173487174673937261104583740234375, 0.997801482677459716796875, 0, -4.780000209808349609375, 0, 0.980000019073486328125, 1, },
+					},
+					{ 
+						group = "jay_mesh_laaersABRF_pillars",
+						models = { "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_6.mdl", },
+						randomId = 7,
+						transf = { -1, -0.0000013430886838250444270670413970947265625, -0, 0, 0.0000013430886838250444270670413970947265625, -1, 0, 0, -0, 0, 1, 0, 0.23999999463558197021484375, 0, 0.87999999523162841796875, 1, },
+					},
+					{ 
+						group = "jay_mesh_laaersABRF_pillars",
+						models = { "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_6.mdl", },
+						randomId = 8,
+						transf = { -0.999999940395355224609375, -0.00000134308857013820670545101165771484375, -0, 0, 0.0000013430886838250444270670413970947265625, -1, 0, 0, -0, 0, 0.999999940395355224609375, 0, 5.190000057220458984375, 0, 0.910000026226043701171875, 1, },
+					},
+					{ 
+						group = "jay_mesh_laaersABRF_pillars",
+						models = { "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_6.mdl", },
+						randomId = 9,
+						transf = { -1, -0.0000015815072629266069270670413970947265625, -0, 0, 0.0000015815072629266069270670413970947265625, -1, 0, 0, -0, 0, 1, 0, -4.730000019073486328125, 0, 2.7999999523162841796875, 1, },
+					},
+					{ 
+						group = "jay_mesh_laaersABRF_pillars",
+						models = { "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_6.mdl", },
+						randomId = 10,
+						transf = { -1, -0.0000018199258420281694270670413970947265625, 0, 0, 0.0000018199258420281694270670413970947265625, -1, 0, 0, 0, 0, 1, 0, 0.3499999940395355224609375, 0, 2.809999942779541015625, 1, },
+					},
+					{ 
+						group = "jay_mesh_laaersABRF_pillars",
+						models = { "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/LaaersABRF/vehicle/car_load/urban/toyota_mirai_ladung_6.mdl", },
+						randomId = 11,
+						transf = { -1, -0.0000018199258420281694270670413970947265625, 0, 0, 0.0000018199258420281694270670413970947265625, -1, 0, 0, 0, 0, 1, 0, 5.36999988555908203125, 0, 2.7999999523162841796875, 1, },
+					},
+				},
+			},
+			maintenance = { 
+				lifespan = 22200,
+				runningCosts = -1,
+			},
+			railVehicle = { 
+				config = { 
+					axles = { "jay_mesh_autoGestellKlein_w1", "jay_mesh_autotransporter_w1", },
+					fakeBogies = {
+						{ },
+						{ },
+						{ },
+						{ },
+					},
+				},
+			},
+			soundConfig = { 
+				soundSet = { 
+					name = "/mw_leicht",
+				},
+			},
+			transformatorConfig = { 
+				skipFromLod = 1,
+				transformator = { 
+					name = "::/vehicle/train/shared/default_train.trf",
+				},
+			},
+			transportVehicle = { 
+				carrier = "RAIL",
+				compartments = {
+					{ 
+						loadConfigs = {
+							{ 
+								cargoEntry = { 
+									capacity = 120,
+									cargoTypeSet = { 
+										cargoClassesExcluded = { },
+										cargoClassesIncluded = { },
+										cargoTypesExcluded = { },
+										cargoTypesIncluded = { "::/cargos/machines/machines.cargo", },
+									},
+									loadIndicator = "slots_0",
+									seats = { },
+								},
+								toHide = { },
+							},
+							{ 
+								cargoEntry = { 
+									capacity = 120,
+									cargoTypeSet = { 
+										cargoClassesExcluded = { },
+										cargoClassesIncluded = { },
+										cargoTypesExcluded = { },
+										cargoTypesIncluded = { "::/cargos/cars/cars.cargo", },
+									},
+									loadIndicator = "slots_1",
+									seats = { },
+								},
+								toHide = { },
+							},
+							{ 
+								cargoEntry = { 
+									capacity = 120,
+									cargoTypeSet = { 
+										cargoClassesExcluded = { },
+										cargoClassesIncluded = { },
+										cargoTypesExcluded = { },
+										cargoTypesIncluded = { "::/cargos/mwcars/mwcars.cargo", },
+									},
+									loadIndicator = "slots_2",
+									seats = { },
+								},
+								toHide = { },
+							},
+						},
+					},
+				},
+				engineTags = { },
+				groupFileName = "/vehicle/waggon/Autotransport/menu_autotransport.mdl",
+				loadSpeed = 4,
+				tags = { "TRAIN", "ELECTRIC_TRAIN", },
+			},
+		},
+		version = 2,
+	}
+end

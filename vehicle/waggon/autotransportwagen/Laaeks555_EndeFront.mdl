@@ -1,0 +1,596 @@
+function data()
+return { 
+		boundingInfo = { 
+			bbMax = { 6.6375904083251953125, 1.5834558010101318359375, 4.054300785064697265625, },
+			bbMin = { -6.742610931396484375, -1.583457469940185546875, 0.578105449676513671875, },
+		},
+		collider = { 
+			params = { 
+				halfExtents = { 6.69010066986083984375, 1.58345663547515869140625, 1.738097667694091796875, },
+			},
+			transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			type = "BOX",
+		},
+		lods = {
+			{ 
+				node = { 
+					children = {
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaers560/msh/jay_mesh_autoGestellKlein_w1_lod0.msh",
+							name = "jay_mesh_autoGestellKlein_w1",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -4.28999996185302734375, 0.00361471227370202541351318359375, 0.4099999964237213134765625, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaers560/msh/jay_mesh_autoGestellKlein_lod0.msh",
+							name = "jay_mesh_autoGestellKlein",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -0.310000002384185791015625, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaers560/msh/jay_mesh_autoGestellKlein_w1_lod0.msh",
+							name = "jay_mesh_autoGestellKlein_w1",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 4.5, 0.00361471227370202541351318359375, 0.4099999964237213134765625, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaers560/msh/jay_mesh_autoGestellKlein_lod0.msh",
+							name = "jay_mesh_autoGestellKlein",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 8.47000026702880859375, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_datenraster_lod0.msh",
+							name = "jay_mesh_laaeks555_datenraster",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_hebel_lod0.msh",
+							name = "jay_mesh_laaeks555_hebel",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_klappeOben_lod0.msh",
+							name = "jay_mesh_laaeks555_klappeOben",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_obereEbene_lod0.msh",
+							name = "jay_mesh_laaeks555_obereEbene",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_perlonOben1_lod0.msh",
+							name = "jay_mesh_laaeks555_perlonOben1",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_perlonUnten1_lod0.msh",
+							name = "jay_mesh_laaeks555_perlonUnten1",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_perlonUnten2_lod0.msh",
+							name = "jay_mesh_laaeks555_perlonUnten2",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_puffer_lod0.msh",
+							name = "jay_mesh_laaeks555_puffer",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_schiene_lod0.msh",
+							name = "jay_mesh_laaeks555_schiene",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_seileOben_lod0.msh",
+							name = "jay_mesh_laaeks555_seileOben",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_seileUnten_lod0.msh",
+							name = "jay_mesh_laaeks555_seileUnten",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_seilhaken_lod0.msh",
+							name = "jay_mesh_laaeks555_seilhaken",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_stangen_lod0.msh",
+							name = "jay_mesh_laaeks555_stangen",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_stangenFront_lod0.msh",
+							name = "jay_mesh_laaeks555_stangenFront",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_stangenSchrag_lod0.msh",
+							name = "jay_mesh_laaeks555_stangenSchrag",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_untereEbene_lod0.msh",
+							name = "jay_mesh_laaeks555_untereEbene",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_untereKlappe_lod0.msh",
+							name = "jay_mesh_laaeks555_untereKlappe",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_untereLeiste_lod0.msh",
+							name = "jay_mesh_laaeks555_untereLeiste",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_untereStangen_lod0.msh",
+							name = "jay_mesh_laaeks555_untereStangen",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_stangenHinten_lod0.msh",
+							name = "jay_mesh_laaeks555_stangenHinten",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, 0, 0.02999999932944774627685546875, 1, },
+				},
+				visibleFrom = 0,
+				visibleTo = 46.863552093505859375,
+			},
+			{ 
+				node = { 
+					children = {
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaers560/msh/jay_mesh_autoGestellKlein_w1_lod1.msh",
+							name = "jay_mesh_autoGestellKlein_w1",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -4.28999996185302734375, 0.00361471227370202541351318359375, 0.4099999964237213134765625, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaers560/msh/jay_mesh_autoGestellKlein_lod1.msh",
+							name = "jay_mesh_autoGestellKlein",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -0.310000002384185791015625, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaers560/msh/jay_mesh_autoGestellKlein_w1_lod1.msh",
+							name = "jay_mesh_autoGestellKlein_w1",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 4.5, 0.00361471227370202541351318359375, 0.4099999964237213134765625, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaers560/msh/jay_mesh_autoGestellKlein_lod1.msh",
+							name = "jay_mesh_autoGestellKlein",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 8.47000026702880859375, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_datenraster_lod1.msh",
+							name = "jay_mesh_laaeks555_datenraster",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_klappeOben_lod1.msh",
+							name = "jay_mesh_laaeks555_klappeOben",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_obereEbene_lod1.msh",
+							name = "jay_mesh_laaeks555_obereEbene",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_perlonOben1_lod1.msh",
+							name = "jay_mesh_laaeks555_perlonOben1",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_perlonUnten1_lod1.msh",
+							name = "jay_mesh_laaeks555_perlonUnten1",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_perlonUnten2_lod1.msh",
+							name = "jay_mesh_laaeks555_perlonUnten2",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_puffer_lod1.msh",
+							name = "jay_mesh_laaeks555_puffer",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_schiene_lod1.msh",
+							name = "jay_mesh_laaeks555_schiene",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_seileOben_lod1.msh",
+							name = "jay_mesh_laaeks555_seileOben",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_seileUnten_lod1.msh",
+							name = "jay_mesh_laaeks555_seileUnten",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_seilhaken_lod1.msh",
+							name = "jay_mesh_laaeks555_seilhaken",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_stangen_lod1.msh",
+							name = "jay_mesh_laaeks555_stangen",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_stangenFront_lod1.msh",
+							name = "jay_mesh_laaeks555_stangenFront",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_stangenSchrag_lod1.msh",
+							name = "jay_mesh_laaeks555_stangenSchrag",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_untereEbene_lod1.msh",
+							name = "jay_mesh_laaeks555_untereEbene",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_untereKlappe_lod1.msh",
+							name = "jay_mesh_laaeks555_untereKlappe",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_untereLeiste_lod1.msh",
+							name = "jay_mesh_laaeks555_untereLeiste",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_stangenHinten_lod1.msh",
+							name = "jay_mesh_laaeks555_stangenHinten",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, 0, 0.02999999932944774627685546875, 1, },
+				},
+				visibleFrom = 46.863552093505859375,
+				visibleTo = 140.5906524658203125,
+			},
+			{ 
+				node = { 
+					children = {
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaers560/msh/jay_mesh_autoGestellKlein_w1_lod1.msh",
+							name = "jay_mesh_autoGestellKlein_w1",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -4.28999996185302734375, 0.00361471227370202541351318359375, 0.4099999964237213134765625, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaers560/msh/jay_mesh_autoGestellKlein_w1_lod1.msh",
+							name = "jay_mesh_autoGestellKlein_w1",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 4.5, 0.00361471227370202541351318359375, 0.4099999964237213134765625, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_obereEbene_lod2.msh",
+							name = "jay_mesh_laaeks555_obereEbene",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_perlonOben1_lod2.msh",
+							name = "jay_mesh_laaeks555_perlonOben1",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_perlonUnten1_lod2.msh",
+							name = "jay_mesh_laaeks555_perlonUnten1",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_perlonUnten2_lod2.msh",
+							name = "jay_mesh_laaeks555_perlonUnten2",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_puffer_lod2.msh",
+							name = "jay_mesh_laaeks555_puffer",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_schiene_lod2.msh",
+							name = "jay_mesh_laaeks555_schiene",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_seileOben_lod2.msh",
+							name = "jay_mesh_laaeks555_seileOben",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_seileUnten_lod2.msh",
+							name = "jay_mesh_laaeks555_seileUnten",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_stangen_lod2.msh",
+							name = "jay_mesh_laaeks555_stangen",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_stangenSchrag_lod2.msh",
+							name = "jay_mesh_laaeks555_stangenSchrag",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_untereEbene_lod2.msh",
+							name = "jay_mesh_laaeks555_untereEbene",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_untereKlappe_lod2.msh",
+							name = "jay_mesh_laaeks555_untereKlappe",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_untereLeiste_lod2.msh",
+							name = "jay_mesh_laaeks555_untereLeiste",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, 0, 0.02999999932944774627685546875, 1, },
+				},
+				visibleFrom = 140.5906524658203125,
+				visibleTo = 421.771942138671875,
+			},
+			{ 
+				node = { 
+					children = {
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/msh/jay_mesh_autotransporter_w1_lod3.msh",
+							name = "jay_mesh_autoGestellKlein_w1",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -4.28999996185302734375, 0.00361471227370202541351318359375, 0.4099999964237213134765625, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell_klein.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/msh/jay_mesh_autotransporter_w1_lod3.msh",
+							name = "jay_mesh_autoGestellKlein_w1",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 4.5, 0.00361471227370202541351318359375, 0.4099999964237213134765625, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_obereEbene_lod3.msh",
+							name = "jay_mesh_laaeks555_obereEbene",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_stangen_lod3.msh",
+							name = "jay_mesh_laaeks555_stangen",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_stangenSchrag_lod3.msh",
+							name = "jay_mesh_laaeks555_stangenSchrag",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_untereEbene_lod3.msh",
+							name = "jay_mesh_laaeks555_untereEbene",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/laaeks555/mat/Laaeks555.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/laaeks555/msh/jay_mesh_laaeks555_untereLeiste_lod3.msh",
+							name = "jay_mesh_laaeks555_untereLeiste",
+							transf = { 0.00999999977648258209228515625, 0, 0, 0, 0, -0.00000000282129963835586750064976513385772705078125, 0.00999999977648258209228515625, 0, 0, -0.00999999977648258209228515625, -0.00000000282129963835586750064976513385772705078125, 0, -0.0019237995147705078125, 0, 0, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, 0, 0.02999999932944774627685546875, 1, },
+				},
+				visibleFrom = 421.771942138671875,
+				visibleTo = 1265.3157958984375,
+			},
+		},
+		metadata = { 
+			availability = { 
+				yearFrom = 1988,
+				yearTo = 2002,
+			},
+			cost = { 
+				price = -1,
+			},
+			description = { 
+				description = _("Offhs66_desc"),
+				name = _("Offhs66_name"),
+			},
+			emissions = { 
+				noise = { 
+					idle = -1,
+					power = -1,
+					speed = -1,
+				},
+				pollution = { 
+					idle = -1,
+					power = -1,
+					speed = -1,
+				},
+			},
+			landVehicle = { 
+				brakeDeceleration = 2.5,
+				engines = { },
+				friction = 0.0199999995529651641845703125,
+				topSpeed = 27.77777862548828125,
+				weightEmpty = 18400,
+				weightMaxPayload = 0,
+			},
+			loadIndicator = { 
+				configs = { 
+					slots_0 = { 
+						cargoSlots = { 
+							configurations = {
+								{
+									{ },
+									{ 0, },
+									{ 0, 1, },
+									{ 0, 1, 2, },
+									{ 0, 1, 2, 3, },
+								},
+							},
+						},
+					},
+				},
+				slots = {
+					{ 
+						group = "RootNode",
+						models = { "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_golf_1_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_golf_1_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_golf_1_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_golf_1_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_golf_1_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_golf_1_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_santana_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_santana_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_santana_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_santana_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_santana_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_santana_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/renault_4_f4_fourgonnette_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/renault_4_f4_fourgonnette_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/renault_4_f4_fourgonnette_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/renault_4_f4_fourgonnette_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/renault_4_f4_fourgonnette_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/renault_4_f4_fourgonnette_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/corolla_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/corolla_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/corolla_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/corolla_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/corolla_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/corolla_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_e36_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_e36_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_e36_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_e36_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_e36_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_astra_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_astra_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_astra_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_clio_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_clio_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_clio_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_clio_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_clio_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_golf_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_golf_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_golf_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_golf_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_golf_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_volvo_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_volvo_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_volvo_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_volvo_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_volvo_5.mdl", },
+						randomId = 0,
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -3.3599998950958251953125, 0, 1.10000002384185791015625, 1, },
+					},
+					{ 
+						group = "RootNode",
+						models = { "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_golf_1_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_golf_1_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_golf_1_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_golf_1_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_golf_1_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_golf_1_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_santana_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_santana_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_santana_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_santana_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_santana_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_santana_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/renault_4_f4_fourgonnette_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/renault_4_f4_fourgonnette_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/renault_4_f4_fourgonnette_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/renault_4_f4_fourgonnette_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/renault_4_f4_fourgonnette_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/renault_4_f4_fourgonnette_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/corolla_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/corolla_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/corolla_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/corolla_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/corolla_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/corolla_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_e36_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_e36_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_e36_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_e36_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_e36_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_astra_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_astra_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_astra_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_clio_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_clio_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_clio_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_clio_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_clio_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_golf_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_golf_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_golf_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_golf_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_golf_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_volvo_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_volvo_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_volvo_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_volvo_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_volvo_5.mdl", },
+						randomId = 1,
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 2.63000011444091796875, 0, 1.11000001430511474609375, 1, },
+					},
+					{ 
+						group = "RootNode",
+						models = { "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_golf_1_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_golf_1_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_golf_1_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_golf_1_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_golf_1_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_golf_1_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_santana_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_santana_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_santana_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_santana_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_santana_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_santana_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/renault_4_f4_fourgonnette_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/renault_4_f4_fourgonnette_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/renault_4_f4_fourgonnette_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/renault_4_f4_fourgonnette_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/renault_4_f4_fourgonnette_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/renault_4_f4_fourgonnette_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/corolla_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/corolla_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/corolla_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/corolla_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/corolla_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/corolla_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_e36_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_e36_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_e36_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_e36_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_e36_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_astra_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_astra_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_astra_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_clio_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_clio_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_clio_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_clio_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_clio_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_golf_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_golf_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_golf_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_golf_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_golf_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_volvo_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_volvo_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_volvo_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_volvo_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_volvo_5.mdl", },
+						randomId = 2,
+						transf = { 1, 0, -0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.599999904632568359375, 0, 3, 1, },
+					},
+					{ 
+						group = "RootNode",
+						models = { "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_golf_1_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_golf_1_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_golf_1_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_golf_1_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_golf_1_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_golf_1_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_santana_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_santana_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_santana_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_santana_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_santana_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/vw_santana_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/renault_4_f4_fourgonnette_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/renault_4_f4_fourgonnette_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/renault_4_f4_fourgonnette_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/renault_4_f4_fourgonnette_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/renault_4_f4_fourgonnette_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/renault_4_f4_fourgonnette_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/opel_kadett_e_carevan_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/corolla_ladung_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/corolla_ladung_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/corolla_ladung_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/corolla_ladung_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/corolla_ladung_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/urban/corolla_ladung_6.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_e36_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_e36_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_e36_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_e36_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_e36_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_astra_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_astra_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_astra_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_clio_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_clio_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_clio_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_clio_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_clio_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_golf_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_golf_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_golf_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_golf_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_golf_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_volvo_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_volvo_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_volvo_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_volvo_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Westerland/vehicle/car_load/bko/bko_volvo_5.mdl", },
+						randomId = 3,
+						transf = { 1, 0, -0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.3299999237060546875, 0, 3.0299999713897705078125, 1, },
+					},
+				},
+			},
+			maintenance = { 
+				lifespan = 29220,
+				runningCosts = -1,
+			},
+			railVehicle = { 
+				config = { 
+					axles = { },
+					fakeBogies = {
+						{ },
+						{ },
+						{ },
+						{ },
+					},
+				},
+			},
+			soundConfig = { 
+				soundSet = { 
+					name = "/mw_leicht",
+				},
+			},
+			transformatorConfig = { 
+				skipFromLod = 1,
+				transformator = { 
+					name = "::/vehicle/train/shared/default_train.trf",
+				},
+			},
+			transportVehicle = { 
+				carrier = "RAIL",
+				compartments = {
+					{ 
+						loadConfigs = {
+							{ 
+								cargoEntry = { 
+									capacity = 40,
+									cargoTypeSet = { 
+										cargoClassesExcluded = { },
+										cargoClassesIncluded = { },
+										cargoTypesExcluded = { },
+										cargoTypesIncluded = { "::/cargos/passengers/passengers.cargo", },
+									},
+									loadIndicator = "slots_0",
+									seats = { },
+								},
+								toHide = { },
+							},
+						},
+					},
+				},
+				engineTags = { },
+				groupFileName = "/vehicle/waggon/Autotransport/menu_autotransport.mdl",
+				loadSpeed = 2,
+				multipleUnitOnly = true,
+				tags = { "TRAIN", "ELECTRIC_TRAIN", },
+			},
+		},
+		version = 2,
+	}
+end

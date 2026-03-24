@@ -1,0 +1,602 @@
+function data()
+return { 
+		boundingInfo = { 
+			bbMax = { 5.995521068572998046875, 1.518051624298095703125, 1.63625895977020263671875, },
+			bbMin = { -5.995521068572998046875, -1.518051624298095703125, -0.0356256067752838134765625, },
+		},
+		collider = { 
+			params = { 
+				halfExtents = { 5.995521068572998046875, 1.518051624298095703125, 0.83594226837158203125, },
+			},
+			transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			type = "BOX",
+		},
+		lods = {
+			{ 
+				node = { 
+					children = {
+						{ 
+							animations = { 
+								back_forward_parts_off = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/back_forward_parts_off.ani",
+									},
+									type = "FILE_REF",
+								},
+								back_forward_parts_on = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/back_forward_parts_on.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "/vehicle/waggon/modwerkstatt_basis/mat/zugschluss.mtl", },
+							mesh = "/vehicle/waggon/modwerkstatt_basis/zugschluss/msh/zugschluss_de_lod0.msh",
+							name = "zugschluss_de_front",
+							transf = { 0.9766714572906494140625, 0, 0.21473501622676849365234375, 0, -0.00562111102044582366943359375, 0.99965703487396240234375, 0.02556629665195941925048828125, 0, -0.2146613895893096923828125, -0.02617692388594150543212890625, 0.976336538791656494140625, 0, -5.429999828338623046875, -1.40999996662139892578125, 1.2200000286102294921875, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/msh/jay_mesh_autotransporter_w1_lod0.msh",
+							name = "jay_mesh_rrho_w1",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.4915926456451416015625, 0.00363837531767785549163818359375, 0.450230777263641357421875, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/msh/jay_mesh_autotransporter_w1_lod0.msh",
+							name = "jay_mesh_rrho_w1",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.4915926456451416015625, 0.00363837531767785549163818359375, 0.450230777263641357421875, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_laufwerk_lod0.msh",
+							name = "jay_mesh_rrho_laufwerk",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_unterbau_lod0.msh",
+							name = "jay_mesh_rrho_unterbau",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_bodenplatte_lod0.msh",
+							name = "jay_mesh_rrho_bodenplatte",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_bordwand_lod0.msh",
+							name = "jay_mesh_rrho_bordwand",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_bordwandFront_lod0.msh",
+							name = "jay_mesh_rrho_bordwandFront",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_puffer_lod0.msh",
+							name = "jay_mesh_rrho_puffer",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_griffeKupplung_lod0.msh",
+							name = "jay_mesh_rrho_griffeKupplung",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_kupplung_lod0.msh",
+							name = "jay_mesh_rrho_kupplung",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_untereStangen_lod0.msh",
+							name = "jay_mesh_rrho_untereStangen",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_stangs_lod0.msh",
+							name = "jay_mesh_rrho_stangs",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_stark_lod0.msh",
+							name = "jay_mesh_rrho_stark",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_accecs_lod0.msh",
+							name = "jay_mesh_rrho_accecs",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_tritte_lod0.msh",
+							name = "jay_mesh_rrho_tritte",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_frontStangs_lod0.msh",
+							name = "jay_mesh_rrho_frontStangs",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_halterTafeln_lod0.msh",
+							name = "jay_mesh_rrho_halterTafeln",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_kegp_lod0.msh",
+							name = "jay_mesh_rrho_kegp",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_untenRum_lod0.msh",
+							name = "jay_mesh_rrho_untenRum",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				},
+				visibleFrom = 0,
+				visibleTo = 41.106380462646484375,
+			},
+			{ 
+				node = { 
+					children = {
+						{ 
+							animations = { 
+								back_forward_parts_off = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/back_forward_parts_off.ani",
+									},
+									type = "FILE_REF",
+								},
+								back_forward_parts_on = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/back_forward_parts_on.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "/vehicle/waggon/modwerkstatt_basis/mat/zugschluss.mtl", },
+							mesh = "/vehicle/waggon/modwerkstatt_basis/zugschluss/msh/zugschluss_de_lod0.msh",
+							name = "zugschluss_de_front",
+							transf = { 0.9766714572906494140625, 0, 0.21473501622676849365234375, 0, -0.00562111102044582366943359375, 0.99965703487396240234375, 0.02556629665195941925048828125, 0, -0.2146613895893096923828125, -0.02617692388594150543212890625, 0.976336538791656494140625, 0, -5.429999828338623046875, -1.40999996662139892578125, 1.2200000286102294921875, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/msh/jay_mesh_autotransporter_w1_lod1.msh",
+							name = "jay_mesh_rrho_w1",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.4915926456451416015625, 0.00363837531767785549163818359375, 0.450230777263641357421875, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/msh/jay_mesh_autotransporter_w1_lod1.msh",
+							name = "jay_mesh_rrho_w1",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.4915926456451416015625, 0.00363837531767785549163818359375, 0.450230777263641357421875, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_laufwerk_lod1.msh",
+							name = "jay_mesh_rrho_laufwerk",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_unterbau_lod1.msh",
+							name = "jay_mesh_rrho_unterbau",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_bodenplatte_lod1.msh",
+							name = "jay_mesh_rrho_bodenplatte",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_bordwand_lod1.msh",
+							name = "jay_mesh_rrho_bordwand",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_bordwandFront_lod1.msh",
+							name = "jay_mesh_rrho_bordwandFront",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_puffer_lod1.msh",
+							name = "jay_mesh_rrho_puffer",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_untereStangen_lod1.msh",
+							name = "jay_mesh_rrho_untereStangen",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_stangs_lod1.msh",
+							name = "jay_mesh_rrho_stangs",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_stark_lod1.msh",
+							name = "jay_mesh_rrho_stark",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_accecs_lod1.msh",
+							name = "jay_mesh_rrho_accecs",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_tritte_lod1.msh",
+							name = "jay_mesh_rrho_tritte",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_frontStangs_lod1.msh",
+							name = "jay_mesh_rrho_frontStangs",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_halterTafeln_lod1.msh",
+							name = "jay_mesh_rrho_halterTafeln",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_untenRum_lod1.msh",
+							name = "jay_mesh_rrho_untenRum",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				},
+				visibleFrom = 41.106380462646484375,
+				visibleTo = 123.31914520263671875,
+			},
+			{ 
+				node = { 
+					children = {
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/msh/jay_mesh_autotransporter_w1_lod2.msh",
+							name = "jay_mesh_rrho_w1",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.4915926456451416015625, 0.00363837531767785549163818359375, 0.450230777263641357421875, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/msh/jay_mesh_autotransporter_w1_lod2.msh",
+							name = "jay_mesh_rrho_w1",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.4915926456451416015625, 0.00363837531767785549163818359375, 0.450230777263641357421875, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_laufwerk_lod2.msh",
+							name = "jay_mesh_rrho_laufwerk",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_unterbau_lod2.msh",
+							name = "jay_mesh_rrho_unterbau",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_bodenplatte_lod2.msh",
+							name = "jay_mesh_rrho_bodenplatte",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_bordwand_lod2.msh",
+							name = "jay_mesh_rrho_bordwand",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_bordwandFront_lod2.msh",
+							name = "jay_mesh_rrho_bordwandFront",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_puffer_lod2.msh",
+							name = "jay_mesh_rrho_puffer",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_untereStangen_lod2.msh",
+							name = "jay_mesh_rrho_untereStangen",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_stangs_lod2.msh",
+							name = "jay_mesh_rrho_stangs",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_stark_lod2.msh",
+							name = "jay_mesh_rrho_stark",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_kegp_lod2.msh",
+							name = "jay_mesh_rrho_kegp",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				},
+				visibleFrom = 123.31914520263671875,
+				visibleTo = 369.957427978515625,
+			},
+			{ 
+				node = { 
+					children = {
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/msh/jay_mesh_autotransporter_w1_lod3.msh",
+							name = "jay_mesh_rrho_w1",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.4915926456451416015625, 0.00363837531767785549163818359375, 0.450230777263641357421875, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/msh/jay_mesh_autotransporter_w1_lod3.msh",
+							name = "jay_mesh_rrho_w1",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.4915926456451416015625, 0.00363837531767785549163818359375, 0.450230777263641357421875, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_unterbau_lod3.msh",
+							name = "jay_mesh_rrho_unterbau",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_bodenplatte_lod3.msh",
+							name = "jay_mesh_rrho_bodenplatte",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_bordwand_lod3.msh",
+							name = "jay_mesh_rrho_bordwand",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/rrho/mat/Rrho_db.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/rrho/msh/jay_mesh_rrho_bordwandFront_lod3.msh",
+							name = "jay_mesh_rrho_bordwandFront",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				},
+				visibleFrom = 369.957427978515625,
+				visibleTo = 1109.872314453125,
+			},
+		},
+		metadata = { 
+			availability = { 
+				yearFrom = 1949,
+				yearTo = 1968,
+			},
+			cost = { 
+				price = -1,
+			},
+			description = { 
+				description = _("rrho_desc"),
+				name = _("Rrho 30 (DB) >Opel< [1949]"),
+			},
+			emissions = { 
+				noise = { 
+					idle = -1,
+					power = -1,
+					speed = -1,
+				},
+				pollution = { 
+					idle = -1,
+					power = -1,
+					speed = -1,
+				},
+			},
+			landVehicle = { 
+				brakeDeceleration = 2.5,
+				engines = { },
+				friction = 0.0199999995529651641845703125,
+				topSpeed = 18.0555553436279296875,
+				weightEmpty = 10400,
+				weightMaxPayload = 0,
+			},
+			loadIndicator = { 
+				configs = { 
+					slots_0 = { 
+						cargoSlots = { 
+							configurations = {
+								{
+									{ },
+									{ 0, },
+									{ 0, 1, },
+								},
+								{
+									{ },
+									{ 2, },
+									{ 2, 3, },
+								},
+							},
+						},
+					},
+					slots_1 = { 
+						cargoSlots = { 
+							configurations = {
+								{
+									{ },
+									{ 0, },
+									{ 0, 1, },
+								},
+							},
+						},
+					},
+					slots_2 = { 
+						cargoSlots = { 
+							configurations = {
+								{
+									{ },
+									{ 0, },
+									{ 0, 1, },
+								},
+							},
+						},
+					},
+				},
+				slots = {
+					{ 
+						group = "RootNode",
+						models = { "res/models/model/vehicle/waggon/Autotransport/Rrho/vehicle/car_load/bandion/bandion_olympia_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Rrho/vehicle/car_load/bandion/bandion_olympia_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Rrho/vehicle/car_load/bandion/bandion_olympia_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Rrho/vehicle/car_load/bandion/bandion_olympia_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Rrho/vehicle/car_load/bandion/bandion_olympia_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Rrho/vehicle/car_load/bandion/bandion_olympia_6.mdl", },
+						randomId = 0,
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 2.4900000095367431640625, 0, 1.2400000095367431640625, 1, },
+					},
+					{ 
+						group = "RootNode",
+						models = { "res/models/model/vehicle/waggon/Autotransport/Rrho/vehicle/car_load/bandion/bandion_olympia_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Rrho/vehicle/car_load/bandion/bandion_olympia_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Rrho/vehicle/car_load/bandion/bandion_olympia_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Rrho/vehicle/car_load/bandion/bandion_olympia_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Rrho/vehicle/car_load/bandion/bandion_olympia_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Rrho/vehicle/car_load/bandion/bandion_olympia_6.mdl", },
+						randomId = 1,
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -2.4900000095367431640625, 0, 1.2400000095367431640625, 1, },
+					},
+					{ 
+						group = "RootNode",
+						models = { "res/models/model/vehicle/waggon/Autotransport/Rrho/vehicle/car_load/bandion/bandion_olympia_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Rrho/vehicle/car_load/bandion/bandion_olympia_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Rrho/vehicle/car_load/bandion/bandion_olympia_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Rrho/vehicle/car_load/bandion/bandion_olympia_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Rrho/vehicle/car_load/bandion/bandion_olympia_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Rrho/vehicle/car_load/bandion/bandion_olympia_6.mdl", },
+						randomId = 2,
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 2.4900000095367431640625, 0, 1.2400000095367431640625, 1, },
+					},
+					{ 
+						group = "RootNode",
+						models = { "res/models/model/vehicle/waggon/Autotransport/Rrho/vehicle/car_load/bandion/bandion_olympia_1.mdl", "res/models/model/vehicle/waggon/Autotransport/Rrho/vehicle/car_load/bandion/bandion_olympia_2.mdl", "res/models/model/vehicle/waggon/Autotransport/Rrho/vehicle/car_load/bandion/bandion_olympia_3.mdl", "res/models/model/vehicle/waggon/Autotransport/Rrho/vehicle/car_load/bandion/bandion_olympia_4.mdl", "res/models/model/vehicle/waggon/Autotransport/Rrho/vehicle/car_load/bandion/bandion_olympia_5.mdl", "res/models/model/vehicle/waggon/Autotransport/Rrho/vehicle/car_load/bandion/bandion_olympia_6.mdl", },
+						randomId = 3,
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -2.4900000095367431640625, 0, 1.2400000095367431640625, 1, },
+					},
+				},
+			},
+			maintenance = { 
+				lifespan = 12220,
+				runningCosts = -1,
+			},
+			railVehicle = { 
+				config = { 
+					axles = { "jay_mesh_rrho_w1", },
+					fakeBogies = {
+						{ },
+						{ },
+						{ },
+						{ },
+					},
+				},
+			},
+			soundConfig = { 
+				soundSet = { 
+					name = "::/vehicle/waggon/shared/sound/waggon_freight_old.snd",
+				},
+			},
+			transformatorConfig = { 
+				skipFromLod = 1,
+				transformator = { 
+					name = "::/vehicle/train/shared/default_train.trf",
+				},
+			},
+			transportVehicle = { 
+				carrier = "RAIL",
+				compartments = {
+					{ 
+						loadConfigs = {
+							{ 
+								cargoEntry = { 
+									capacity = 32,
+									cargoTypeSet = { 
+										cargoClassesExcluded = { },
+										cargoClassesIncluded = { },
+										cargoTypesExcluded = { },
+										cargoTypesIncluded = { "::/cargos/machines/machines.cargo", },
+									},
+									loadIndicator = "slots_0",
+									seats = { },
+								},
+								toHide = { },
+							},
+							{ 
+								cargoEntry = { 
+									capacity = 32,
+									cargoTypeSet = { 
+										cargoClassesExcluded = { },
+										cargoClassesIncluded = { },
+										cargoTypesExcluded = { },
+										cargoTypesIncluded = { "::/cargos/mwcars/mwcars.cargo", },
+									},
+									loadIndicator = "slots_1",
+									seats = { },
+								},
+								toHide = { },
+							},
+							{ 
+								cargoEntry = { 
+									capacity = 32,
+									cargoTypeSet = { 
+										cargoClassesExcluded = { },
+										cargoClassesIncluded = { },
+										cargoTypesExcluded = { },
+										cargoTypesIncluded = { "::/cargos/cars/cars.cargo", },
+									},
+									loadIndicator = "slots_2",
+									seats = { },
+								},
+								toHide = { },
+							},
+						},
+					},
+				},
+				engineTags = { },
+				groupFileName = "/vehicle/waggon/Autotransport/menu_autotransport.mdl",
+				loadSpeed = 2,
+				tags = { "TRAIN", "ELECTRIC_TRAIN", },
+			},
+		},
+		version = 2,
+	}
+end
