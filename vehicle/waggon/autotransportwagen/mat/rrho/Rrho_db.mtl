@@ -31,7 +31,7 @@ return {
 			light_receiver = { 
 				fragmentProperties = {
 					{ 
-						isLegacyMaterial = true,
+						isLegacyMaterial = false,
 						lightMask = 2,
 					},
 				},
@@ -39,7 +39,7 @@ return {
 			map_albedo = { 
 				fragmentSamplers = { 
 					albedoTex = { 
-						fileName = "/vehicle/waggon/Rrho/mat/tex/Rrho_db_albedo.dds",
+						fileName = "tex/Rrho_db_albedo.dds",
 						type = "TWOD",
 					},
 				},
@@ -47,7 +47,7 @@ return {
 			map_cblend_dirt_rust = { 
 				fragmentSamplers = { 
 					cblendDirtRustTex = { 
-						fileName = "/vehicle/waggon/Rrho/mat/tex/Rrho_alterung.dds",
+						fileName = "tex/Rrho_alterung.dds",
 						type = "TWOD",
 					},
 				},
@@ -72,7 +72,7 @@ return {
 			map_metal_gloss_ao = { 
 				fragmentSamplers = { 
 					metalGlossAoTex = { 
-						fileName = "/vehicle/waggon/Rrho/mat/tex/Rrho_dr_mga.dds",
+						fileName = "tex/Rrho_dr_mga.dds",
 						type = "TWOD",
 					},
 				},
@@ -80,7 +80,7 @@ return {
 			map_normal = { 
 				fragmentSamplers = { 
 					normalTex = { 
-						fileName = "/vehicle/waggon/Rrho/mat/tex/Rrho_nrml.dds",
+						fileName = "tex/Rrho_nrml.dds",
 						redGreen = true,
 						type = "TWOD",
 					},

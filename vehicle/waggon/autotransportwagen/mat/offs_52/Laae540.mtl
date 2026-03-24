@@ -31,7 +31,7 @@ return {
 			light_receiver = { 
 				fragmentProperties = {
 					{ 
-						isLegacyMaterial = true,
+						isLegacyMaterial = false,
 						lightMask = 2,
 					},
 				},
@@ -73,7 +73,6 @@ return {
 				fragmentSamplers = { 
 					metalGlossAoTex = { 
 						fileName = "/vehicle/waggon/Off52/mat/tex/Offs52_mga.dds",
-						scaleDownAllowed = false,
 						type = "TWOD",
 					},
 				},

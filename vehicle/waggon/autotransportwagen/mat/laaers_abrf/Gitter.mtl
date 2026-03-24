@@ -37,7 +37,7 @@ return {
 			light_receiver = { 
 				fragmentProperties = {
 					{ 
-						isLegacyMaterial = true,
+						isLegacyMaterial = false,
 						lightMask = 2,
 					},
 				},
@@ -45,7 +45,7 @@ return {
 			map_albedo_opacity = { 
 				fragmentSamplers = { 
 					albedoOpacityTex = { 
-						fileName = "/vehicle/waggon/LaaersABRF/mat/tex/LaaersABRF_gitterBlau.dds",
+						fileName = "tex/LaaersABRF_gitterBlau.dds",
 						type = "TWOD",
 					},
 				},
