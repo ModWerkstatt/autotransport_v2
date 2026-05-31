@@ -17,8 +17,8 @@ return {
 					children = {
 						{ 
 							materials = { "/vehicle/waggon/Autotransport/xfm36/mat/Xfm36.mtl", },
-							mesh = "/vehicle/waggon/Autotransport/xfm36/msh/jay_mesh_xfm36_radhalter_lod0.msh",
-							name = "jay_mesh_xfm36_radhalter",
+							mesh = "/vehicle/waggon/Autotransport/xfm36/msh/xfm36_radhalter_lod0.msh",
+							name = "xfm36_radhalter",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
 					},

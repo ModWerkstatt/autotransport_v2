@@ -1,0 +1,632 @@
+function data()
+return { 
+		boundingInfo = { 
+			bbMax = { 5.4019317626953125, 1.50937187671661376953125, 1.4782826900482177734375, },
+			bbMin = { -5.4019317626953125, -1.50937330722808837890625, 0.23091010749340057373046875, },
+		},
+		collider = { 
+			params = { 
+				halfExtents = { 5.4019317626953125, 1.50937259197235107421875, 0.623686313629150390625, },
+			},
+			transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			type = "BOX",
+		},
+		lods = {
+			{ 
+				node = { 
+					children = {
+						{ 
+							animations = { 
+								back_forward_parts_off = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/back_forward_parts_off.ani",
+									},
+									type = "FILE_REF",
+								},
+								back_forward_parts_on = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/back_forward_parts_on.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mw_basis::/vehicle/waggon/mw_basis/mat/zugschluss_de.mtl", },
+							mesh = "mw_basis::/vehicle/waggon/mw_basis/msh/zugschluss_de_lod0.msh",
+							name = "zugschluss_de_front",
+							transf = { 0.98419535160064697265625, -0.0000013218613048593397252261638641357421875, 0.1770846843719482421875, 0, -0.0027801808901131153106689453125, 0.999875962734222412109375, 0.0154590606689453125, 0, -0.17706282436847686767578125, -0.01570707000792026519775390625, 0.98407375812530517578125, 0, -4.769999980926513671875, 1.440000057220458984375, 1.190000057220458984375, 1, },
+						},
+						{ 
+							animations = { 
+								back_forward_parts_off = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/back_forward_parts_off.ani",
+									},
+									type = "FILE_REF",
+								},
+								back_forward_parts_on = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/back_forward_parts_on.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mw_basis::/vehicle/waggon/mw_basis/mat/zugschluss_de.mtl", },
+							mesh = "mw_basis::/vehicle/waggon/mw_basis/msh/zugschluss_de_lod0.msh",
+							name = "zugschluss_de_front",
+							transf = { 0.9964926242828369140625, -0.000001338377614956698380410671234130859375, 0.083677820861339569091796875, 0, -0.0126558430492877960205078125, 0.988493263721466064453125, 0.1507302224636077880859375, 0, -0.082715205848217010498046875, -0.1512606441974639892578125, 0.98502671718597412109375, 0, -4.7600002288818359375, -1.4500000476837158203125, 1.190000057220458984375, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/msh/autotransporter_laufwerk_bandion_lod0.msh",
+							name = "xfm36_laufwerkBandion",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -0.62000000476837158203125, 0, -0.02999999932944774627685546875, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/msh/autotransporter_laufwerk_bandion_lod0.msh",
+							name = "xfm36_laufwerkBandion",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 6.599999904632568359375, 0, -0.02999999932944774627685546875, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/msh/autotransporter_w1_lod0.msh",
+							name = "autotransporter_w1",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -3.599999904632568359375, 0.003638125956058502197265625, 0.4600000083446502685546875, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/msh/autotransporter_w1_lod0.msh",
+							name = "autotransporter_w1",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 3.6099998950958251953125, 0.003638125956058502197265625, 0.4600000083446502685546875, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/xf08/mat/Xf08.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/xf08/msh/xf08_untenDrunter_lod0.msh",
+							name = "xf08_untenDrunter",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/xf08/msh/xf08_kupplungMaikC_lod0.msh",
+							name = "xf08_kupplungMaikC",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/xf08/mat/Xf08.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/xf08/msh/xf08_tritt_lod0.msh",
+							name = "xf08_tritt",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/xf08/mat/Xf08.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/xf08/msh/xf08_puffer_lod0.msh",
+							name = "xf08_puffer",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/xf08/mat/Xf08.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/xf08/msh/xf08_platteOben_lod0.msh",
+							name = "xf08_platteOben",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/xf08/mat/Xf08.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/xf08/msh/xf08_obenDrauf_lod0.msh",
+							name = "xf08_obenDrauf",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/xf08/mat/Xf08.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/xf08/msh/xf08_griffeKupplung_lod0.msh",
+							name = "xf08_griffeKupplung",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/xf08/mat/Xf08.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/xf08/msh/xf08_tafel_lod0.msh",
+							name = "xf08_tafel",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/xf08/mat/Xf08.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/xf08/msh/xf08_sprengwerk_lod0.msh",
+							name = "xf08_sprengwerk",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/xf08/mat/Xf08.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/xf08/msh/xf08_halterPlatte_lod0.msh",
+							name = "xf08_halterPlatte",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				},
+				visibleFrom = 0,
+				visibleTo = 50,
+			},
+			{ 
+				node = { 
+					children = {
+						{ 
+							animations = { 
+								back_forward_parts_off = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/back_forward_parts_off.ani",
+									},
+									type = "FILE_REF",
+								},
+								back_forward_parts_on = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/back_forward_parts_on.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mw_basis::/vehicle/waggon/mw_basis/mat/zugschluss_de.mtl", },
+							mesh = "mw_basis::/vehicle/waggon/mw_basis/msh/zugschluss_de_lod0.msh",
+							name = "zugschluss_de_front",
+							transf = { 0.98419535160064697265625, -0.0000013218613048593397252261638641357421875, 0.1770846843719482421875, 0, -0.0027801808901131153106689453125, 0.999875962734222412109375, 0.0154590606689453125, 0, -0.17706282436847686767578125, -0.01570707000792026519775390625, 0.98407375812530517578125, 0, -4.769999980926513671875, 1.440000057220458984375, 1.190000057220458984375, 1, },
+						},
+						{ 
+							animations = { 
+								back_forward_parts_off = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/back_forward_parts_off.ani",
+									},
+									type = "FILE_REF",
+								},
+								back_forward_parts_on = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/back_forward_parts_on.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mw_basis::/vehicle/waggon/mw_basis/mat/zugschluss_de.mtl", },
+							mesh = "mw_basis::/vehicle/waggon/mw_basis/msh/zugschluss_de_lod0.msh",
+							name = "zugschluss_de_front",
+							transf = { 0.9964926242828369140625, -0.000001338377614956698380410671234130859375, 0.083677820861339569091796875, 0, -0.0126558430492877960205078125, 0.988493263721466064453125, 0.1507302224636077880859375, 0, -0.082715205848217010498046875, -0.1512606441974639892578125, 0.98502671718597412109375, 0, -4.7600002288818359375, -1.4500000476837158203125, 1.190000057220458984375, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/msh/autotransporter_laufwerk_bandion_lod1.msh",
+							name = "xfm36_laufwerkBandion",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -0.62000000476837158203125, 0, -0.02999999932944774627685546875, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/msh/autotransporter_laufwerk_bandion_lod1.msh",
+							name = "xfm36_laufwerkBandion",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 6.599999904632568359375, 0, -0.02999999932944774627685546875, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/msh/autotransporter_w1_lod1.msh",
+							name = "autotransporter_w1",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -3.599999904632568359375, 0.003638125956058502197265625, 0.4600000083446502685546875, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/msh/autotransporter_w1_lod1.msh",
+							name = "autotransporter_w1",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 3.6099998950958251953125, 0.003638125956058502197265625, 0.4600000083446502685546875, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/xf08/mat/Xf08.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/xf08/msh/xf08_untenDrunter_lod0.msh",
+							name = "xf08_untenDrunter",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/xf08/msh/xf08_kupplungMaikC_lod0.msh",
+							name = "xf08_kupplungMaikC",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/xf08/mat/Xf08.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/xf08/msh/xf08_tritt_lod0.msh",
+							name = "xf08_tritt",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/xf08/mat/Xf08.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/xf08/msh/xf08_puffer_lod0.msh",
+							name = "xf08_puffer",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/xf08/mat/Xf08.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/xf08/msh/xf08_platteOben_lod0.msh",
+							name = "xf08_platteOben",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/xf08/mat/Xf08.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/xf08/msh/xf08_obenDrauf_lod0.msh",
+							name = "xf08_obenDrauf",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/xf08/mat/Xf08.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/xf08/msh/xf08_griffeKupplung_lod0.msh",
+							name = "xf08_griffeKupplung",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/xf08/mat/Xf08.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/xf08/msh/xf08_tafel_lod0.msh",
+							name = "xf08_tafel",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/xf08/mat/Xf08.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/xf08/msh/xf08_sprengwerk_lod0.msh",
+							name = "xf08_sprengwerk",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/xf08/mat/Xf08.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/xf08/msh/xf08_halterPlatte_lod0.msh",
+							name = "xf08_halterPlatte",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				},
+				visibleFrom = 50,
+				visibleTo = 100,
+			},
+			{ 
+				node = { 
+					children = {
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/msh/autotransporter_laufwerk_bandion_lod1.msh",
+							name = "xfm36_laufwerkBandion",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -0.62000000476837158203125, 0, -0.02999999932944774627685546875, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/msh/autotransporter_laufwerk_bandion_lod1.msh",
+							name = "xfm36_laufwerkBandion",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 6.599999904632568359375, 0, -0.02999999932944774627685546875, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/msh/autotransporter_w1_lod1.msh",
+							name = "autotransporter_w1",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -3.599999904632568359375, 0.003638125956058502197265625, 0.4600000083446502685546875, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/msh/autotransporter_w1_lod2.msh",
+							name = "autotransporter_w1",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 3.6099998950958251953125, 0.003638125956058502197265625, 0.4600000083446502685546875, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/xf08/mat/Xf08.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/xf08/msh/xf08_untenDrunter_lod0.msh",
+							name = "xf08_untenDrunter",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/xf08/mat/Xf08.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/xf08/msh/xf08_puffer_lod0.msh",
+							name = "xf08_puffer",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/xf08/mat/Xf08.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/xf08/msh/xf08_platteOben_lod0.msh",
+							name = "xf08_platteOben",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/xf08/mat/Xf08.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/xf08/msh/xf08_obenDrauf_lod0.msh",
+							name = "xf08_obenDrauf",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/xf08/mat/Xf08.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/xf08/msh/xf08_sprengwerk_lod0.msh",
+							name = "xf08_sprengwerk",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/xf08/mat/Xf08.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/xf08/msh/xf08_halterPlatte_lod0.msh",
+							name = "xf08_halterPlatte",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				},
+				visibleFrom = 100,
+				visibleTo = 200,
+			},
+			{ 
+				node = { 
+					children = {
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/msh/autotransporter_w1_lod3.msh",
+							name = "autotransporter_w1",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -3.599999904632568359375, 0.003638125956058502197265625, 0.4888211786746978759765625, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/mat/Auto_Gestell.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/msh/autotransporter_w1_lod3.msh",
+							name = "autotransporter_w1",
+							transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 3.6099998950958251953125, 0.003638125956058502197265625, 0.4888211786746978759765625, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/xf08/mat/Xf08.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/xf08/msh/xf08_untenDrunter_lod0.msh",
+							name = "xf08_untenDrunter",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/xf08/mat/Xf08.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/xf08/msh/xf08_platteOben_lod0.msh",
+							name = "xf08_platteOben",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/xf08/mat/Xf08.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/xf08/msh/xf08_obenDrauf_lod0.msh",
+							name = "xf08_obenDrauf",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/vehicle/waggon/Autotransport/xf08/mat/Xf08.mtl", },
+							mesh = "/vehicle/waggon/Autotransport/xf08/msh/xf08_sprengwerk_lod0.msh",
+							name = "xf08_sprengwerk",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				},
+				visibleFrom = 200,
+				visibleTo = 1047.340087890625,
+			},
+		},
+		metadata = { 
+			availability = { 
+				yearFrom = 1950,
+				yearTo = 1970,
+			},
+			cost = { 
+				price = -1,
+			},
+			description = { 
+				description = _("xfm_desc"),
+				name = _("Xfl08 (Volkswagen) [1950]"),
+			},
+			emissions = { 
+				noise = { 
+					idle = -1,
+					power = -1,
+					speed = -1,
+				},
+				pollution = { 
+					idle = -1,
+					power = -1,
+					speed = -1,
+				},
+			},
+			landVehicle = { 
+				brakeDeceleration = 2.5,
+				engines = { },
+				friction = 0.0199999995529651641845703125,
+				topSpeed = 22.200000762939453125,
+				weightEmpty = 9000,
+				weightMaxPayload = 0,
+			},
+			loadIndicator = { 
+				configs = { 
+					slots_0 = { 
+						cargoSlots = { 
+							configurations = {
+								{
+									{ },
+									{ 0, },
+									{ 0, 1, },
+									{ 0, 1, 2, },
+									{ 0, 1, 2, 3, },
+									{ 0, 1, 2, 3, 4, },
+								},
+								{
+									{ },
+									{ 5, 0, },
+									{ 5, 0, 1, },
+									{ 5, 0, 1, 2, },
+									{ 5, 0, 1, 2, 3, },
+									{ 5, 0, 1, 2, 3, 4, },
+								},
+							},
+						},
+					},
+					slots_1 = { 
+						cargoSlots = { 
+							configurations = {
+								{
+									{ },
+									{ 0, },
+									{ 0, 1, },
+									{ 0, 1, 2, },
+									{ 0, 1, 2, 3, },
+									{ 0, 1, 2, 3, 4, },
+								},
+								{
+									{ },
+									{ 5, 0, },
+									{ 5, 0, 1, },
+									{ 5, 0, 1, 2, },
+									{ 5, 0, 1, 2, 3, },
+									{ 5, 0, 1, 2, 3, 4, },
+								},
+							},
+						},
+					},
+					slots_2 = { 
+						cargoSlots = { 
+							configurations = {
+								{
+									{ },
+									{ 0, },
+									{ 0, 1, },
+									{ 0, 1, 2, },
+									{ 0, 1, 2, 3, },
+									{ 0, 1, 2, 3, 4, },
+								},
+								{
+									{ },
+									{ 5, 0, },
+									{ 5, 0, 1, },
+									{ 5, 0, 1, 2, },
+									{ 5, 0, 1, 2, 3, },
+									{ 5, 0, 1, 2, 3, 4, },
+								},
+							},
+						},
+					},
+				},
+				slots = {
+					{ 
+						group = "xfm36_laufwerkBandion",
+						models = { "res/models/model/vehicle/waggon/Autotransport/X_Wagen/vehicle/car_load/jay/tl250_1.mdl", "res/models/model/vehicle/waggon/Autotransport/X_Wagen/vehicle/car_load/jay/tl250_2.mdl", "res/models/model/vehicle/waggon/Autotransport/X_Wagen/vehicle/car_load/jay/tl250_3.mdl", "res/models/model/vehicle/waggon/Autotransport/X_Wagen/vehicle/car_load/jay/tl250_4.mdl", "res/models/model/vehicle/waggon/Autotransport/X_Wagen/vehicle/car_load/jay/tl250_5.mdl", "res/models/model/vehicle/waggon/Autotransport/X_Wagen/vehicle/car_load/jay/tl250_6.mdl", },
+						randomId = 0,
+						transf = { -0.00000004371138828673792886547744274139404296875, 1, -0, 0, -1, -0.00000004371138828673792886547744274139404296875, 0, 0, 0, 0, 1, 0, 0.589999973773956298828125, 0, 1.2400000095367431640625, 1, },
+					},
+					{ 
+						group = "xfm36_laufwerkBandion",
+						models = { "res/models/model/vehicle/waggon/Autotransport/X_Wagen/vehicle/car_load/jay/tl250_1.mdl", "res/models/model/vehicle/waggon/Autotransport/X_Wagen/vehicle/car_load/jay/tl250_2.mdl", "res/models/model/vehicle/waggon/Autotransport/X_Wagen/vehicle/car_load/jay/tl250_3.mdl", "res/models/model/vehicle/waggon/Autotransport/X_Wagen/vehicle/car_load/jay/tl250_4.mdl", "res/models/model/vehicle/waggon/Autotransport/X_Wagen/vehicle/car_load/jay/tl250_5.mdl", "res/models/model/vehicle/waggon/Autotransport/X_Wagen/vehicle/car_load/jay/tl250_6.mdl", },
+						randomId = 1,
+						transf = { -0.00000004371138828673792886547744274139404296875, 1, -0, 0, -1, -0.00000004371138828673792886547744274139404296875, 0, 0, 0, 0, 1, 0, -1.03999996185302734375, 0, 1.2400000095367431640625, 1, },
+					},
+					{ 
+						group = "xfm36_laufwerkBandion",
+						models = { "res/models/model/vehicle/waggon/Autotransport/X_Wagen/vehicle/car_load/jay/tl250_1.mdl", "res/models/model/vehicle/waggon/Autotransport/X_Wagen/vehicle/car_load/jay/tl250_2.mdl", "res/models/model/vehicle/waggon/Autotransport/X_Wagen/vehicle/car_load/jay/tl250_3.mdl", "res/models/model/vehicle/waggon/Autotransport/X_Wagen/vehicle/car_load/jay/tl250_4.mdl", "res/models/model/vehicle/waggon/Autotransport/X_Wagen/vehicle/car_load/jay/tl250_5.mdl", "res/models/model/vehicle/waggon/Autotransport/X_Wagen/vehicle/car_load/jay/tl250_6.mdl", },
+						randomId = 2,
+						transf = { -0.00000004371138828673792886547744274139404296875, 1, -0, 0, -1, -0.00000004371138828673792886547744274139404296875, 0, 0, 0, 0, 1, 0, 3.88000011444091796875, 0, 1.2400000095367431640625, 1, },
+					},
+					{ 
+						group = "xfm36_laufwerkBandion",
+						models = { "res/models/model/vehicle/waggon/Autotransport/X_Wagen/vehicle/car_load/jay/tl250_1.mdl", "res/models/model/vehicle/waggon/Autotransport/X_Wagen/vehicle/car_load/jay/tl250_2.mdl", "res/models/model/vehicle/waggon/Autotransport/X_Wagen/vehicle/car_load/jay/tl250_3.mdl", "res/models/model/vehicle/waggon/Autotransport/X_Wagen/vehicle/car_load/jay/tl250_4.mdl", "res/models/model/vehicle/waggon/Autotransport/X_Wagen/vehicle/car_load/jay/tl250_5.mdl", "res/models/model/vehicle/waggon/Autotransport/X_Wagen/vehicle/car_load/jay/tl250_6.mdl", },
+						randomId = 3,
+						transf = { -0.00000004371138828673792886547744274139404296875, 1, -0, 0, -1, -0.00000004371138828673792886547744274139404296875, 0, 0, 0, 0, 1, 0, 2.230000019073486328125, 0, 1.2400000095367431640625, 1, },
+					},
+					{ 
+						group = "xfm36_laufwerkBandion",
+						models = { "res/models/model/vehicle/waggon/Autotransport/X_Wagen/vehicle/car_load/jay/tl250_1.mdl", "res/models/model/vehicle/waggon/Autotransport/X_Wagen/vehicle/car_load/jay/tl250_2.mdl", "res/models/model/vehicle/waggon/Autotransport/X_Wagen/vehicle/car_load/jay/tl250_3.mdl", "res/models/model/vehicle/waggon/Autotransport/X_Wagen/vehicle/car_load/jay/tl250_4.mdl", "res/models/model/vehicle/waggon/Autotransport/X_Wagen/vehicle/car_load/jay/tl250_5.mdl", "res/models/model/vehicle/waggon/Autotransport/X_Wagen/vehicle/car_load/jay/tl250_6.mdl", },
+						randomId = 4,
+						transf = { -0.00000004371138828673792886547744274139404296875, 1, -0, 0, -1, -0.00000004371138828673792886547744274139404296875, 0, 0, 0, 0, 1, 0, -2.6600000858306884765625, 0, 1.2400000095367431640625, 1, },
+					},
+					{ 
+						group = "xfm36_laufwerkBandion",
+						models = { "res/models/model/vehicle/waggon/Autotransport/X_Wagen/vehicle/car_load/jay/tl250_kasten.mdl", },
+						randomId = 0,
+						transf = { -1, -0.0000003894143674187944270670413970947265625, 0, 0, 0.0000003894143674187944270670413970947265625, -1, 0, 0, 0, 0, 1, 0, 0.61000001430511474609375, 0, 1.2400000095367431640625, 1, },
+					},
+				},
+			},
+			maintenance = { 
+				lifespan = 12220,
+				runningCosts = -1,
+			},
+			railVehicle = { 
+				config = { 
+					axles = { "autotransporter_w1", },
+					fakeBogies = {
+						{ },
+						{ },
+						{ },
+						{ },
+					},
+				},
+			},
+			soundConfig = { 
+				soundSet = { 
+					name = "::/vehicle/waggon/shared/sound/waggon_freight_old.snd",
+				},
+			},
+			transformatorConfig = { 
+				skipFromLod = 1,
+				transformator = { 
+					name = "::/vehicle/train/shared/default_train.trf",
+				},
+			},
+			transportVehicle = { 
+				carrier = "RAIL",
+				compartments = {
+					{ 
+						loadConfigs = {
+							{ 
+								cargoEntry = { 
+									capacity = 32,
+									cargoTypeSet = { 
+										cargoClassesExcluded = { },
+										cargoClassesIncluded = { },
+										cargoTypesExcluded = { },
+										cargoTypesIncluded = { "::/cargos/machines/machines.cargo", },
+									},
+									loadIndicator = "slots_0",
+									seats = { },
+								},
+								toHide = { },
+							},
+							{ 
+								cargoEntry = { 
+									capacity = 32,
+									cargoTypeSet = { 
+										cargoClassesExcluded = { },
+										cargoClassesIncluded = { },
+										cargoTypesExcluded = { },
+										cargoTypesIncluded = { "::/cargos/mwcars/mwcars.cargo", },
+									},
+									loadIndicator = "slots_1",
+									seats = { },
+								},
+								toHide = { },
+							},
+							{ 
+								cargoEntry = { 
+									capacity = 32,
+									cargoTypeSet = { 
+										cargoClassesExcluded = { },
+										cargoClassesIncluded = { },
+										cargoTypesExcluded = { },
+										cargoTypesIncluded = { "::/cargos/cars/cars.cargo", },
+									},
+									loadIndicator = "slots_2",
+									seats = { },
+								},
+								toHide = { },
+							},
+						},
+					},
+				},
+				engineTags = { },
+				groupFileName = "/vehicle/waggon/Autotransport/menu_autotransport.mdl",
+				loadSpeed = 2,
+				tags = { "TRAIN", "ELECTRIC_TRAIN", },
+			},
+		},
+		version = 2,
+	}
+end
