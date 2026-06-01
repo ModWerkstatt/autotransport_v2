@@ -16,7 +16,7 @@ return {
 				node = { 
 					children = {
 						{ 
-							materials = { "mat/offhs66/offhs66_db.mtl", },
+							materials = { "mat/westerland/offhs66_db.mtl", },
 							mesh = "msh/laeqrss548_lod0.msh",
 							name = "laeqrss548",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
@@ -68,7 +68,7 @@ return {
 				node = { 
 					children = {
 						{ 
-							materials = { "mat/offhs66/offhs66_db.mtl", },
+							materials = { "mat/westerland/offhs66_db.mtl", },
 							mesh = "msh/laeqrss548_lod1.msh",
 							name = "laeqrss548",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
@@ -108,7 +108,7 @@ return {
 				node = { 
 					children = {
 						{ 
-							materials = { "mat/offhs66/offhs66_db.mtl", },
+							materials = { "mat/westerland/offhs66_db.mtl", },
 							mesh = "msh/laeqrss548_lod2.msh",
 							name = "laeqrss548",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },

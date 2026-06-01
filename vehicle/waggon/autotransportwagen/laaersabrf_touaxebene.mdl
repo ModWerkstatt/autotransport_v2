@@ -16,9 +16,9 @@ return {
 				node = { 
 					children = {
 						{ 
-							materials = { "/vehicle/waggon/Autotransport/laaersABRF/mat/LaaersABRF_touax.mtl", },
-							mesh = "/vehicle/waggon/Autotransport/laaersABRF/msh/laaersABRF_obereEbene_lod0.msh",
-							name = "laaersABRF_obereEbene",
+							materials = { "mat/laaers_abrf/laaersabrf_touax.mtl", },
+							mesh = "msh/laaersabrf_obereebene_lod0.msh",
+							name = "laaersabrf_obereebene",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
 					},
