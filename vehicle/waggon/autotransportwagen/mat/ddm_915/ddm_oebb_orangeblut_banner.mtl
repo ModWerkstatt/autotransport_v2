@@ -39,7 +39,7 @@ return {
 			map_albedo = {
 				fragmentSamplers = {
 					albedoTex = {
-						fileName = "tex/ddm_oebborange2_banner_albedo.dds",
+						fileName = "tex/ddm_oebb_orange2_banner_albedo.dds",
 						type = "TWOD",
 					},
 				},

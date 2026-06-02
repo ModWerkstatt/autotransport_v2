@@ -250,19 +250,19 @@ return {
 						{ 
 							children = {
 								{ 
-									materials = { "mat/shared/ddmgestell.mtl", },
+									materials = { "mat/shared/ddm_gestell.mtl", },
 									mesh = "msh/bogie_lod0.msh",
 									name = "bogie",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 								},
 								{ 
-									materials = { "mat/shared/ddmgestell.mtl", },
+									materials = { "mat/shared/ddm_gestell.mtl", },
 									mesh = "msh/achse2_lod0.msh",
 									name = "achse2",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2548406124114990234375, 0.0000002384185791015625, -0.3091019690036773681640625, 1, },
 								},
 								{ 
-									materials = { "mat/shared/ddmgestell.mtl", },
+									materials = { "mat/shared/ddm_gestell.mtl", },
 									mesh = "msh/achse_lod0.msh",
 									name = "achse",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2565886974334716796875, 0.0000002384185791015625, -0.3091019690036773681640625, 1, },
@@ -274,19 +274,19 @@ return {
 						{ 
 							children = {
 								{ 
-									materials = { "mat/shared/ddmgestell.mtl", },
+									materials = { "mat/shared/ddm_gestell.mtl", },
 									mesh = "msh/bogie_lod0.msh",
 									name = "bogie",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 								},
 								{ 
-									materials = { "mat/shared/ddmgestell.mtl", },
+									materials = { "mat/shared/ddm_gestell.mtl", },
 									mesh = "msh/achse2_lod0.msh",
 									name = "achse2",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2548406124114990234375, 0.0000002384185791015625, -0.3091019690036773681640625, 1, },
 								},
 								{ 
-									materials = { "mat/shared/ddmgestell.mtl", },
+									materials = { "mat/shared/ddm_gestell.mtl", },
 									mesh = "msh/achse_lod0.msh",
 									name = "achse",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2565886974334716796875, 0.0000002384185791015625, -0.3091019690036773681640625, 1, },
@@ -450,19 +450,19 @@ return {
 						{ 
 							children = {
 								{ 
-									materials = { "mat/shared/ddmgestell.mtl", },
+									materials = { "mat/shared/ddm_gestell.mtl", },
 									mesh = "msh/bogie_lod1.msh",
 									name = "bogie",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 								},
 								{ 
-									materials = { "mat/shared/ddmgestell.mtl", },
+									materials = { "mat/shared/ddm_gestell.mtl", },
 									mesh = "msh/achse2_lod1.msh",
 									name = "achse2",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2548406124114990234375, 0.0000002384185791015625, -0.3091019690036773681640625, 1, },
 								},
 								{ 
-									materials = { "mat/shared/ddmgestell.mtl", },
+									materials = { "mat/shared/ddm_gestell.mtl", },
 									mesh = "msh/achse_lod1.msh",
 									name = "achse",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2565886974334716796875, 0.0000002384185791015625, -0.3091019690036773681640625, 1, },
@@ -474,19 +474,19 @@ return {
 						{ 
 							children = {
 								{ 
-									materials = { "mat/shared/ddmgestell.mtl", },
+									materials = { "mat/shared/ddm_gestell.mtl", },
 									mesh = "msh/bogie_lod1.msh",
 									name = "bogie",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 								},
 								{ 
-									materials = { "mat/shared/ddmgestell.mtl", },
+									materials = { "mat/shared/ddm_gestell.mtl", },
 									mesh = "msh/achse2_lod1.msh",
 									name = "achse2",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2548406124114990234375, 0.0000002384185791015625, -0.3091019690036773681640625, 1, },
 								},
 								{ 
-									materials = { "mat/shared/ddmgestell.mtl", },
+									materials = { "mat/shared/ddm_gestell.mtl", },
 									mesh = "msh/achse_lod1.msh",
 									name = "achse",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2565886974334716796875, 0.0000002384185791015625, -0.3091019690036773681640625, 1, },
@@ -532,13 +532,13 @@ return {
 						{ 
 							children = {
 								{ 
-									materials = { "mat/shared/ddmgestell.mtl", },
+									materials = { "mat/shared/ddm_gestell.mtl", },
 									mesh = "msh/achse2_lod2.msh",
 									name = "achse2",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2548406124114990234375, 0.0000002384185791015625, -0.3091019690036773681640625, 1, },
 								},
 								{ 
-									materials = { "mat/shared/ddmgestell.mtl", },
+									materials = { "mat/shared/ddm_gestell.mtl", },
 									mesh = "msh/achse_lod2.msh",
 									name = "achse",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2565886974334716796875, 0.0000002384185791015625, -0.3091019690036773681640625, 1, },
@@ -550,13 +550,13 @@ return {
 						{ 
 							children = {
 								{ 
-									materials = { "mat/shared/ddmgestell.mtl", },
+									materials = { "mat/shared/ddm_gestell.mtl", },
 									mesh = "msh/achse2_lod2.msh",
 									name = "achse2",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2548406124114990234375, 0.0000002384185791015625, -0.3091019690036773681640625, 1, },
 								},
 								{ 
-									materials = { "mat/shared/ddmgestell.mtl", },
+									materials = { "mat/shared/ddm_gestell.mtl", },
 									mesh = "msh/achse_lod2.msh",
 									name = "achse",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2565886974334716796875, 0.0000002384185791015625, -0.3091019690036773681640625, 1, },
@@ -596,13 +596,13 @@ return {
 						{ 
 							children = {
 								{ 
-									materials = { "mat/shared/ddmgestell.mtl", },
+									materials = { "mat/shared/ddm_gestell.mtl", },
 									mesh = "msh/schwany30_w2_lod3.msh",
 									name = "schwany30_w2",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.7454986572265625, 0.0422175638377666473388671875, 0.4295194149017333984375, 1, },
 								},
 								{ 
-									materials = { "mat/shared/ddmgestell.mtl", },
+									materials = { "mat/shared/ddm_gestell.mtl", },
 									mesh = "msh/schwany30_w1_lod3.msh",
 									name = "schwany30_w1",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.45674037933349609375, 0.04221768677234649658203125, 0.4295194447040557861328125, 1, },
@@ -614,13 +614,13 @@ return {
 						{ 
 							children = {
 								{ 
-									materials = { "mat/shared/ddmgestell.mtl", },
+									materials = { "mat/shared/ddm_gestell.mtl", },
 									mesh = "msh/schwany30_w2_lod3.msh",
 									name = "schwany30_w2",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.7454986572265625, 0.0422175638377666473388671875, 0.4295194149017333984375, 1, },
 								},
 								{ 
-									materials = { "mat/shared/ddmgestell.mtl", },
+									materials = { "mat/shared/ddm_gestell.mtl", },
 									mesh = "msh/schwany30_w1_lod3.msh",
 									name = "schwany30_w1",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.45674037933349609375, 0.04221768677234649658203125, 0.4295194447040557861328125, 1, },
