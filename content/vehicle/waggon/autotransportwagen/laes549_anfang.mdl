@@ -593,7 +593,6 @@ return {
 				engineTransportModes = { },
 				groupFileName = "menu_autotransport.mdl",
 				loadSpeed = 3,
-				multipleUnitOnly = true,
 				transportModes = { "TRAIN", "ELECTRIC_TRAIN", },
 				filterTags = { "default", },
 			},
