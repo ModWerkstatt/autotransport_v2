@@ -1042,7 +1042,7 @@ return {
 			},
 			soundConfig = { 
 				soundSet = { 
-					name = "/mw_leicht",
+					name = "mw_basis::/vehicle/waggon/mw_basis/sound/mw_leicht.snd",
 				},
 			},
 			transformatorConfig = { 
