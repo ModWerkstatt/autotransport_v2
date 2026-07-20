@@ -491,25 +491,25 @@ return {
 				slots = {
 					{ 
 						group = "RootNode",
-						models = { "res/models/modelRrho/vehicle/car_load/urban/beetle_1948_ladung_1.mdl", "res/models/modelRrho/vehicle/car_load/urban/beetle_1948_ladung_2.mdl", "res/models/modelRrho/vehicle/car_load/urban/beetle_1948_ladung_3.mdl", "res/models/modelRrho/vehicle/car_load/urban/beetle_1948_ladung_4.mdl", "res/models/modelRrho/vehicle/car_load/urban/beetle_1948_ladung_5.mdl", "res/models/modelRrho/vehicle/car_load/urban/beetle_1948_ladung_6.mdl", },
+						models = { "#CAR_EUROPE", },
 						randomId = 0,
 						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 2.4900000095367431640625, 0, 1.2400000095367431640625, 1, },
 					},
 					{ 
 						group = "RootNode",
-						models = { "res/models/modelRrho/vehicle/car_load/urban/beetle_1948_ladung_1.mdl", "res/models/modelRrho/vehicle/car_load/urban/beetle_1948_ladung_2.mdl", "res/models/modelRrho/vehicle/car_load/urban/beetle_1948_ladung_3.mdl", "res/models/modelRrho/vehicle/car_load/urban/beetle_1948_ladung_4.mdl", "res/models/modelRrho/vehicle/car_load/urban/beetle_1948_ladung_5.mdl", "res/models/modelRrho/vehicle/car_load/urban/beetle_1948_ladung_6.mdl", },
+						models = { "#CAR_EUROPE", },
 						randomId = 1,
 						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -2.4900000095367431640625, 0, 1.2400000095367431640625, 1, },
 					},
 					{ 
 						group = "RootNode",
-						models = { "res/models/modelRrho/vehicle/car_load/jay/beetle_1948_ladung_abgedeckt.mdl", },
+						models = { "#CAR_EUROPE", },
 						randomId = 2,
 						transf = { -1, -0.0000000874227765734758577309548854827880859375, 0, 0, 0.0000000874227765734758577309548854827880859375, -1, 0, 0, 0, 0, 1, 0, 2.4900000095367431640625, 0, 1.2400000095367431640625, 1, },
 					},
 					{ 
 						group = "RootNode",
-						models = { "res/models/modelRrho/vehicle/car_load/jay/beetle_1948_ladung_abgedeckt.mdl", },
+						models = { "#CAR_EUROPE", },
 						randomId = 3,
 						transf = { -1, -0.0000000874227765734758577309548854827880859375, 0, 0, 0.0000000874227765734758577309548854827880859375, -1, 0, 0, 0, 0, 1, 0, -2.4900000095367431640625, 0, 1.2400000095367431640625, 1, },
 					},

@@ -465,7 +465,7 @@ return {
 				slots = {
 					{ 
 						group = "xfm36_laufwerk",
-						models = { "res/models/modelX_Wagen/vehicle/car_load/jay/beetle_1948_ladung_abgedeckt.mdl", },
+						models = { "#CAR_EUROPE", },
 						randomId = 0,
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, -0, 1, 0, -0.1500000059604644775390625, 0, 1.2400000095367431640625, 1, },
 					},

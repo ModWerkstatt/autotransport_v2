@@ -477,25 +477,25 @@ return {
 				slots = {
 					{ 
 						group = "xfm36_laufwerk",
-						models = { "res/models/modelX_Wagen/vehicle/car_load/jay/tl250_1.mdl", "res/models/modelX_Wagen/vehicle/car_load/jay/tl250_2.mdl", "res/models/modelX_Wagen/vehicle/car_load/jay/tl250_3.mdl", "res/models/modelX_Wagen/vehicle/car_load/jay/tl250_4.mdl", "res/models/modelX_Wagen/vehicle/car_load/jay/tl250_5.mdl", "res/models/modelX_Wagen/vehicle/car_load/jay/tl250_6.mdl", },
+						models = { "#CAR_EUROPE", },
 						randomId = 0,
 						transf = { -0.00000004371138828673792886547744274139404296875, 1, -0, 0, -1, -0.00000004371138828673792886547744274139404296875, 0, 0, 0, 0, 1, 0, 0, 0, 1.2400000095367431640625, 1, },
 					},
 					{ 
 						group = "xfm36_laufwerk",
-						models = { "res/models/modelX_Wagen/vehicle/car_load/jay/tl250_1.mdl", "res/models/modelX_Wagen/vehicle/car_load/jay/tl250_2.mdl", "res/models/modelX_Wagen/vehicle/car_load/jay/tl250_3.mdl", "res/models/modelX_Wagen/vehicle/car_load/jay/tl250_4.mdl", "res/models/modelX_Wagen/vehicle/car_load/jay/tl250_5.mdl", "res/models/modelX_Wagen/vehicle/car_load/jay/tl250_6.mdl", },
+						models = { "#CAR_EUROPE", },
 						randomId = 1,
 						transf = { -0.00000004371138828673792886547744274139404296875, 1, -0, 0, -1, -0.00000004371138828673792886547744274139404296875, 0, 0, 0, 0, 1, 0, -1.53999996185302734375, 0, 1.2400000095367431640625, 1, },
 					},
 					{ 
 						group = "xfm36_laufwerk",
-						models = { "res/models/modelX_Wagen/vehicle/car_load/jay/tl250_1.mdl", "res/models/modelX_Wagen/vehicle/car_load/jay/tl250_2.mdl", "res/models/modelX_Wagen/vehicle/car_load/jay/tl250_3.mdl", "res/models/modelX_Wagen/vehicle/car_load/jay/tl250_4.mdl", "res/models/modelX_Wagen/vehicle/car_load/jay/tl250_5.mdl", "res/models/modelX_Wagen/vehicle/car_load/jay/tl250_6.mdl", },
+						models = { "#CAR_EUROPE", },
 						randomId = 2,
 						transf = { -0.00000004371138828673792886547744274139404296875, 1, -0, 0, -1, -0.00000004371138828673792886547744274139404296875, 0, 0, 0, 0, 1, 0, 1.519999980926513671875, 0, 1.2400000095367431640625, 1, },
 					},
 					{ 
 						group = "xfm36_laufwerk",
-						models = { "res/models/modelX_Wagen/vehicle/car_load/jay/tl250_kasten.mdl", },
+						models = { "#CAR_EUROPE", },
 						randomId = 0,
 						transf = { -0.930000007152557373046875, -0.0000000813031846291778492741286754608154296875, 0, 0, 0.0000000874227765734758577309548854827880859375, -1, 0, 0, 0, 0, 1, 0, -0.02999999932944774627685546875, 0, 1.2400000095367431640625, 1, },
 					},

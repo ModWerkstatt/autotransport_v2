@@ -476,13 +476,13 @@ return {
 				slots = {
 					{ 
 						group = "xfm36_laufwerk",
-						models = { "res/models/modelX_Wagen/vehicle/car_load/jay/beetle_1948_ladung_abgedeckt.mdl", },
+						models = { "#CAR_EUROPE", },
 						randomId = 1,
 						transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, -0, 1, 0, -1.66999995708465576171875, 0, 1.25, 1, },
 					},
 					{ 
 						group = "xfm36_laufwerk",
-						models = { "res/models/modelX_Wagen/vehicle/car_load/jay/beetle_1948_ladung_abgedeckt.mdl", },
+						models = { "#CAR_EUROPE", },
 						randomId = 2,
 						transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, -0, 1, 0, 3.0799999237060546875, 0, 1.25, 1, },
 					},
