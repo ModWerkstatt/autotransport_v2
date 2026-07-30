@@ -1,0 +1,445 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 6.1796011924744, 1.5632081031799, 3.5558106899261, },
+		bbMin = { -6.141939163208, -1.5632081031799, 0.48191779851913, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 6.1607704162598, 1.5632081031799, 1.5369464159012, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "mat/shared/auto_gestell.mtl", },
+						mesh = "msh/laes547_laufwerk_w2_lod0.msh",
+						name = "laes547_laufwerk_w2",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 6.1799998283386, 0.0036384239792824, 0.40999999642372, 1, },
+					},
+					{
+						materials = { "mat/shared/auto_gestell.mtl", },
+						mesh = "msh/laes547_laufwerk_bandion_lod0.msh",
+						name = "laes547_laufwerk_bandion",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 10.670000076294, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_stangenunten_lod0.msh",
+						name = "laes549_mitte_stangenunten",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_stangensenkrecht_lod0.msh",
+						name = "laes549_mitte_stangensenkrecht",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_stangenoben_lod0.msh",
+						name = "laes549_mitte_stangenoben",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_seile_lod0.msh",
+						name = "laes549_mitte_seile",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_gerust_lod0.msh",
+						name = "laes549_mitte_gerust",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_untereabdeckung_lod0.msh",
+						name = "laes549_mitte_untereabdeckung",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_obereabdeckung_lod0.msh",
+						name = "laes549_mitte_obereabdeckung",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_obereebene_lod0.msh",
+						name = "laes549_mitte_obereebene",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_unterestangen_lod0.msh",
+						name = "laes549_mitte_unterestangen",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_untereebene_lod0.msh",
+						name = "laes549_mitte_untereebene",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_schieneoben_lod0.msh",
+						name = "laes549_mitte_schieneoben",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_leitern_lod0.msh",
+						name = "laes549_mitte_leitern",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 42.746109008789,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "mat/shared/auto_gestell.mtl", },
+						mesh = "msh/laes547_laufwerk_w2_lod1.msh",
+						name = "laes547_laufwerk_w2",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 6.1199998855591, 0.0036384239792824, 0.40999999642372, 1, },
+					},
+					{
+						materials = { "mat/shared/auto_gestell.mtl", },
+						mesh = "msh/laes547_laufwerk_bandion_lod1.msh",
+						name = "laes547_laufwerk_bandion",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 10.590000152588, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_stangenunten_lod1.msh",
+						name = "laes549_mitte_stangenunten",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_stangensenkrecht_lod1.msh",
+						name = "laes549_mitte_stangensenkrecht",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_gerust_lod1.msh",
+						name = "laes549_mitte_gerust",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_untereabdeckung_lod1.msh",
+						name = "laes549_mitte_untereabdeckung",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_obereabdeckung_lod1.msh",
+						name = "laes549_mitte_obereabdeckung",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_obereebene_lod1.msh",
+						name = "laes549_mitte_obereebene",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_unterestangen_lod1.msh",
+						name = "laes549_mitte_unterestangen",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_untereebene_lod1.msh",
+						name = "laes549_mitte_untereebene",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_schieneoben_lod1.msh",
+						name = "laes549_mitte_schieneoben",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_leitern_lod1.msh",
+						name = "laes549_mitte_leitern",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 42.746109008789,
+			visibleTo = 128.23832702637,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "mat/shared/auto_gestell.mtl", },
+						mesh = "msh/laes547_laufwerk_w2_lod2.msh",
+						name = "laes547_laufwerk_w2",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 6.1199998855591, 0.0036384239792824, 0.40999999642372, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_schieneoben_lod0.msh",
+						name = "laes549_mitte_schieneoben",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_gerust_lod2.msh",
+						name = "laes549_mitte_gerust",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_untereabdeckung_lod2.msh",
+						name = "laes549_mitte_untereabdeckung",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_obereabdeckung_lod2.msh",
+						name = "laes549_mitte_obereabdeckung",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_obereebene_lod2.msh",
+						name = "laes549_mitte_obereebene",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_unterestangen_lod2.msh",
+						name = "laes549_mitte_unterestangen",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_untereebene_lod2.msh",
+						name = "laes549_mitte_untereebene",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_leitern_lod2.msh",
+						name = "laes549_mitte_leitern",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 128.23832702637,
+			visibleTo = 384.71496582031,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "mat/shared/auto_gestell.mtl", },
+						mesh = "msh/laes547_laufwerk_w2_lod3.msh",
+						name = "laes547_laufwerk_w2",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 6.1199998855591, 0.0036384239792824, 0.40999999642372, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_gerust_lod3.msh",
+						name = "laes549_mitte_gerust",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_untereabdeckung_lod3.msh",
+						name = "laes549_mitte_untereabdeckung",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_obereabdeckung_lod3.msh",
+						name = "laes549_mitte_obereabdeckung",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_obereebene_lod3.msh",
+						name = "laes549_mitte_obereebene",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "mat/westerland/laes549_mitte.mtl", },
+						mesh = "msh/laes549_mitte_untereebene_lod3.msh",
+						name = "laes549_mitte_untereebene",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 384.71496582031,
+			visibleTo = 1154.1448974609,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1964,
+			yearTo = -1,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("Offhs66_desc"),
+			name = _("Offehss 548 (DB) [1964]"),
+		},
+			emissions = { 
+				noise = { 
+					idle = -1,
+					power = -1,
+					speed = -1,
+				},
+				pollution = { 
+					idle = -1,
+					power = -1,
+					speed = -1,
+				},
+			},
+			landVehicle = { 
+				brakeDeceleration = 2.5,
+				engines = { },
+				friction = 0.0199999995529651641845703125,
+				topSpeed = 33.299999237060546875,
+				weightEmpty = 11100,
+				weightMaxPayload = 0,
+			},
+			loadIndicator = { 
+				configs = { 
+					slots_0 = { 
+						cargoSlots = { 
+							configurations = {
+								{
+									{ },
+									{ 0, },
+									{ 0, 1, },
+									{ 0, 1, 2, },
+									{ 0, 1, 2, 3, },
+								},
+							},
+						},
+					},
+				},
+				slots = {
+					{ 
+						group = "RootNode",
+						models = { "#CAR_EUROPE", },
+						randomId = 11,
+						transf = { -1, -0.00000008742276946804850012995302677154541015625, -0, 0, 0.00000008742276946804850012995302677154541015625, -1, 0, 0, 0, -0, 1, 0, -0.039999999105930328369140625, 0, 0.800000011920928955078125, 1, },
+					},
+					{ 
+						group = "RootNode",
+						models = { "#CAR_EUROPE", },
+						randomId = 13,
+						transf = { -0.994521796703338623046875, -0.0000006243935786187648773193359375, 0.104528449475765228271484375, 0, 0.0000006278329465203569270670413970947265625, -1, 0, 0, 0.104528449475765228271484375, 0.0000000656264091958291828632354736328125, 0.994521796703338623046875, 0, -5.280000209808349609375, 0, 1.0099999904632568359375, 1, },
+					},
+					{ 
+						group = "RootNode",
+						models = { "#CAR_EUROPE", },
+						randomId = 14,
+						transf = { -0.999506533145904541015625, -0.0000008658240631120861507952213287353515625, 0.0314107574522495269775390625, 0, 0.0000008662515256219194270670413970947265625, -1, 0, 0, 0.0314107574522495269775390625, 0.00000002720961589375292533077299594879150390625, 0.999506533145904541015625, 0, 0.25, 0, 2.7999999523162841796875, 1, },
+					},
+					{ 
+						group = "RootNode",
+						models = { "#CAR_EUROPE", },
+						randomId = 15,
+						transf = { -0.998970448970794677734375, -0.00000062718658000449067912995815277099609375, 0.0453629828989505767822265625, 0, 0.0000006278329465203569270670413970947265625, -1, 0, 0, 0.0453629828989505767822265625, 0.0000000284803736150252007064409554004669189453125, 0.998970448970794677734375, 0, -5.13000011444091796875, 0, 2.9200000762939453125, 1, },
+					},
+				},
+			},
+			maintenance = { 
+				lifespan = 22200,
+				runningCosts = -1,
+			},
+			railVehicle = { 
+				config = { 
+					axles = { "laes_547_laufwerk_w1", },
+					fakeBogies = {
+						{
+							{ 
+								group = "RootNode",
+								offset = 0,
+								position = 4.69999980926513671875,
+							},
+						},
+						{ },
+						{ },
+						{ },
+					},
+				},
+			},
+			soundConfig = { 
+				soundSet = { 
+					name = "mw_basis::/vehicle/waggon/mw_basis/sound/mw_leicht.snd",
+				},
+			},
+			transformatorConfig = { 
+				skipFromLod = 1,
+				transformator = { 
+					name = "::/vehicle/train/shared/default_train.trf",
+				},
+			},
+			transportVehicle = { 
+				carrier = "RAIL",
+				compartments = {
+					{ 
+						loadConfigs = {
+							{ 
+								cargoEntry = { 
+									capacity = 48,
+									cargoTypeSet = { 
+										cargoClassesExcluded = { },
+										cargoClassesIncluded = { },
+										cargoTypesExcluded = { },
+										cargoTypesIncluded = { "::/cargos/passengers/passengers.cargo", },
+									},
+									loadIndicator = "slots_0",
+									seats = { },
+								},
+								toHide = { },
+							},
+						},
+					},
+				},
+			engineTransportModes = { },
+			groupFileName = "menu_autotransport.mdl",
+			loadSpeed = 3,
+			transportModes = { "TRAIN", "ELECTRIC_TRAIN", },
+			filterTags = { "default", },
+		},
+	},
+	version = 2,
+}
+end
